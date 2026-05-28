@@ -1,0 +1,326 @@
+{
+	"BUILD_DIR" : "/home/amt-06/Desktop/Ascan_1/build/YourProjectName_autogen",
+	"CMAKE_BINARY_DIR" : "/home/amt-06/Desktop/Ascan_1/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/amt-06/Desktop/Ascan_1/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/amt-06/Desktop/Ascan_1",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/amt-06/Desktop/Ascan_1/CMakeLists.txt",
+		"/home/amt-06/Desktop/Ascan_1/build/CMakeFiles/3.22.1/CMakeSystem.cmake",
+		"/home/amt-06/Desktop/Ascan_1/toolchain-armv7.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake",
+		"/home/amt-06/Desktop/Ascan_1/build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake",
+		"/usr/share/cmake-3.22/Modules/Platform/Linux.cmake",
+		"/usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake",
+		"/usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake",
+		"/usr/share/cmake-3.22/Modules/Compiler/GNU.cmake",
+		"/usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake",
+		"/usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5/Qt5Config.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Core/Qt5CoreMacros.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeParseArguments.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5GuiConfig.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeParseArguments.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Sql/Qt5SqlConfig.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5PrintSupport/Qt5PrintSupportConfigVersion.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5PrintSupport/Qt5PrintSupportConfig.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5PrintSupport/Qt5PrintSupport_QCupsPrinterSupportPlugin.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Charts/Qt5ChartsConfigVersion.cmake",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/cmake/Qt5Charts/Qt5ChartsConfig.cmake",
+		"/usr/share/cmake-3.22/Modules/FindOpenSSL.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPkgConfig.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake",
+		"/home/amt-06/Desktop/Ascan_1/resource.qrc"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/amt-06/Desktop/Ascan_1",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"/home/amt-06/Desktop/Ascan_1/Services/qcustomplot.h",
+			"MU",
+			"4VYEQU4VHD/moc_qcustomplot.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/adddoctordialog.h",
+			"MU",
+			"EWIEGA46WW/moc_adddoctordialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/addlensdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_addlensdialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/addpatientdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_addpatientdialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/calculatordialog.h",
+			"MU",
+			"EWIEGA46WW/moc_calculatordialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/calibrationdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_calibrationdialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/doctordetaildialog.h",
+			"MU",
+			"EWIEGA46WW/moc_doctordetaildialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/editdoctordialog.h",
+			"MU",
+			"EWIEGA46WW/moc_editdoctordialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/editlensdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_editlensdialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/editpatientdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_editpatientdialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/fixedcombobox.h",
+			"MU",
+			"EWIEGA46WW/moc_fixedcombobox.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/homescreendialog.h",
+			"MU",
+			"EWIEGA46WW/moc_homescreendialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/keypad.h",
+			"MU",
+			"EWIEGA46WW/moc_keypad.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/measuredialog.h",
+			"MU",
+			"EWIEGA46WW/moc_measuredialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/numericpad.h",
+			"MU",
+			"EWIEGA46WW/moc_numericpad.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/patientdetaildialog.h",
+			"MU",
+			"EWIEGA46WW/moc_patientdetaildialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/preferencesdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_preferencesdialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/printdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_printdialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/promptdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_promptdialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/viewdoctordialog.h",
+			"MU",
+			"EWIEGA46WW/moc_viewdoctordialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/viewlensdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_viewlensdialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/viewpatientdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_viewpatientdialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/waveformdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_waveformdialog.cpp",
+			null
+		],
+		[
+			"/home/amt-06/Desktop/Ascan_1/welcomedialog.h",
+			"MU",
+			"EWIEGA46WW/moc_welcomedialog.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/amt-06/Desktop/Ascan_1/build/YourProjectName_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/amt-06/Desktop/Ascan_1/build/YourProjectName_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CHARTS_LIB",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
+		"QT_PRINTSUPPORT_LIB",
+		"QT_SQL_LIB",
+		"QT_WIDGETS_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/amt-06/Desktop/Ascan_1",
+		"/home/amt-06/Desktop/Ascan_1/Services",
+		"/home/amt-06/zynq-sysroot/usr/include/arm-linux-gnueabihf/qt5",
+		"/home/amt-06/zynq-sysroot/usr/include/arm-linux-gnueabihf/qt5/QtCore",
+		"/home/amt-06/zynq-sysroot/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++",
+		"/home/amt-06/zynq-sysroot/usr/include/arm-linux-gnueabihf/qt5/QtGui",
+		"/home/amt-06/zynq-sysroot/usr/include/arm-linux-gnueabihf/qt5/QtWidgets",
+		"/home/amt-06/zynq-sysroot/usr/include/arm-linux-gnueabihf/qt5/QtSql",
+		"/home/amt-06/zynq-sysroot/usr/include/arm-linux-gnueabihf/qt5/QtPrintSupport",
+		"/home/amt-06/zynq-sysroot/usr/include/arm-linux-gnueabihf/qt5/QtCharts",
+		"/home/amt-06/zynq-sysroot/usr/include",
+		"/usr/arm-linux-gnueabihf/include/c++/11",
+		"/usr/arm-linux-gnueabihf/include/c++/11/arm-linux-gnueabihf",
+		"/usr/arm-linux-gnueabihf/include/c++/11/backward",
+		"/usr/lib/gcc-cross/arm-linux-gnueabihf/11/include",
+		"/usr/arm-linux-gnueabihf/include",
+		"/home/amt-06/zynq-sysroot/usr/include/arm-linux-gnueabihf"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/arm-linux-gnueabihf-g++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/amt-06/Desktop/Ascan_1/build/YourProjectName_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/amt-06/Desktop/Ascan_1/build/CMakeFiles/YourProjectName_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/home/amt-06/zynq-sysroot/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "/home/amt-06/zynq-sysroot/usr/lib/qt5/bin/uic",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "/home/amt-06/Desktop/Ascan_1/build/CMakeFiles/YourProjectName_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[ "/home/amt-06/Desktop/Ascan_1/Services/qcustomplot.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/adddoctordialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/addlensdialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/addpatientdialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/calculatordialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/calibrationdialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/doctordetaildialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/editdoctordialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/editlensdialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/editpatientdialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/homescreendialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/keypad.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/main.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/measuredialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/numericpad.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/patientdetaildialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/preferencesdialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/printdialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/promptdialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/viewdoctordialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/viewlensdialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/viewpatientdialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/waveformdialog.cpp", "MU", null ],
+		[ "/home/amt-06/Desktop/Ascan_1/welcomedialog.cpp", "MU", null ]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

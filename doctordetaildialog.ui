@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DoctorDetailDialog</class>
+ <widget class="QDialog" name="DoctorDetailDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/images/5.png);</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>0</y>
+     <width>160</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(empty.png);</string>
+   </property>
+   <property name="text">
+    <string>Doctor Details</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_close">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>70</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(empty.png);
+border-image: url(:/images/icons/ic_arrow_back_white_48dp.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>90</y>
+     <width>730</width>
+     <height>480</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/card-image.png);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Doctor ID</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>100</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Doctor Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>120</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Primary Formula</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget_currentDoctor">
+    <property name="geometry">
+     <rect>
+      <x>426</x>
+      <y>0</y>
+      <width>300</width>
+      <height>259</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);border-image:url(empty.png);color:rgb(21,21,21);</string>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Lens1</string>
+     </attribute>
+     <widget class="QLabel" name="lbl_iolLensOne">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>4</y>
+        <width>185</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>IOL</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_asrktLensOne">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>60</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>ASRKT</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_asrktiiLensOne">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>63</y>
+        <width>60</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>ASRKII</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_acdLensOne">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>60</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>ACD</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_sfLensOne">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>60</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>SF</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_a0LensOne">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>40</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>A0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_a1LensOne">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>150</y>
+        <width>40</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>A1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_a2LensOne">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>150</y>
+        <width>40</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>A2</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_asrktLensOneValue">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>30</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_asrkiiLensOneValue">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>60</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_acdLensOneValue">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>90</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_sfLensOneValue">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>120</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_a0LensOneValue">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_a1LensOneValue">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>170</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_a2LensOneValue">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>170</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Lens2</string>
+     </attribute>
+     <widget class="QLabel" name="lbl_sfLensTwo">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>60</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>SF</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_sfLensTwoValue">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>120</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_asrktLensTwoValue">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>30</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_a2LensTwoValue">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>170</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_asrkiiLensTwoValue">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>60</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_acdLensTwo">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>60</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>ACD</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_asrkiiLensTwo">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>63</y>
+        <width>60</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>ASRKII</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_a1LensTwo">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>150</y>
+        <width>40</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>A1</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_a0LensTwoValue">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_a2LensTwo">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>150</y>
+        <width>40</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>A2</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_a1LensTwoValue">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>170</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_iolLensTwo">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>4</y>
+        <width>185</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>IOL</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_asrktLensTwo">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>60</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>ASRKT</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_acdLensTwoValue">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>90</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_a0LensTwo">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>40</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>A0</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Lens3</string>
+     </attribute>
+     <widget class="QLabel" name="lbl_sfLensThree">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>60</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>SF</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_sfLensThreeValue">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>120</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_asrktLensThreeValue">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>30</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_a2LensThreeValue">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>170</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_asrkiiLensThreeValue">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>60</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_acdLensThree">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>60</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>ACD</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_asrkiiLensThree">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>63</y>
+        <width>60</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>ASRKII</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_a1LensThree">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>150</y>
+        <width>40</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>A1</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_a0LensThreeValue">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_a2LensThree">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>150</y>
+        <width>40</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>A2</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_a1LensThreeValue">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>170</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_iolLensThree">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>4</y>
+        <width>185</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>IOL</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_asrktLensThree">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>60</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>ASRKT</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lbl_acdLensThreeValue">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>90</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_a0LensThree">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>40</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      </property>
+      <property name="text">
+       <string>A0</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>120</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Patients</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_patient">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>266</y>
+      <width>320</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>310</y>
+      <width>110</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Patient Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>340</y>
+      <width>110</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Age</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>370</y>
+      <width>110</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Gender</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>400</y>
+      <width>110</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Contact</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>430</y>
+      <width>110</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Settings</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>310</y>
+      <width>110</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Keratometry</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lbl_currentPatientLK2Value">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>356</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_currentPatientLK">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>336</y>
+      <width>40</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);</string>
+    </property>
+    <property name="text">
+     <string>LK</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_currentPatientRK2">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>400</y>
+      <width>40</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);</string>
+    </property>
+    <property name="text">
+     <string>RK2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_currentPatientRK1">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>400</y>
+      <width>40</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);</string>
+    </property>
+    <property name="text">
+     <string>RK1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_currentPatientRK">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>400</y>
+      <width>40</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);</string>
+    </property>
+    <property name="text">
+     <string>RK</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lbl_currentPatientLKValue">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>356</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lbl_currentPatientRKValue">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>420</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lbl_currentPatientRK2Value">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>420</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_currentPatientLK2">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>336</y>
+      <width>40</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);</string>
+    </property>
+    <property name="text">
+     <string>LK2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_currentPatientLK1">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>336</y>
+      <width>40</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);</string>
+    </property>
+    <property name="text">
+     <string>LK1</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lbl_currentPatientLK1Value">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>356</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lbl_currentPatientRK1Value">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>420</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lineEdit_docID">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>66</y>
+      <width>210</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image: url(:/images/searchbar.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lineEdit_docName">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>106</y>
+      <width>230</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image: url(:/images/searchbar.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lineEdit_primaryFormula">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>147</y>
+      <width>210</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image: url(:/images/searchbar.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_patName">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>310</y>
+      <width>210</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image: url(:/images/searchbar.png);</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_patientAge">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>340</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image: url(:/images/searchbar.png);</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_patientGender">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>370</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image: url(:/images/searchbar.png);</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_patientContact">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>400</y>
+      <width>180</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image: url(:/images/searchbar.png);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lineEdit_patOpEye">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>450</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image: url(:/images/searchbar.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lineEdit_patOpMethod">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>450</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image: url(:/images/searchbar.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lineEdit_patOpMode">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>450</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/empty.png);
+background-image: url(:/images/searchbar.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>60</y>
+     <width>89</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(empty.png);
+border-image: url(:/images/surgeon-icon.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_time">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>0</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+   </property>
+   <property name="text">
+    <string>10:09</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

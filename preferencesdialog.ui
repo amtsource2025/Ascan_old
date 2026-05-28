@@ -1,0 +1,2030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PreferencesDialog</class>
+ <widget class="QDialog" name="PreferencesDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/images/quick-settings-notexticon.png);</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>-1</y>
+     <width>623</width>
+     <height>606</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(255,255,255);
+background-image:url(empty.png);</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>10</y>
+       <width>90</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>General</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>140</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Hospital Name</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_hospitalName">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>76</y>
+       <width>260</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>140</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Address</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_hospitalAddress">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>120</y>
+       <width>420</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_currentDoctor">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>170</y>
+       <width>260</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>174</y>
+       <width>140</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Current Doctor</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_serialNumber">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>216</y>
+       <width>260</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_26">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>140</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Serial Number</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_27">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>264</y>
+       <width>140</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Software Version</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_softwareVersion">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>260</y>
+       <width>260</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_qr">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>310</y>
+       <width>130</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>More Info</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_qrImage">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>350</y>
+       <width>130</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image:url(/home/adityan/res.bmp);background-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_save">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>470</y>
+       <width>80</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/images/save-icon.png);
+background-image:url(:/images/empty.png);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>259</x>
+       <y>10</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Databases</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_patCount">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>220</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string>background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Patients</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_doctorCount">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>240</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string>background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Doctors</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_lensCount">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>170</y>
+       <width>230</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string>background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Lens</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_totDiskSpace">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>280</y>
+       <width>280</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string>background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Total Disk Space</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_availDiskSpace">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>320</y>
+       <width>300</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string>background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Available Disk Space</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar_diskSpace">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>350</y>
+       <width>560</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="textDirection">
+      <enum>QProgressBar::TopToBottom</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_scansCount">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>210</y>
+       <width>230</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string>background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Scans</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_clearScans">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>233</y>
+       <width>130</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);
+color: rgb(255, 255, 255);
+background-color: #1976D2;
+border-radius:5px;</string>
+     </property>
+     <property name="text">
+      <string>Clear scans</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>10</y>
+       <width>90</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Printer</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>130</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Printer Port</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_printer">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>69</y>
+       <width>270</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_testPrint">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>130</y>
+       <width>130</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);
+color: rgb(255, 255, 255);
+background-color: #1976D2;
+border-radius:5px;</string>
+     </property>
+     <property name="text">
+      <string>Test port</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="but_save_printer">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>470</y>
+       <width>80</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/images/save-icon.png);
+background-image:url(empty.png);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_4">
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>10</y>
+       <width>90</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Network</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>80</y>
+       <width>67</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>SSID</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_ssid">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>80</y>
+       <width>260</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_psk">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>140</y>
+       <width>260</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhNone</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>67</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>PSK</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_pwdMask">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>140</y>
+       <width>92</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Show</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_clearSSID">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>190</y>
+       <width>180</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Clear existing entries</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="tristate">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_5">
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>10</y>
+       <width>200</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Backup &amp; Restore</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Warning</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>110</y>
+       <width>520</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;All database and system settings including scans saved would be reverted to the factory defaults if you press the Restore All button. Changes cannot be undone.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; If you wish to not disturb the scan records please press the Restore Settings button. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_restoreAll">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>250</y>
+       <width>480</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);
+color: rgb(255, 255, 255);
+background-color: #1976D2;
+border-radius:5px;</string>
+     </property>
+     <property name="text">
+      <string> Restore All to Factory Settings ( Includes Scans)</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_restoreSettings">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>340</y>
+       <width>480</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);
+color: #1976D2;
+border: 1px solid #1976D2;
+border-radius:5px;</string>
+     </property>
+     <property name="text">
+      <string> Restore Preferences to Factory Settings (Excludes Scans)</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_save_4">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>60</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);
+border-image: url(:/images/icons/ic_warning_white_96dp.png);
+color: rgb(255, 255, 255);
+background-color: rgb(239, 41, 41);
+border-radius:15px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_6">
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>10</y>
+       <width>130</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Date &amp; Time</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>130</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Set Date</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>60</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Day</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_day">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>180</y>
+       <width>70</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>140</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Month</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_month">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>180</y>
+       <width>130</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>January</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>February</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>March</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>April</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>May</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>June</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>July</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>August</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>September</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>October</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>November</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>December</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_year">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>180</y>
+       <width>90</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_19">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>140</y>
+       <width>60</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Year</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>280</y>
+       <width>60</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Hour</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_hour">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>320</y>
+       <width>70</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_minute">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>320</y>
+       <width>70</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>280</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Minute</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_25">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>240</y>
+       <width>310</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+     <property name="text">
+      <string>Set Time (24 hour format)</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="but_save_date">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>470</y>
+       <width>80</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/images/save-icon.png);
+background-image:url(empty.png);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_statistics">
+    <widget class="QLabel" name="label_29">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>10</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+     </property>
+     <property name="text">
+      <string>Statistics</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_30">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>120</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+     </property>
+     <property name="text">
+      <string>Total Scans</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_31">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>130</y>
+       <width>180</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+     </property>
+     <property name="text">
+      <string>Scans in past week</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_32">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>190</y>
+       <width>190</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+     </property>
+     <property name="text">
+      <string>Scans in past month</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_33">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>250</y>
+       <width>220</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+     </property>
+     <property name="text">
+      <string>Scans performed today</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lbl_totalScans">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>60</y>
+       <width>120</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lbl_scansPastWeek">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>120</y>
+       <width>120</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lbl_scansPastMonth">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>180</y>
+       <width>120</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lbl_scansToday">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>240</y>
+       <width>120</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_7">
+    <widget class="QLabel" name="label_34">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>10</y>
+       <width>130</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+     </property>
+     <property name="text">
+      <string>Measurement</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_35">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>130</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+     </property>
+     <property name="text">
+      <string>Velocity</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_36">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>180</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+     </property>
+     <property name="text">
+      <string>Anterior Chamber</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_acVelocity">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>150</y>
+       <width>100</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_37">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>110</y>
+       <width>180</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+     </property>
+     <property name="text">
+      <string>Lens</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_lVelocity">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>150</y>
+       <width>100</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_38">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>110</y>
+       <width>180</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+     </property>
+     <property name="text">
+      <string>Vitreous</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_vitVelocity">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>150</y>
+       <width>100</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_avVelocity">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>260</y>
+       <width>100</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_39">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>220</y>
+       <width>180</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+     </property>
+     <property name="text">
+      <string>Average Velocity</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btn_back">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>0</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/icons/ic_arrow_back_white_48dp.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logo_general">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>83</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/icons/ic_info_white_48dp.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_general">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>94</y>
+     <width>67</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string>General</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logo_databases">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>149</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/icons/ic_folder_shared_white_48dp.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_databases">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>160</y>
+     <width>100</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string>Databases</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_printer">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>221</y>
+     <width>70</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string>Printer</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logo_printer">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>210</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image:url(:/images/icons/ic_print_white_48dp.png)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_backup">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>470</y>
+     <width>120</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string>Backup &amp; Restore</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logo_backuprestore">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>460</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/icons/ic_settings_backup_restore_white_48dp.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logo_network">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>280</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/icons/ic_network_wifi_white_48dp.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_network">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>290</y>
+     <width>120</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string>Network</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_general">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>79</y>
+     <width>180</width>
+     <height>53</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_databases">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>149</y>
+     <width>180</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_printer">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>207</y>
+     <width>180</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_backup">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>460</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_network">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>270</y>
+     <width>180</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="snackbar">
+   <property name="geometry">
+    <rect>
+     <x>-2</x>
+     <y>560</y>
+     <width>805</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/alert-red.png);
+background-image:url(empty.png);color:rgb(255,255,255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="indent">
+    <number>5</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_time">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>30</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string>10:09</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_datetime">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>350</y>
+     <width>120</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string>Date &amp; Time</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logo_datetime">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>340</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/icons/ic_access_time_white_48dp.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_date_time">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>340</y>
+     <width>180</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_statistics">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>400</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_stats">
+   <property name="geometry">
+    <rect>
+     <x>54</x>
+     <y>410</y>
+     <width>120</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string>Statistics</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logo_stats">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>400</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/icons/ic_assessment_white_48dp.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_measurement">
+   <property name="geometry">
+    <rect>
+     <x>53</x>
+     <y>530</y>
+     <width>120</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string>Measurement</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_measurement">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>520</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logo_measure">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>520</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/icons/ic_developer_board_white_48dp.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>stackedWidget</zorder>
+  <zorder>btn_back</zorder>
+  <zorder>logo_general</zorder>
+  <zorder>lbl_general</zorder>
+  <zorder>logo_databases</zorder>
+  <zorder>lbl_databases</zorder>
+  <zorder>lbl_printer</zorder>
+  <zorder>logo_printer</zorder>
+  <zorder>lbl_backup</zorder>
+  <zorder>logo_backuprestore</zorder>
+  <zorder>logo_network</zorder>
+  <zorder>lbl_network</zorder>
+  <zorder>snackbar</zorder>
+  <zorder>lbl_time</zorder>
+  <zorder>lbl_datetime</zorder>
+  <zorder>logo_datetime</zorder>
+  <zorder>lbl_stats</zorder>
+  <zorder>logo_stats</zorder>
+  <zorder>btn_date_time</zorder>
+  <zorder>btn_network</zorder>
+  <zorder>btn_printer</zorder>
+  <zorder>btn_databases</zorder>
+  <zorder>btn_general</zorder>
+  <zorder>lbl_measurement</zorder>
+  <zorder>logo_measure</zorder>
+  <zorder>btn_measurement</zorder>
+  <zorder>btn_statistics</zorder>
+  <zorder>btn_backup</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

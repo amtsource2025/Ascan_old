@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddPatientDialog</class>
+ <widget class="QDialog" name="AddPatientDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/images/5.png);</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>49</y>
+     <width>520</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-image: url(:/images/card-big.png);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLineEdit" name="lineEdit_patName">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>73</y>
+      <width>310</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>130</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Patient Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>183</y>
+      <width>120</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Gender</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>235</y>
+      <width>130</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Phone</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>363</y>
+      <width>130</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Operating Eye</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>276</y>
+      <width>160</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Operating Method</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_phone">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>225</y>
+      <width>310</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>150</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Operating Mode</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_age">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>121</y>
+      <width>60</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>130</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Age</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_male">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>180</y>
+      <width>112</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Male</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_female">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>180</y>
+      <width>112</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Female</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_aphakic">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>274</y>
+      <width>112</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Aphakic</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_phakic">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>274</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Phakic</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_immersion">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>320</y>
+      <width>112</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Immersion</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_contact">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>320</y>
+      <width>112</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Contact</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_right">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>360</y>
+      <width>112</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Right</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_left">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>360</y>
+      <width>112</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Left</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_dense">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>274</y>
+      <width>92</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dense</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPatID">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>100</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cus_Patient ID</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_CustPatId">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>30</y>
+      <width>311</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_patid">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>30</y>
+      <width>311</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>lineEdit_patid</zorder>
+   <zorder>lineEdit_patName</zorder>
+   <zorder>label</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>lineEdit_phone</zorder>
+   <zorder>label_8</zorder>
+   <zorder>lineEdit_age</zorder>
+   <zorder>label_18</zorder>
+   <zorder>checkBox_male</zorder>
+   <zorder>checkBox_female</zorder>
+   <zorder>checkBox_aphakic</zorder>
+   <zorder>checkBox_phakic</zorder>
+   <zorder>checkBox_immersion</zorder>
+   <zorder>checkBox_contact</zorder>
+   <zorder>checkBox_right</zorder>
+   <zorder>checkBox_left</zorder>
+   <zorder>checkBox_dense</zorder>
+   <zorder>lblPatID</zorder>
+   <zorder>lineEdit_CustPatId</zorder>
+  </widget>
+  <widget class="QPushButton" name="btn_save">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>499</y>
+     <width>202</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(empty.png);
+color: rgb(255, 255, 255);
+background-color: rgb(25, 118, 210);
+border-radius:5px;</string>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="snackbar">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>570</y>
+     <width>810</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/alert-red.png);
+background-image:url(empty.png);color:rgb(255,255,255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="indent">
+    <number>5</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_cancel">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>499</y>
+     <width>202</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(empty.png);
+color: #1976D2;
+border: 1px solid #1976D2;border-radius:5px;</string>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>0</y>
+     <width>160</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(empty.png);</string>
+   </property>
+   <property name="text">
+    <string>Add Patient</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>49</y>
+     <width>250</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-image: url(:/images/card-big.png);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>130</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Keratometer</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>RK1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>160</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>RK2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>160</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>RK</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Right</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_rk1">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>182</y>
+      <width>60</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+    </property>
+    <property name="text">
+     <string>45.00</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_rk2">
+    <property name="geometry">
+     <rect>
+      <x>91</x>
+      <y>182</y>
+      <width>60</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+    </property>
+    <property name="text">
+     <string>45.00</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_rk">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>182</y>
+      <width>60</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+    </property>
+    <property name="text">
+     <string>45.00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>47</y>
+      <width>40</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>Left</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_lk">
+    <property name="geometry">
+     <rect>
+      <x>179</x>
+      <y>90</y>
+      <width>60</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+    </property>
+    <property name="text">
+     <string>45.00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>89</x>
+      <y>68</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>LK2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>68</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>LK1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>179</x>
+      <y>68</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);</string>
+    </property>
+    <property name="text">
+     <string>LK</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_lk1">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>90</y>
+      <width>60</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+    </property>
+    <property name="text">
+     <string>45.00</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_lk2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>90</y>
+      <width>60</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(empty.png);
+border-image:url(empty.png);
+</string>
+    </property>
+    <property name="text">
+     <string>45.00</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="lbl_time">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>0</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+   </property>
+   <property name="text">
+    <string>10:09</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
