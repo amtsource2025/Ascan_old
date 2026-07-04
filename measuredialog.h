@@ -18,10 +18,12 @@ class MeasureDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit MeasureDialog(const QString &patientId,
-                           const QString &doctorId,
-                           QWidget *parent = nullptr);
+    explicit MeasureDialog(QWidget *parent = nullptr);
+    MeasureDialog(const QString &patientId, const QString &doctorId, QWidget *parent = nullptr);
+    void loadContext(const QString &patientId, const QString &doctorId);
     ~MeasureDialog();
+
+protected:
 
 private slots:
     void updateTime();
@@ -89,6 +91,8 @@ private:
     QCustomPlot *m_plot;
 
     void bindReadingFilters(QSqlQuery &q) const;
+
+    QPixmap getWaveformPixmap() const;
 };
 
 #endif // MEASUREDIALOG_H

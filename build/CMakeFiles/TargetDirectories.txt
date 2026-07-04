@@ -1,8 +1,8 @@
-/home/amt-06/Desktop/Ascan_1/build/CMakeFiles/Ascan.dir
+/home/amt-06/Desktop/Ascan_1/build/CMakeFiles/Ascan_v2.dir
 /home/amt-06/Desktop/Ascan_1/build/CMakeFiles/edit_cache.dir
 /home/amt-06/Desktop/Ascan_1/build/CMakeFiles/rebuild_cache.dir
 /home/amt-06/Desktop/Ascan_1/build/CMakeFiles/list_install_components.dir
 /home/amt-06/Desktop/Ascan_1/build/CMakeFiles/install.dir
 /home/amt-06/Desktop/Ascan_1/build/CMakeFiles/install/local.dir
 /home/amt-06/Desktop/Ascan_1/build/CMakeFiles/install/strip.dir
-/home/amt-06/Desktop/Ascan_1/build/CMakeFiles/Ascan_autogen.dir
+/home/amt-06/Desktop/Ascan_1/build/CMakeFiles/Ascan_v2_autogen.dir

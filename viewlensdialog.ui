@@ -6,88 +6,69 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1280</width>
+    <height>720</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/images/5.png);</string>
+   <string notr="true">
+QDialog{
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+		stop:0 #eef2f8, stop:1 #e4ebf5);
+	font-family: "Segoe UI";
+}</string>
   </property>
-  <widget class="QPushButton" name="btn_add">
+
+  <!-- Header -->
+  <widget class="QLabel" name="header_bg">
    <property name="geometry">
     <rect>
-     <x>690</x>
-     <y>509</y>
-     <width>85</width>
-     <height>85</height>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>90</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image: url(:/images/add-icon.png);</string>
+    <string notr="true">QLabel{
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,
+		stop:0 #1A5FB4, stop:0.55 #1976D2, stop:1 #2E9BDA);
+	border-bottom-left-radius: 18px;
+	border-bottom-right-radius: 18px;
+}</string>
    </property>
    <property name="text">
     <string/>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btn_delete">
-   <property name="geometry">
-    <rect>
-     <x>690</x>
-     <y>320</y>
-     <width>85</width>
-     <height>85</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image: url(:/images/delete-icon.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btn_edit">
-   <property name="geometry">
-    <rect>
-     <x>690</x>
-     <y>413</y>
-     <width>85</width>
-     <height>85</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image: url(:/images/edit-icon.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_close">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>3</y>
-     <width>70</width>
+     <x>18</x>
+     <y>15</y>
+     <width>60</width>
      <height>60</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image: url(:/images/icons/ic_arrow_back_white_48dp.png);</string>
+    <string notr="true">QPushButton{
+	background-color: rgba(255,255,255,25);
+	border: none;
+	border-radius: 30px;
+	border-image: url(:/images/icons/ic_arrow_back_white_48dp.png);
+}
+QPushButton:hover{
+	background-color: rgba(255,255,255,45);
+}
+QPushButton:pressed{
+	background-color: rgba(255,255,255,70);
+}</string>
    </property>
    <property name="text">
     <string/>
@@ -96,29 +77,135 @@ border-image: url(:/images/icons/ic_arrow_back_white_48dp.png);</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QTableWidget" name="table_lenses">
+  <widget class="QLabel" name="lbl_lenses">
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>93</y>
-     <width>801</width>
-     <height>511</height>
+     <y>0</y>
+     <width>1280</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+color: rgb(255,255,255);
+letter-spacing: 1px;</string>
+   </property>
+   <property name="text">
+    <string>Lenses</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_time">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>25</y>
+     <width>150</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+color: rgba(255,255,255,220);
+letter-spacing: 1px;</string>
+   </property>
+   <property name="text">
+    <string>10:09</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+
+  <!-- Table -->
+  <widget class="QTableWidget" name="table_lenses">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>110</y>
+     <width>1080</width>
+     <height>560</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);</string>
+    <string notr="true">QTableWidget {
+    background-color: #ffffff;
+    alternate-background-color: #f7f9fc;
+    gridline-color: #e2e8f0;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    font-size: 14px;
+    color: #1f2937;
+    }
+    QTableWidget::item {
+    padding: 12px 14px;
+    border-bottom: 1px solid #eef1f5;
+    }
+    QTableWidget::item:selected {
+    background-color: #E3F0FD;
+    color: #0b3d91;
+    }
+    QHeaderView::section {
+    background-color: #F5F8FC;
+    color: #374151;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 14px 10px;
+    border: none;
+    border-bottom: 2px solid #DCE3EA;
+    }
+    QTableCornerButton::section {
+    background-color: #F5F8FC;
+    border: none;
+    }
+    QScrollBar:vertical {
+    width: 12px;
+    background: #F5F8FC;
+    border-radius: 6px;
+    }
+    QScrollBar::handle:vertical {
+    background: #C3CEDC;
+    border-radius: 6px;
+    min-height: 30px;
+    }
+    QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+    }</string>
    </property>
    <property name="editTriggers">
     <set>QAbstractItemView::NoEditTriggers</set>
    </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
    <attribute name="horizontalHeaderDefaultSectionSize">
-    <number>79</number>
+    <number>108</number>
    </attribute>
    <row>
     <property name="text">
      <string/>
     </property>
    </row>
+   <column>
+    <property name="text">
+     <string>S.No</string>
+    </property>
+   </column>
    <column>
     <property name="text">
      <string>IOL</string>
@@ -164,67 +251,117 @@ border-image: url(:/images/icons/ic_arrow_back_white_48dp.png);</string>
      <string>a1</string>
     </property>
    </column>
-   <column>
-    <property name="text">
-     <string>a2</string>
-    </property>
-   </column>
   </widget>
-  <widget class="QLabel" name="lbl_lenses">
+
+  <!-- Action rail -->
+  <widget class="QPushButton" name="btn_delete">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>3</y>
-     <width>160</width>
+     <x>1150</x>
+     <y>235</y>
+     <width>70</width>
      <height>70</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>16</pointsize>
-    </font>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);</string>
+    <string notr="true">QPushButton{
+	background-color: #FDEAEC;
+	border: 2px solid #F5C6CB;
+	border-radius: 35px;
+	border-image: url(:/images/delete-icon.png);
+}
+QPushButton:hover{
+	border: 2px solid #EFA3AB;
+}
+QPushButton:pressed{
+	background-color: #F9D2D7;
+}</string>
    </property>
    <property name="text">
-    <string>Lenses</string>
+    <string/>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="flat">
+    <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="lbl_time">
+  <widget class="QPushButton" name="btn_edit">
    <property name="geometry">
     <rect>
-     <x>680</x>
-     <y>0</y>
-     <width>120</width>
-     <height>40</height>
+     <x>1150</x>
+     <y>335</y>
+     <width>70</width>
+     <height>70</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-    </font>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+    <string notr="true">QPushButton{
+	background-color: #FDF3E7;
+	border: 2px solid #F6DFC0;
+	border-radius: 35px;
+	border-image: url(:/images/edit-icon.png);
+}
+QPushButton:hover{
+	border: 2px solid #EBC48C;
+}
+QPushButton:pressed{
+	background-color: #F8E6C7;
+}</string>
    </property>
    <property name="text">
-    <string>10:09</string>
+    <string/>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   <property name="flat">
+    <bool>true</bool>
    </property>
   </widget>
-  <zorder>btn_close</zorder>
-  <zorder>table_lenses</zorder>
+  <widget class="QPushButton" name="btn_add">
+   <property name="geometry">
+    <rect>
+     <x>1150</x>
+     <y>435</y>
+     <width>70</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: #EAF7EF;
+	border: 2px solid #C7ECD4;
+	border-radius: 35px;
+	border-image: url(:/images/add-icon.png);
+}
+QPushButton:hover{
+	border: 2px solid #98DBAF;
+}
+QPushButton:pressed{
+	background-color: #CFEEDA;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+
+  <zorder>header_bg</zorder>
   <zorder>lbl_lenses</zorder>
+  <zorder>btn_close</zorder>
+  <zorder>lbl_time</zorder>
+  <zorder>table_lenses</zorder>
   <zorder>btn_delete</zorder>
   <zorder>btn_edit</zorder>
   <zorder>btn_add</zorder>
-  <zorder>lbl_time</zorder>
  </widget>
  <resources/>
  <connections/>

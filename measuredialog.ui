@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1280</width>
+    <height>720</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,10 +19,10 @@
   <widget class="QPushButton" name="btn_lensType">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>60</y>
-     <width>70</width>
-     <height>70</height>
+     <x>319</x>
+     <y>69</y>
+     <width>95</width>
+     <height>95</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -39,10 +39,10 @@ border-image: url(:/images/aphakic-icon.png);</string>
   <widget class="QPushButton" name="btn_opMode">
    <property name="geometry">
     <rect>
-     <x>390</x>
+     <x>650</x>
      <y>60</y>
-     <width>70</width>
-     <height>70</height>
+     <width>101</width>
+     <height>101</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -59,10 +59,10 @@ border-image: url(:/images/contact.png);</string>
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>-5</x>
-     <y>500</y>
-     <width>808</width>
-     <height>100</height>
+     <x>-10</x>
+     <y>599</y>
+     <width>1301</width>
+     <height>121</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -74,13 +74,13 @@ border-image: url(:/images/contact.png);</string>
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <widget class="QLabel" name="lbl_alOne">
+   <widget class="QFrame" name="frame_graphOne">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>30</x>
       <y>10</y>
-      <width>67</width>
-      <height>31</height>
+      <width>90</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="font">
@@ -90,422 +90,782 @@ border-image: url(:/images/contact.png);</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
     </property>
-    <property name="text">
-     <string>0.00</string>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
     </property>
+    <widget class="QLabel" name="lbl_alOne">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>67</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string>0.00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_graphOne">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>90</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_graphTwo">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>90</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="btn_graphTwo">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>90</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_alTwo">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>67</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string>0.00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <zorder>lbl_alTwo</zorder>
+    <zorder>btn_graphTwo</zorder>
+   </widget>
+   <widget class="QFrame" name="frame_graphThree">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>10</y>
+      <width>90</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="btn_graphThree">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>90</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_alThree">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>67</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string>0.00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <zorder>lbl_alThree</zorder>
+    <zorder>btn_graphThree</zorder>
+   </widget>
+   <widget class="QFrame" name="frame_graphFour">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>10</y>
+      <width>90</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="btn_graphFour">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>91</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_alFour">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>67</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string>0.00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <zorder>lbl_alFour</zorder>
+    <zorder>btn_graphFour</zorder>
+   </widget>
+   <widget class="QFrame" name="frame_graphFive">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>10</y>
+      <width>90</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="btn_graphFive">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>90</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_alFive">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>67</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string>0.00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <zorder>lbl_alFive</zorder>
+    <zorder>btn_graphFive</zorder>
+   </widget>
+   <widget class="QFrame" name="frame_graphSix">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>10</y>
+      <width>90</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="btn_graphSix">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>90</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_alSix">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>67</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string>0.00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <zorder>lbl_alSix</zorder>
+    <zorder>btn_graphSix</zorder>
+   </widget>
+   <widget class="QFrame" name="frame_graphSeven">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>10</y>
+      <width>90</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbl_alSeven">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>67</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string>0.00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_graphSeven">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>90</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_graphEight">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>10</y>
+      <width>90</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbl_alEight">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>67</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string>0.00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_graphEight">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>90</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_graphNine">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>10</y>
+      <width>90</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbl_alNine">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>67</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string>0.00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_graphNine">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>90</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_graphTen">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>10</y>
+      <width>90</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbl_alTen">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>67</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string>0.00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_graphTen">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>90</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
    <widget class="QLabel" name="lbl_devOne">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>56</y>
-      <width>67</width>
-      <height>31</height>
+      <x>60</x>
+      <y>81</y>
+      <width>30</width>
+      <height>17</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_alTwo">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>10</y>
-      <width>67</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_devTwo">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>56</y>
-      <width>67</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_alThree">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>10</y>
-      <width>67</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_devThree">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>56</y>
-      <width>67</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_devFour">
-    <property name="geometry">
-     <rect>
-      <x>250</x>
-      <y>56</y>
-      <width>67</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_alFour">
-    <property name="geometry">
-     <rect>
-      <x>250</x>
-      <y>10</y>
-      <width>67</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_devFive">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>56</y>
-      <width>67</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_alFive">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>10</y>
-      <width>67</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_devSix">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>56</y>
-      <width>67</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_alSix">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>10</y>
-      <width>67</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_devSeven">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>56</y>
-      <width>67</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_alSeven">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>10</y>
-      <width>67</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_alEight">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>10</y>
-      <width>67</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_devEight">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>56</y>
-      <width>67</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_devNine">
-    <property name="geometry">
-     <rect>
-      <x>650</x>
-      <y>56</y>
-      <width>67</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_alNine">
-    <property name="geometry">
-     <rect>
-      <x>650</x>
-      <y>12</y>
-      <width>67</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_alTen">
-    <property name="geometry">
-     <rect>
-      <x>730</x>
-      <y>10</y>
-      <width>67</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>0.00</string>
@@ -517,15 +877,15 @@ border-image:url(empty.png);</string>
    <widget class="QLabel" name="lbl_devTen">
     <property name="geometry">
      <rect>
-      <x>730</x>
-      <y>56</y>
-      <width>67</width>
-      <height>31</height>
+      <x>1180</x>
+      <y>81</y>
+      <width>30</width>
+      <height>17</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>0.00</string>
@@ -534,526 +894,167 @@ border-image:url(empty.png);</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QFrame" name="frame_graphOne">
+   <widget class="QLabel" name="lbl_devEight">
     <property name="geometry">
      <rect>
-      <x>9</x>
-      <y>6</y>
-      <width>70</width>
-      <height>40</height>
+      <x>940</x>
+      <y>81</y>
+      <width>30</width>
+      <height>17</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="frame_graphTwo">
-    <property name="geometry">
-     <rect>
-      <x>89</x>
-      <y>6</y>
-      <width>70</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="frame_graphThree">
-    <property name="geometry">
-     <rect>
-      <x>169</x>
-      <y>6</y>
-      <width>70</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="frame_graphFour">
-    <property name="geometry">
-     <rect>
-      <x>249</x>
-      <y>6</y>
-      <width>70</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="frame_graphFive">
-    <property name="geometry">
-     <rect>
-      <x>329</x>
-      <y>6</y>
-      <width>70</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="frame_graphSix">
-    <property name="geometry">
-     <rect>
-      <x>409</x>
-      <y>6</y>
-      <width>70</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="frame_graphSeven">
-    <property name="geometry">
-     <rect>
-      <x>489</x>
-      <y>6</y>
-      <width>70</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="frame_graphEight">
-    <property name="geometry">
-     <rect>
-      <x>569</x>
-      <y>6</y>
-      <width>70</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="frame_graphNine">
-    <property name="geometry">
-     <rect>
-      <x>649</x>
-      <y>6</y>
-      <width>70</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="frame_graphTen">
-    <property name="geometry">
-     <rect>
-      <x>729</x>
-      <y>6</y>
-      <width>70</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_graphOne">
-    <property name="geometry">
-     <rect>
-      <x>6</x>
-      <y>1</y>
-      <width>72</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
-     <string/>
+     <string>0.00</string>
     </property>
-    <property name="flat">
-     <bool>true</bool>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_graphTwo">
+   <widget class="QLabel" name="lbl_devFive">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>1</y>
-      <width>72</width>
-      <height>51</height>
+      <x>570</x>
+      <y>81</y>
+      <width>30</width>
+      <height>17</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
-     <string/>
+     <string>0.00</string>
     </property>
-    <property name="flat">
-     <bool>true</bool>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_graphThree">
+   <widget class="QLabel" name="lbl_devTwo">
     <property name="geometry">
      <rect>
-      <x>169</x>
-      <y>1</y>
-      <width>72</width>
-      <height>51</height>
+      <x>190</x>
+      <y>81</y>
+      <width>30</width>
+      <height>17</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
-     <string/>
+     <string>0.00</string>
     </property>
-    <property name="flat">
-     <bool>true</bool>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_graphFour">
+   <widget class="QLabel" name="lbl_devNine">
     <property name="geometry">
      <rect>
-      <x>249</x>
-      <y>1</y>
-      <width>72</width>
-      <height>51</height>
+      <x>1060</x>
+      <y>81</y>
+      <width>30</width>
+      <height>17</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
-     <string/>
+     <string>0.00</string>
     </property>
-    <property name="flat">
-     <bool>true</bool>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_graphFive">
+   <widget class="QLabel" name="lbl_devSeven">
     <property name="geometry">
      <rect>
-      <x>329</x>
-      <y>1</y>
-      <width>72</width>
-      <height>51</height>
+      <x>810</x>
+      <y>81</y>
+      <width>30</width>
+      <height>17</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
-     <string/>
+     <string>0.00</string>
     </property>
-    <property name="flat">
-     <bool>true</bool>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_graphSix">
+   <widget class="QLabel" name="lbl_devFour">
     <property name="geometry">
      <rect>
-      <x>409</x>
-      <y>1</y>
-      <width>72</width>
-      <height>51</height>
+      <x>450</x>
+      <y>81</y>
+      <width>30</width>
+      <height>17</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
-     <string/>
+     <string>0.00</string>
     </property>
-    <property name="flat">
-     <bool>true</bool>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_graphSeven">
+   <widget class="QLabel" name="lbl_devSix">
     <property name="geometry">
      <rect>
-      <x>488</x>
-      <y>1</y>
-      <width>72</width>
-      <height>51</height>
+      <x>690</x>
+      <y>81</y>
+      <width>30</width>
+      <height>17</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
-     <string/>
+     <string>0.00</string>
     </property>
-    <property name="flat">
-     <bool>true</bool>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_graphEight">
+   <widget class="QLabel" name="lbl_devThree">
     <property name="geometry">
      <rect>
-      <x>568</x>
-      <y>1</y>
-      <width>72</width>
-      <height>51</height>
+      <x>320</x>
+      <y>81</y>
+      <width>30</width>
+      <height>17</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
-     <string/>
+     <string>0.00</string>
     </property>
-    <property name="flat">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_graphNine">
-    <property name="geometry">
-     <rect>
-      <x>648</x>
-      <y>1</y>
-      <width>72</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="flat">
-     <bool>true</bool>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_graphTen">
-    <property name="geometry">
-     <rect>
-      <x>728</x>
-      <y>1</y>
-      <width>72</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="flat">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <zorder>lbl_alSix</zorder>
-   <zorder>lbl_alFive</zorder>
-   <zorder>lbl_alOne</zorder>
-   <zorder>lbl_alTen</zorder>
-   <zorder>lbl_alThree</zorder>
-   <zorder>lbl_alFour</zorder>
-   <zorder>lbl_alTwo</zorder>
-   <zorder>lbl_alNine</zorder>
-   <zorder>lbl_alEight</zorder>
-   <zorder>lbl_alSeven</zorder>
+   <zorder>layoutWidget</zorder>
    <zorder>frame_graphTen</zorder>
    <zorder>frame_graphEight</zorder>
    <zorder>frame_graphTwo</zorder>
@@ -1064,74 +1065,14 @@ border-image:url(empty.png);</string>
    <zorder>frame_graphFive</zorder>
    <zorder>frame_graphSeven</zorder>
    <zorder>frame_graphThree</zorder>
-   <zorder>btn_graphSix</zorder>
-   <zorder>btn_graphTen</zorder>
-   <zorder>btn_graphOne</zorder>
-   <zorder>btn_graphEight</zorder>
-   <zorder>btn_graphTwo</zorder>
-   <zorder>btn_graphNine</zorder>
-   <zorder>btn_graphThree</zorder>
-   <zorder>btn_graphFive</zorder>
-   <zorder>btn_graphSeven</zorder>
-   <zorder>btn_graphFour</zorder>
-   <zorder>lbl_devOne</zorder>
-   <zorder>lbl_devTwo</zorder>
-   <zorder>lbl_devThree</zorder>
-   <zorder>lbl_devFour</zorder>
-   <zorder>lbl_devFive</zorder>
-   <zorder>lbl_devSix</zorder>
-   <zorder>lbl_devSeven</zorder>
-   <zorder>lbl_devEight</zorder>
-   <zorder>lbl_devNine</zorder>
-   <zorder>lbl_devTen</zorder>
   </widget>
   <widget class="QLineEdit" name="lineEdit_patName">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>0</y>
-     <width>230</width>
+     <x>270</x>
+     <y>10</y>
+     <width>321</width>
      <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/searchbar.png);
-background-image:url(empty.png);
-color:rgb(0,0,0);</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_docName">
-   <property name="geometry">
-    <rect>
-     <x>380</x>
-     <y>0</y>
-     <width>281</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/searchbar.png);
-background-image:url(empty.png);
-color:rgb(21,21,21);</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="lineEdit_lensType">
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>60</y>
-     <width>201</width>
-     <height>61</height>
     </rect>
    </property>
    <property name="font">
@@ -1140,8 +1081,48 @@ color:rgb(21,21,21);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+    <string notr="true">border-image: url(:/images/searchbar.png);
+background-image:url(:/images/empty.png);
+color:rgb(0,0,0);</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_docName">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>10</y>
+     <width>321</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/searchbar.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineEdit_lensType">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>80</y>
+     <width>201</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>Dense Cataract</string>
@@ -1153,20 +1134,20 @@ border-image:url(empty.png);</string>
   <widget class="QLabel" name="lbl_opMode">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>60</y>
+     <x>760</x>
+     <y>80</y>
      <width>141</width>
      <height>61</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>18</pointsize>
+     <pointsize>20</pointsize>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+    <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>Contact</string>
@@ -1178,10 +1159,10 @@ border-image:url(empty.png);</string>
   <widget class="QPushButton" name="btn_calculator">
    <property name="geometry">
     <rect>
-     <x>730</x>
+     <x>1180</x>
      <y>60</y>
-     <width>70</width>
-     <height>70</height>
+     <width>91</width>
+     <height>111</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1198,10 +1179,10 @@ border-image: url(:/images/calculator-icon.png);</string>
   <widget class="QPushButton" name="btn_home">
    <property name="geometry">
     <rect>
-     <x>660</x>
+     <x>1069</x>
      <y>60</y>
-     <width>70</width>
-     <height>70</height>
+     <width>101</width>
+     <height>111</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1218,15 +1199,20 @@ border-image: url(:/images/home.png);</string>
   <widget class="QLabel" name="lbl_home">
    <property name="geometry">
     <rect>
-     <x>650</x>
+     <x>1080</x>
      <y>40</y>
      <width>80</width>
      <height>16</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+    <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>Home</string>
@@ -1238,15 +1224,20 @@ border-image:url(empty.png);</string>
   <widget class="QLabel" name="lbl_calculator">
    <property name="geometry">
     <rect>
-     <x>720</x>
+     <x>1180</x>
      <y>40</y>
      <width>90</width>
      <height>16</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+    <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>Calculator</string>
@@ -1255,85 +1246,25 @@ border-image:url(empty.png);</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_play">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>240</y>
-     <width>100</width>
-     <height>100</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image: url(:/images/icons/ic_play_circle_outline_white_48dp.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btn_startMeasure">
-   <property name="geometry">
-    <rect>
-     <x>-10</x>
-     <y>170</y>
-     <width>512</width>
-     <height>331</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QFrame" name="wm_plt">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>130</y>
-     <width>512</width>
-     <height>350</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(0, 0, 0);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-  </widget>
   <widget class="QCustomPlot" name="graphicsView">
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>130</y>
-     <width>512</width>
-     <height>255</height>
+     <y>170</y>
+     <width>861</width>
+     <height>401</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);
+    <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);
 background-color: rgb(0, 0, 0);</string>
    </property>
   </widget>
   <widget class="QLabel" name="lbl_time">
    <property name="geometry">
     <rect>
-     <x>680</x>
+     <x>1150</x>
      <y>10</y>
      <width>120</width>
      <height>21</height>
@@ -1341,11 +1272,11 @@ background-color: rgb(0, 0, 0);</string>
    </property>
    <property name="font">
     <font>
-     <pointsize>9</pointsize>
+     <pointsize>14</pointsize>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);</string>
+    <string notr="true">background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>10:09</string>
@@ -1354,101 +1285,17 @@ background-color: rgb(0, 0, 0);</string>
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="marker_cornea">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>150</y>
-     <width>20</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image: url(:/images/marker.png);
-</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="marker_lensOne">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>150</y>
-     <width>20</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image: url(:/images/marker.png);
-</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="marker_lensTwo">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>150</y>
-     <width>20</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image: url(:/images/marker.png);
-</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="marker_retina">
-   <property name="geometry">
-    <rect>
-     <x>490</x>
-     <y>150</y>
-     <width>20</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image: url(:/images/marker.png);
-</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
   <widget class="QPushButton" name="marker_cornea_2">
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>480</y>
-     <width>513</width>
+     <y>570</y>
+     <width>861</width>
      <height>20</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
+    <string notr="true">background-image:url(:/images/empty.png);
 border-image: url(:/images/scale.png);
 </string>
    </property>
@@ -1459,294 +1306,6 @@ border-image: url(:/images/scale.png);
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QFrame" name="frame_2">
-   <property name="geometry">
-    <rect>
-     <x>512</x>
-     <y>130</y>
-     <width>290</width>
-     <height>370</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color:rgb(0,0,0);background-image:url(empty.png);</string>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <widget class="QLineEdit" name="lineEdit_avgAl">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>9</y>
-      <width>120</width>
-      <height>52</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>24</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/images/searchbar.png);
-background-image:url(empty.png);
-color:rgb(21,21,21);
-border-radius:5px;</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_vit">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>189</y>
-      <width>120</width>
-      <height>52</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/images/searchbar.png);
-background-image:url(empty.png);
-color:rgb(21,21,21);
-border-radius:5px;</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_acd">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>130</y>
-      <width>120</width>
-      <height>52</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/images/searchbar.png);
-background-image:url(empty.png);
-color:rgb(21,21,21);
-border-radius:5px;</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_avgAl">
-    <property name="geometry">
-     <rect>
-      <x>43</x>
-      <y>10</y>
-      <width>90</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-color:rgb(255,255,255);
-background-color: #2196F3;border-radius:5px;</string>
-    </property>
-    <property name="text">
-     <string>AVG AL:</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_lt">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>249</y>
-      <width>120</width>
-      <height>52</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/images/searchbar.png);
-background-image:url(empty.png);
-color:rgb(21,21,21);
-border-radius:5px;</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_avgAl_4">
-    <property name="geometry">
-     <rect>
-      <x>43</x>
-      <y>310</y>
-      <width>90</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-color:rgb(255,255,255);
-background-color: #2196F3;border-radius:5px;</string>
-    </property>
-    <property name="text">
-     <string>AL:</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_avgAl_2">
-    <property name="geometry">
-     <rect>
-      <x>43</x>
-      <y>131</y>
-      <width>90</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-color:rgb(255,255,255);
-background-color: #2196F3;border-radius:5px;</string>
-    </property>
-    <property name="text">
-     <string>ACD:</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_sd">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>70</y>
-      <width>120</width>
-      <height>52</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>18</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/images/searchbar.png);
-background-image:url(empty.png);
-color:rgb(21,21,21);
-border-radius:5px;</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_avgAl_5">
-    <property name="geometry">
-     <rect>
-      <x>43</x>
-      <y>190</y>
-      <width>90</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-color:rgb(255,255,255);
-background-color: #2196F3;border-radius:5px;</string>
-    </property>
-    <property name="text">
-     <string>VIT:</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_sd">
-    <property name="geometry">
-     <rect>
-      <x>43</x>
-      <y>71</y>
-      <width>90</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-color:rgb(255,255,255);
-background-color: #2196F3;border-radius:5px;</string>
-    </property>
-    <property name="text">
-     <string>SD:</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_avgAl_3">
-    <property name="geometry">
-     <rect>
-      <x>43</x>
-      <y>250</y>
-      <width>90</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-color:rgb(255,255,255);
-background-color: #2196F3;border-radius:5px;</string>
-    </property>
-    <property name="text">
-     <string>LT:</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_al">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>309</y>
-      <width>120</width>
-      <height>52</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>20</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/images/searchbar.png);
-background-image:url(empty.png);
-color:rgb(21,21,21);
-border-radius:5px;</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <zorder>lbl_avgAl</zorder>
-   <zorder>lbl_avgAl_4</zorder>
-   <zorder>lbl_avgAl_2</zorder>
-   <zorder>lbl_avgAl_5</zorder>
-   <zorder>lbl_sd</zorder>
-   <zorder>lbl_avgAl_3</zorder>
-   <zorder>lineEdit_al</zorder>
-   <zorder>lineEdit_avgAl</zorder>
-   <zorder>lineEdit_sd</zorder>
-   <zorder>lineEdit_acd</zorder>
-   <zorder>lineEdit_vit</zorder>
-   <zorder>lineEdit_lt</zorder>
-  </widget>
   <widget class="QPushButton" name="btn_eye">
    <property name="enabled">
     <bool>true</bool>
@@ -1755,8 +1314,8 @@ border-radius:5px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>111</width>
-     <height>60</height>
+     <width>141</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="font">
@@ -1782,22 +1341,429 @@ border-image: url(:/images/btn-small.png);
   <widget class="QPushButton" name="butDelete">
    <property name="geometry">
     <rect>
-     <x>620</x>
+     <x>990</x>
      <y>90</y>
-     <width>41</width>
-     <height>41</height>
+     <width>81</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image: url(:/images/delete-icon.png);</string>
+    <string notr="true">background-image:url(:/images/empty.png);
+border-image: url(:/images/Delete_btn.png);</string>
    </property>
    <property name="text">
     <string/>
    </property>
   </widget>
+  <widget class="QFrame" name="wm_plt">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>170</y>
+     <width>861</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="btn_startMeasure">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>861</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="marker_cornea">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image: url(:/images/marker.png);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="marker_lensOne">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>10</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image: url(:/images/marker.png);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="marker_lensTwo">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image: url(:/images/marker.png);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="marker_retina">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>10</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image: url(:/images/marker.png);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_play">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>150</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image: url(:/images/icons/ic_play_circle_outline_white_48dp.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>170</y>
+     <width>421</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(0,0,0);background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>10</y>
+      <width>191</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLineEdit" name="lineEdit_avgAl">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>24</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/searchbar.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);
+border-radius:5px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_sd">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/searchbar.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);
+border-radius:5px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_acd">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/searchbar.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);
+border-radius:5px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_vit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/searchbar.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);
+border-radius:5px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_lt">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/searchbar.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);
+border-radius:5px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_al">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/searchbar.png);
+background-image:url(:/images/empty.png);
+color:rgb(21,21,21);
+border-radius:5px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>161</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="lbl_avgAl">
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);
+color:rgb(255,255,255);
+background-color: #2196F3;border-radius:5px;</string>
+       </property>
+       <property name="text">
+        <string>AVG AL:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_sd">
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);
+color:rgb(255,255,255);
+background-color: #2196F3;border-radius:5px;</string>
+       </property>
+       <property name="text">
+        <string>SD:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_avgAl_2">
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);
+color:rgb(255,255,255);
+background-color: #2196F3;border-radius:5px;</string>
+       </property>
+       <property name="text">
+        <string>ACD:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_avgAl_5">
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);
+color:rgb(255,255,255);
+background-color: #2196F3;border-radius:5px;</string>
+       </property>
+       <property name="text">
+        <string>VIT:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_avgAl_3">
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);
+color:rgb(255,255,255);
+background-color: #2196F3;border-radius:5px;</string>
+       </property>
+       <property name="text">
+        <string>LT:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_avgAl_4">
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);
+color:rgb(255,255,255);
+background-color: #2196F3;border-radius:5px;</string>
+       </property>
+       <property name="text">
+        <string>AL:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
   <zorder>graphicsView</zorder>
-  <zorder>wm_plt</zorder>
   <zorder>btn_lensType</zorder>
   <zorder>btn_opMode</zorder>
   <zorder>frame</zorder>
@@ -1809,17 +1775,12 @@ border-image: url(:/images/delete-icon.png);</string>
   <zorder>btn_home</zorder>
   <zorder>lbl_home</zorder>
   <zorder>lbl_calculator</zorder>
-  <zorder>btn_play</zorder>
-  <zorder>btn_startMeasure</zorder>
   <zorder>lbl_time</zorder>
-  <zorder>marker_cornea</zorder>
-  <zorder>marker_lensOne</zorder>
-  <zorder>marker_lensTwo</zorder>
-  <zorder>marker_retina</zorder>
   <zorder>marker_cornea_2</zorder>
-  <zorder>frame_2</zorder>
   <zorder>btn_eye</zorder>
   <zorder>butDelete</zorder>
+  <zorder>wm_plt</zorder>
+  <zorder>frame_2</zorder>
  </widget>
  <customwidgets>
   <customwidget>

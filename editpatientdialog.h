@@ -18,6 +18,9 @@ public:
     explicit EditPatientDialog(int patientDbId, QWidget *parent = nullptr);
     ~EditPatientDialog();
 
+protected:
+    bool eventFilter(QObject *obj, QEvent *event) override;
+
 
 private slots:
     void on_btn_save_clicked();

@@ -1,4 +1,4 @@
-QT += core gui widgets sql printsupport charts
+QT += core gui widgets sql printsupport charts serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -8,7 +8,10 @@ CONFIG += c++17
 # In order to do so, uncomment the following line.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+TARGET = Ascan.V1
+
 SOURCES += \
+    AppManager.cpp \
     adddoctordialog.cpp \
     addlensdialog.cpp \
     addpatientdialog.cpp \
@@ -30,10 +33,11 @@ SOURCES += \
     viewdoctordialog.cpp \
     viewlensdialog.cpp \
     viewpatientdialog.cpp \
-    waveformdialog.cpp \
+    # waveformdialog.cpp \
     welcomedialog.cpp
 
 HEADERS += \
+    AppManager.h \
     adddoctordialog.h \
     addlensdialog.h \
     addpatientdialog.h \
@@ -55,7 +59,7 @@ HEADERS += \
     viewdoctordialog.h \
     viewlensdialog.h \
     viewpatientdialog.h \
-    waveformdialog.h \
+    # waveformdialog.h \
     welcomedialog.h
 
 FORMS += \
@@ -97,3 +101,10 @@ INCLUDEPATH += $$PWD/Services
 SOURCES += Services/qcustomplot.cpp
 
 HEADERS += Services/qcustomplot.h
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/./release/ -liolcalc
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/./debug/ -liolcalc
+else:unix: LIBS += -L$$PWD/./ -liolcalc
+
+INCLUDEPATH += $$PWD/.
+DEPENDPATH += $$PWD/.

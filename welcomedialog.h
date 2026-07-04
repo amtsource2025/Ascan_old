@@ -14,13 +14,17 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class WelcomeDialog; }
 QT_END_NAMESPACE
 
-class welcomedialog : public QMainWindow
+class welcomeDialog : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit welcomedialog(QWidget *parent = nullptr);
-    ~welcomedialog();
+    explicit welcomeDialog(QWidget *parent = nullptr);
+    ~welcomeDialog();
+
+    void    loadPatients();
+    void    selectPatientById(const QString &patientId);
+    QString getLastPatientId();
 
 private slots:
     void onPatientSelectionChanged(int index);
@@ -37,12 +41,13 @@ private:
 
     QString m_defaultDoctorId;
 
+    QString m_lastPatientId;
+
     bool    openDatabase();
     QString ensureDefaultDoctor();
     void    ensurePatientHasDoctor(const QString &patientId);
     QString resolveDoctor(const QString &patientId);
-    void    loadPatients();
-    void    selectPatientById(const QString &patientId);
+
 };
 
 #endif // WELCOMEDIALOG_H

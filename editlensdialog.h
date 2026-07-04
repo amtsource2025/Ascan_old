@@ -17,6 +17,9 @@ public:
     explicit EditLensDialog(const QString &iol, QWidget *parent = nullptr);
     ~EditLensDialog();
 
+protected:
+    bool eventFilter(QObject *obj, QEvent *event) override;
+
 private slots:
     void on_btn_save_clicked();
     void on_btn_cancel_clicked();

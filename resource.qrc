@@ -2089,5 +2089,13 @@
         <file>icons/ic_zoom_out_map_black_48dp.png</file>
         <file>icons/ic_zoom_out_map_white_48dp.png</file>
         <file>icons/ic_zoom_out_white_48dp.png</file>
+        <file>calc-icon-shrt(1).png</file>
+        <file>Delete_btn.png</file>
+        <file>contact_icon.png</file>
+        <file>calibration_icon.png</file>
+        <file>doctor_icon.png</file>
+        <file>iol_icon.png</file>
+        <file>save_icon.png</file>
+        <file>view_icon.png</file>
     </qresource>
 </RCC>

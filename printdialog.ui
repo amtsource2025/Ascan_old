@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1280</width>
+    <height>720</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,10 +19,10 @@
   <widget class="QPushButton" name="btn_back">
    <property name="geometry">
     <rect>
-     <x>690</x>
-     <y>450</y>
-     <width>70</width>
-     <height>60</height>
+     <x>1180</x>
+     <y>570</y>
+     <width>81</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -38,19 +38,30 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>0</y>
-     <width>180</width>
-     <height>40</height>
+     <x>489</x>
+     <y>40</y>
+     <width>251</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>14</pointsize>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);</string>
+    <string notr="true">/*background-image:url(:/images/empty.png);*/
+
+QLabel {
+    color: #023e8a;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: &quot;Arial&quot;;
+    background: transparent;
+    border: none;
+}</string>
    </property>
    <property name="text">
     <string>Print</string>
@@ -59,142 +70,42 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QStackedWidget" name="stackedWidget">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>40</y>
-     <width>30</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="currentIndex">
-    <number>1</number>
-   </property>
-   <widget class="QWidget" name="page">
-    <widget class="QLabel" name="label_2">
-     <property name="geometry">
-      <rect>
-       <x>330</x>
-       <y>160</y>
-       <width>110</width>
-       <height>40</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);</string>
-     </property>
-     <property name="text">
-      <string>Select a mode</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="page_2">
-    <widget class="QPushButton" name="btn_printScan">
-     <property name="geometry">
-      <rect>
-       <x>620</x>
-       <y>364</y>
-       <width>160</width>
-       <height>70</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border-image: url(:/images/purple-btn.png);
-color:rgb(255,255,255);
-background-image:url(empty.png);</string>
-     </property>
-     <property name="text">
-      <string>Print</string>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="plainTextEdit_scan">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>20</y>
-       <width>770</width>
-       <height>330</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="page_3">
-    <widget class="QPushButton" name="btn_printCalc">
-     <property name="geometry">
-      <rect>
-       <x>620</x>
-       <y>365</y>
-       <width>160</width>
-       <height>70</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border-image: url(:/images/purple-btn.png);
-color:rgb(255,255,255);
-background-image:url(empty.png);</string>
-     </property>
-     <property name="text">
-      <string>Print</string>
-     </property>
-    </widget>
-    <widget class="QPlainTextEdit" name="plainTextEdit_calc">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>20</y>
-       <width>770</width>
-       <height>330</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="page_4">
-    <widget class="QPushButton" name="btn_printAll">
-     <property name="geometry">
-      <rect>
-       <x>620</x>
-       <y>365</y>
-       <width>160</width>
-       <height>70</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border-image: url(:/images/purple-btn.png);
-color:rgb(255,255,255);
-background-image:url(empty.png);</string>
-     </property>
-     <property name="text">
-      <string>Print</string>
-     </property>
-    </widget>
-    <widget class="QPlainTextEdit" name="plainTextEdit_all">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>20</y>
-       <width>770</width>
-       <height>330</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
-  </widget>
   <widget class="QPushButton" name="btn_scan">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>330</y>
-     <width>230</width>
-     <height>110</height>
+     <x>120</x>
+     <y>150</y>
+     <width>351</width>
+     <height>191</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/btn-mid.png);
-background-image:url(empty.png);</string>
+    <string notr="true">/*border-image: url(:/images/btn-mid.png);
+border-color: rgb(119, 118, 123);
+background-image:url(:/images/empty.png);*/
+
+QPushButton {
+    border-image: url(:/images/btn-mid.png);
+    background-image: url(:/images/empty.png);
+    background-repeat: no-repeat;
+    text-align: centre;
+    padding-left: 90px;   /* leave space for the icon */
+    padding-right: 30px;  /* leave space for the chevron */
+    min-height: 90px;
+    min-width: 200px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #2bb3a3;
+	border-color: rgb(43, 179, 163);
+
+}
+</string>
    </property>
    <property name="text">
     <string>Print Scan</string>
@@ -203,15 +114,15 @@ background-image:url(empty.png);</string>
   <widget class="QPushButton" name="btn_scan2">
    <property name="geometry">
     <rect>
-     <x>23</x>
-     <y>309</y>
-     <width>60</width>
-     <height>60</height>
+     <x>140</x>
+     <y>190</y>
+     <width>111</width>
+     <height>111</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/graph-icon.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -220,15 +131,15 @@ background-image:url(empty.png);</string>
   <widget class="QPushButton" name="btn_calculations2">
    <property name="geometry">
     <rect>
-     <x>302</x>
-     <y>309</y>
-     <width>60</width>
-     <height>60</height>
+     <x>510</x>
+     <y>190</y>
+     <width>101</width>
+     <height>101</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/calculator-icon.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -237,15 +148,38 @@ background-image:url(empty.png);</string>
   <widget class="QPushButton" name="btn_calculations">
    <property name="geometry">
     <rect>
-     <x>289</x>
-     <y>330</y>
-     <width>230</width>
-     <height>110</height>
+     <x>490</x>
+     <y>150</y>
+     <width>351</width>
+     <height>191</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/btn-mid.png);
-background-image:url(empty.png);</string>
+    <string notr="true">/*border-image: url(:/images/btn-mid.png);
+background-image:url(:/images/empty.png);*/
+
+QPushButton {
+    border-image: url(:/images/btn-mid.png);
+    background-image: url(:/images/empty.png);
+    background-repeat: no-repeat;
+    text-align: centre;
+    padding-left: 90px;   /* leave space for the icon */
+    padding-right: 30px;  /* leave space for the chevron */
+    min-height: 90px;
+    min-width: 200px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #0077b6;
+}
+
+
+</string>
    </property>
    <property name="text">
     <string>Print Calculations</string>
@@ -254,49 +188,55 @@ background-image:url(empty.png);</string>
   <widget class="QPushButton" name="btn_both">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>330</y>
-     <width>230</width>
-     <height>110</height>
+     <x>120</x>
+     <y>360</y>
+     <width>731</width>
+     <height>181</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/btn-mid.png);
-background-image:url(empty.png);</string>
+    <string notr="true">/*border-image: url(:/images/btn-mid.png);
+background-image:url(:/images/empty.png);*/
+
+QPushButton {
+    border-image: url(:/images/btn-mid.png);
+    background-image: url(:/images/empty.png);
+    background-repeat: no-repeat;
+    text-align: centre;
+    padding-left: 90px;   /* leave space for the icon */
+    padding-right: 30px;  /* leave space for the chevron */
+    min-height: 90px;
+    min-width: 200px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #9b5de5;
+}
+
+
+</string>
    </property>
    <property name="text">
     <string>Print Scan &amp;&amp; Calculation</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_both3">
-   <property name="geometry">
-    <rect>
-     <x>593</x>
-     <y>309</y>
-     <width>60</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/calculator-icon.png);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QPushButton" name="btn_both2">
    <property name="geometry">
     <rect>
-     <x>563</x>
-     <y>309</y>
-     <width>60</width>
-     <height>60</height>
+     <x>150</x>
+     <y>390</y>
+     <width>121</width>
+     <height>121</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/graph-icon.png);
-background-image:url(empty.png);</string>
+    <string notr="true">border-image: url(:/images/calc-icon-shrt.png);
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -305,9 +245,9 @@ background-image:url(empty.png);</string>
   <widget class="QLabel" name="snackbar">
    <property name="geometry">
     <rect>
-     <x>-2</x>
-     <y>556</y>
-     <width>805</width>
+     <x>0</x>
+     <y>660</y>
+     <width>1281</width>
      <height>47</height>
     </rect>
    </property>
@@ -318,7 +258,7 @@ background-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/alert-red.png);
-background-image:url(empty.png);color:rgb(255,255,255);</string>
+background-image:url(:/images/empty.png);color:rgb(255,255,255);</string>
    </property>
    <property name="text">
     <string/>
@@ -326,29 +266,6 @@ background-image:url(empty.png);color:rgb(255,255,255);</string>
    <property name="indent">
     <number>5</number>
    </property>
-  </widget>
-  <widget class="QComboBox" name="comboBox">
-   <property name="geometry">
-    <rect>
-     <x>560</x>
-     <y>50</y>
-     <width>220</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <item>
-    <property name="text">
-     <string>Thermal</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Wireless</string>
-    </property>
-   </item>
   </widget>
   <widget class="QChartView" name="graphicsView">
    <property name="geometry">
@@ -360,58 +277,26 @@ background-image:url(empty.png);color:rgb(255,255,255);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
+    <string notr="true">background-image:url(:/images/empty.png);
 background-color: rgb(255,255, 255);</string>
-   </property>
-  </widget>
-  <widget class="QProgressBar" name="progressBar">
-   <property name="geometry">
-    <rect>
-     <x>16</x>
-     <y>342</y>
-     <width>218</width>
-     <height>10</height>
-    </rect>
-   </property>
-   <property name="value">
-    <number>0</number>
-   </property>
-   <property name="format">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QProgressBar" name="progressBar_2">
-   <property name="geometry">
-    <rect>
-     <x>556</x>
-     <y>343</y>
-     <width>218</width>
-     <height>10</height>
-    </rect>
-   </property>
-   <property name="value">
-    <number>0</number>
-   </property>
-   <property name="format">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="lbl_time">
    <property name="geometry">
     <rect>
-     <x>680</x>
-     <y>0</y>
+     <x>1150</x>
+     <y>10</y>
      <width>120</width>
      <height>40</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>9</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);</string>
+    <string notr="true">background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>10:09</string>
@@ -420,36 +305,18 @@ background-color: rgb(255,255, 255);</string>
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_newPatient">
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>280</x>
-     <y>110</y>
-     <width>221</width>
+     <x>480</x>
+     <y>20</y>
+     <width>91</width>
      <height>91</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/btn-mid.png);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>New
-Patient</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btn_newPatient2">
-   <property name="geometry">
-    <rect>
-     <x>290</x>
-     <y>90</y>
-     <width>60</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/patient-icon.png);
-background-image:url(empty.png);</string>
+    <string notr="true">border-image: url(:/images/calc-icon-shrt(1).png);
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -461,18 +328,12 @@ background-image:url(empty.png);</string>
   <zorder>snackbar</zorder>
   <zorder>btn_back</zorder>
   <zorder>label</zorder>
-  <zorder>stackedWidget</zorder>
   <zorder>btn_calculations</zorder>
-  <zorder>btn_calculations2</zorder>
-  <zorder>comboBox</zorder>
-  <zorder>progressBar</zorder>
-  <zorder>progressBar_2</zorder>
   <zorder>lbl_time</zorder>
-  <zorder>btn_newPatient</zorder>
-  <zorder>btn_newPatient2</zorder>
   <zorder>btn_scan2</zorder>
-  <zorder>btn_both3</zorder>
+  <zorder>btn_calculations2</zorder>
   <zorder>btn_both2</zorder>
+  <zorder>pushButton</zorder>
  </widget>
  <customwidgets>
   <customwidget>

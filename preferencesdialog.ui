@@ -6,28 +6,30 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1280</width>
+    <height>720</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/images/quick-settings-notexticon.png);</string>
+   <string notr="true">background-image: url(:/images/quick-settings-notexticon.png);
+
+/*background:rgb(240,240,246);*/</string>
   </property>
   <widget class="QStackedWidget" name="stackedWidget">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>-1</y>
-     <width>623</width>
-     <height>606</height>
+     <x>310</x>
+     <y>0</y>
+     <width>971</width>
+     <height>671</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color:rgb(255,255,255);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="currentIndex">
     <number>2</number>
@@ -48,7 +50,7 @@ background-image:url(empty.png);</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>General</string>
@@ -66,8 +68,13 @@ background-image:url(empty.png);</string>
        <height>17</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Hospital Name</string>
@@ -82,8 +89,13 @@ background-image:url(empty.png);</string>
        <height>25</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_13">
@@ -95,8 +107,13 @@ background-image:url(empty.png);</string>
        <height>17</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Address</string>
@@ -111,8 +128,13 @@ background-image:url(empty.png);</string>
        <height>25</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_currentDoctor">
@@ -124,8 +146,13 @@ background-image:url(empty.png);</string>
        <height>25</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_15">
@@ -137,8 +164,13 @@ background-image:url(empty.png);</string>
        <height>17</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Current Doctor</string>
@@ -153,8 +185,13 @@ background-image:url(empty.png);</string>
        <height>25</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_26">
@@ -166,8 +203,13 @@ background-image:url(empty.png);</string>
        <height>17</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Serial Number</string>
@@ -182,8 +224,13 @@ background-image:url(empty.png);</string>
        <height>17</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Software Version</string>
@@ -198,8 +245,13 @@ background-image:url(empty.png);</string>
        <height>25</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
     <widget class="QLabel" name="lbl_qr">
@@ -211,8 +263,13 @@ background-image:url(empty.png);</string>
        <height>17</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>More Info</string>
@@ -228,7 +285,7 @@ background-image:url(empty.png);</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">border-image:url(/home/adityan/res.bmp);background-image:url(empty.png);</string>
+      <string notr="true">border-image:url(/home/adityan/res.bmp);background-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string/>
@@ -237,8 +294,8 @@ background-image:url(empty.png);</string>
     <widget class="QPushButton" name="btn_save">
      <property name="geometry">
       <rect>
-       <x>500</x>
-       <y>470</y>
+       <x>880</x>
+       <y>580</y>
        <width>80</width>
        <height>80</height>
       </rect>
@@ -253,6 +310,30 @@ background-image:url(:/images/empty.png);
      </property>
      <property name="flat">
       <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_time">
+     <property name="geometry">
+      <rect>
+       <x>820</x>
+       <y>10</y>
+       <width>120</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/images/empty.png);</string>
+     </property>
+     <property name="text">
+      <string>10:09</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
    </widget>
@@ -272,7 +353,7 @@ background-image:url(:/images/empty.png);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Databases</string>
@@ -290,8 +371,13 @@ background-image:url(:/images/empty.png);
        <height>17</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string>background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string>background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Patients</string>
@@ -306,8 +392,13 @@ background-image:url(:/images/empty.png);
        <height>17</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string>background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string>background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Doctors</string>
@@ -322,8 +413,13 @@ background-image:url(:/images/empty.png);
        <height>17</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string>background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string>background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Lens</string>
@@ -338,8 +434,13 @@ background-image:url(:/images/empty.png);
        <height>17</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string>background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string>background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Total Disk Space</string>
@@ -354,8 +455,13 @@ background-image:url(:/images/empty.png);
        <height>17</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string>background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string>background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Available Disk Space</string>
@@ -369,6 +475,11 @@ background-image:url(:/images/empty.png);
        <width>560</width>
        <height>23</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
      </property>
      <property name="value">
       <number>0</number>
@@ -389,8 +500,13 @@ background-image:url(:/images/empty.png);
        <height>17</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string>background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string>background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Scans</string>
@@ -405,11 +521,16 @@ background-image:url(:/images/empty.png);
        <height>40</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="autoFillBackground">
       <bool>false</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);
+      <string notr="true">background-image:url(:/images/empty.png);
 color: rgb(255, 255, 255);
 background-color: #1976D2;
 border-radius:5px;</string>
@@ -438,7 +559,7 @@ border-radius:5px;</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Printer</string>
@@ -456,8 +577,13 @@ border-radius:5px;</string>
        <height>17</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Printer Port</string>
@@ -472,8 +598,13 @@ border-radius:5px;</string>
        <height>30</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true"/>
      </property>
     </widget>
     <widget class="QPushButton" name="btn_testPrint">
@@ -485,8 +616,13 @@ border-radius:5px;</string>
        <height>50</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);
+      <string notr="true">background-image:url(:/images/empty.png);
 color: rgb(255, 255, 255);
 background-color: #1976D2;
 border-radius:5px;</string>
@@ -501,15 +637,15 @@ border-radius:5px;</string>
     <widget class="QPushButton" name="but_save_printer">
      <property name="geometry">
       <rect>
-       <x>500</x>
-       <y>470</y>
-       <width>80</width>
-       <height>80</height>
+       <x>839</x>
+       <y>559</y>
+       <width>91</width>
+       <height>91</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">border-image: url(:/images/save-icon.png);
-background-image:url(empty.png);
+background-image:url(:/images/empty.png);
 </string>
      </property>
      <property name="text">
@@ -533,7 +669,7 @@ background-image:url(empty.png);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Network</string>
@@ -551,8 +687,13 @@ background-image:url(empty.png);
        <height>17</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>SSID</string>
@@ -567,8 +708,13 @@ background-image:url(empty.png);
        <height>25</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_psk">
@@ -580,8 +726,13 @@ background-image:url(empty.png);
        <height>25</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="inputMethodHints">
       <set>Qt::ImhNone</set>
@@ -596,8 +747,13 @@ background-image:url(empty.png);
        <height>17</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>PSK</string>
@@ -612,8 +768,13 @@ background-image:url(empty.png);
        <height>23</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Show</string>
@@ -628,8 +789,13 @@ background-image:url(empty.png);
        <height>23</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Clear existing entries</string>
@@ -658,7 +824,7 @@ background-image:url(empty.png);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Backup &amp; Restore</string>
@@ -682,7 +848,7 @@ background-image:url(empty.png);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Warning</string>
@@ -700,8 +866,13 @@ background-image:url(empty.png);
        <height>120</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);</string>
      </property>
      <property name="html">
       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -710,10 +881,10 @@ p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;All database and system settings including scans saved would be reverted to the factory defaults if you press the Restore All button. Changes cannot be undone.&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; If you wish to not disturb the scan records please press the Restore Settings button. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;All database and system settings including scans saved would be reverted to the factory defaults if you press the Restore All button. Changes cannot be undone.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt; If you wish to not disturb the scan records please press the Restore Settings button. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QPushButton" name="btn_restoreAll">
@@ -725,11 +896,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <height>65</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="autoFillBackground">
       <bool>false</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);
+      <string notr="true">background-image:url(:/images/empty.png);
 color: rgb(255, 255, 255);
 background-color: #1976D2;
 border-radius:5px;</string>
@@ -750,8 +926,13 @@ border-radius:5px;</string>
        <height>65</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);
+      <string notr="true">background-image:url(:/images/empty.png);
 color: #1976D2;
 border: 1px solid #1976D2;
 border-radius:5px;</string>
@@ -776,7 +957,7 @@ border-radius:5px;</string>
       <bool>false</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);
+      <string notr="true">background-image:url(:/images/empty.png);
 border-image: url(:/images/icons/ic_warning_white_96dp.png);
 color: rgb(255, 255, 255);
 background-color: rgb(239, 41, 41);
@@ -806,7 +987,7 @@ border-radius:15px;</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Date &amp; Time</string>
@@ -830,7 +1011,7 @@ border-radius:15px;</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Set Date</string>
@@ -854,7 +1035,7 @@ border-radius:15px;</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Day</string>
@@ -872,8 +1053,13 @@ border-radius:15px;</string>
        <height>50</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_18">
@@ -891,7 +1077,7 @@ border-radius:15px;</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Month</string>
@@ -903,14 +1089,19 @@ border-radius:15px;</string>
     <widget class="QComboBox" name="comboBox_month">
      <property name="geometry">
       <rect>
-       <x>130</x>
+       <x>120</x>
        <y>180</y>
-       <width>130</width>
-       <height>25</height>
+       <width>151</width>
+       <height>31</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true"/>
      </property>
      <item>
       <property name="text">
@@ -982,8 +1173,13 @@ border-radius:15px;</string>
        <height>50</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_19">
@@ -1001,7 +1197,7 @@ border-radius:15px;</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Year</string>
@@ -1025,7 +1221,7 @@ border-radius:15px;</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Hour</string>
@@ -1043,8 +1239,13 @@ border-radius:15px;</string>
        <height>50</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_minute">
@@ -1056,8 +1257,13 @@ border-radius:15px;</string>
        <height>50</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_24">
@@ -1075,7 +1281,7 @@ border-radius:15px;</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Minute</string>
@@ -1099,7 +1305,7 @@ border-radius:15px;</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
      <property name="text">
       <string>Set Time (24 hour format)</string>
@@ -1111,15 +1317,15 @@ border-radius:15px;</string>
     <widget class="QPushButton" name="but_save_date">
      <property name="geometry">
       <rect>
-       <x>500</x>
-       <y>470</y>
+       <x>880</x>
+       <y>580</y>
        <width>80</width>
        <height>80</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">border-image: url(:/images/save-icon.png);
-background-image:url(empty.png);
+background-image:url(:/images/empty.png);
 </string>
      </property>
      <property name="text">
@@ -1143,7 +1349,7 @@ background-image:url(empty.png);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
      </property>
      <property name="text">
       <string>Statistics</string>
@@ -1167,7 +1373,7 @@ background-image:url(empty.png);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
      </property>
      <property name="text">
       <string>Total Scans</string>
@@ -1191,7 +1397,7 @@ background-image:url(empty.png);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
      </property>
      <property name="text">
       <string>Scans in past week</string>
@@ -1215,7 +1421,7 @@ background-image:url(empty.png);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
      </property>
      <property name="text">
       <string>Scans in past month</string>
@@ -1239,7 +1445,7 @@ background-image:url(empty.png);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
      </property>
      <property name="text">
       <string>Scans performed today</string>
@@ -1258,7 +1464,7 @@ background-image:url(empty.png);
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lbl_scansPastWeek">
@@ -1271,7 +1477,7 @@ background-image:url(empty.png);
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lbl_scansPastMonth">
@@ -1284,7 +1490,7 @@ background-image:url(empty.png);
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lbl_scansToday">
@@ -1297,7 +1503,7 @@ background-image:url(empty.png);
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
    </widget>
@@ -1317,7 +1523,7 @@ background-image:url(empty.png);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
      </property>
      <property name="text">
       <string>Measurement</string>
@@ -1341,7 +1547,7 @@ background-image:url(empty.png);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
      </property>
      <property name="text">
       <string>Velocity</string>
@@ -1365,7 +1571,7 @@ background-image:url(empty.png);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
      </property>
      <property name="text">
       <string>Anterior Chamber</string>
@@ -1384,7 +1590,7 @@ background-image:url(empty.png);
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_37">
@@ -1402,7 +1608,7 @@ background-image:url(empty.png);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
      </property>
      <property name="text">
       <string>Lens</string>
@@ -1421,7 +1627,7 @@ background-image:url(empty.png);
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_38">
@@ -1439,7 +1645,7 @@ background-image:url(empty.png);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
      </property>
      <property name="text">
       <string>Vitreous</string>
@@ -1458,7 +1664,7 @@ background-image:url(empty.png);
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_avVelocity">
@@ -1471,7 +1677,7 @@ background-image:url(empty.png);
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+      <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_39">
@@ -1489,7 +1695,7 @@ background-image:url(empty.png);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);color:rgb(21,21,21);</string>
+      <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
      </property>
      <property name="text">
       <string>Average Velocity</string>
@@ -1505,8 +1711,8 @@ background-image:url(empty.png);
     <rect>
      <x>1</x>
      <y>0</y>
-     <width>60</width>
-     <height>60</height>
+     <width>71</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1522,10 +1728,10 @@ background-image:url(empty.png);
   <widget class="QPushButton" name="logo_general">
    <property name="geometry">
     <rect>
-     <x>4</x>
-     <y>83</y>
-     <width>40</width>
-     <height>40</height>
+     <x>0</x>
+     <y>70</y>
+     <width>61</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1541,11 +1747,16 @@ background-image:url(empty.png);
   <widget class="QLabel" name="lbl_general">
    <property name="geometry">
     <rect>
-     <x>55</x>
-     <y>94</y>
-     <width>67</width>
+     <x>80</x>
+     <y>90</y>
+     <width>120</width>
      <height>17</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image:url(:/images/empty.png);</string>
@@ -1557,10 +1768,10 @@ background-image:url(empty.png);
   <widget class="QPushButton" name="logo_databases">
    <property name="geometry">
     <rect>
-     <x>4</x>
-     <y>149</y>
-     <width>40</width>
-     <height>40</height>
+     <x>0</x>
+     <y>140</y>
+     <width>61</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1576,11 +1787,16 @@ background-image:url(empty.png);
   <widget class="QLabel" name="lbl_databases">
    <property name="geometry">
     <rect>
-     <x>55</x>
+     <x>80</x>
      <y>160</y>
      <width>100</width>
      <height>17</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image:url(:/images/empty.png);</string>
@@ -1592,11 +1808,16 @@ background-image:url(empty.png);
   <widget class="QLabel" name="lbl_printer">
    <property name="geometry">
     <rect>
-     <x>55</x>
-     <y>221</y>
+     <x>80</x>
+     <y>240</y>
      <width>70</width>
      <height>17</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image:url(:/images/empty.png);</string>
@@ -1608,10 +1829,10 @@ background-image:url(empty.png);
   <widget class="QPushButton" name="logo_printer">
    <property name="geometry">
     <rect>
-     <x>4</x>
+     <x>0</x>
      <y>210</y>
-     <width>40</width>
-     <height>40</height>
+     <width>61</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1627,11 +1848,16 @@ background-image:url(empty.png);
   <widget class="QLabel" name="lbl_backup">
    <property name="geometry">
     <rect>
-     <x>55</x>
-     <y>470</y>
+     <x>80</x>
+     <y>550</y>
      <width>120</width>
      <height>17</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image:url(:/images/empty.png);</string>
@@ -1643,10 +1869,10 @@ background-image:url(empty.png);
   <widget class="QPushButton" name="logo_backuprestore">
    <property name="geometry">
     <rect>
-     <x>4</x>
-     <y>460</y>
-     <width>40</width>
-     <height>40</height>
+     <x>0</x>
+     <y>530</y>
+     <width>61</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1664,8 +1890,8 @@ background-image:url(empty.png);
     <rect>
      <x>4</x>
      <y>280</y>
-     <width>40</width>
-     <height>40</height>
+     <width>61</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1681,11 +1907,16 @@ background-image:url(empty.png);
   <widget class="QLabel" name="lbl_network">
    <property name="geometry">
     <rect>
-     <x>55</x>
-     <y>290</y>
+     <x>80</x>
+     <y>300</y>
      <width>120</width>
      <height>17</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image:url(:/images/empty.png);</string>
@@ -1694,17 +1925,58 @@ background-image:url(empty.png);
     <string>Network</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_general">
+  <widget class="QLabel" name="snackbar">
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>79</y>
-     <width>180</width>
-     <height>53</height>
+     <y>680</y>
+     <width>1281</width>
+     <height>43</height>
     </rect>
    </property>
    <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/alert-red.png);
+background-image:url(:/images/empty.png);color:rgb(255,255,255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="indent">
+    <number>5</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_datetime">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>380</y>
+     <width>120</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
     <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string>Date &amp; Time</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logo_datetime">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>360</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/icons/ic_access_time_white_48dp.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -1713,17 +1985,38 @@ background-image:url(empty.png);
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_databases">
+  <widget class="QLabel" name="lbl_stats">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>149</y>
-     <width>180</width>
-     <height>50</height>
+     <x>80</x>
+     <y>470</y>
+     <width>120</width>
+     <height>17</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string>Statistics</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logo_stats">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>450</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/icons/ic_assessment_white_48dp.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -1732,13 +2025,53 @@ background-image:url(empty.png);
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_printer">
+  <widget class="QLabel" name="lbl_measurement">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>630</y>
+     <width>120</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string>Measurement</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logo_measure">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>610</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/icons/ic_developer_board_white_48dp.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_measurement">
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>207</y>
-     <width>180</width>
-     <height>50</height>
+     <y>610</y>
+     <width>311</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1754,10 +2087,29 @@ background-image:url(empty.png);
   <widget class="QPushButton" name="btn_backup">
    <property name="geometry">
     <rect>
+     <x>-1</x>
+     <y>529</y>
+     <width>311</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/images/empty.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_statistics">
+   <property name="geometry">
+    <rect>
      <x>0</x>
-     <y>460</y>
-     <width>180</width>
-     <height>40</height>
+     <y>450</y>
+     <width>311</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1774,9 +2126,9 @@ background-image:url(empty.png);
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>270</y>
-     <width>180</width>
-     <height>60</height>
+     <y>280</y>
+     <width>311</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1789,77 +2141,55 @@ background-image:url(empty.png);
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="snackbar">
+  <widget class="QPushButton" name="btn_printer">
    <property name="geometry">
     <rect>
-     <x>-2</x>
-     <y>560</y>
-     <width>805</width>
-     <height>43</height>
+     <x>0</x>
+     <y>200</y>
+     <width>311</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/alert-red.png);
-background-image:url(empty.png);color:rgb(255,255,255);</string>
+    <string notr="true">background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string/>
    </property>
-   <property name="indent">
-    <number>5</number>
+   <property name="flat">
+    <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="lbl_time">
+  <widget class="QPushButton" name="btn_databases">
    <property name="geometry">
     <rect>
-     <x>680</x>
-     <y>30</y>
-     <width>120</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-image:url(:/images/empty.png);</string>
-   </property>
-   <property name="text">
-    <string>10:09</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="lbl_datetime">
-   <property name="geometry">
-    <rect>
-     <x>55</x>
-     <y>350</y>
-     <width>120</width>
-     <height>17</height>
+     <x>0</x>
+     <y>130</y>
+     <width>311</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
-    <string>Date &amp; Time</string>
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="logo_datetime">
+  <widget class="QPushButton" name="btn_general">
    <property name="geometry">
     <rect>
-     <x>4</x>
-     <y>340</y>
-     <width>40</width>
-     <height>40</height>
+     <x>0</x>
+     <y>70</y>
+     <width>311</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/icons/ic_access_time_white_48dp.png);</string>
+    <string notr="true">background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -1872,9 +2202,9 @@ background-image:url(empty.png);color:rgb(255,255,255);</string>
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>340</y>
-     <width>180</width>
-     <height>41</height>
+     <y>360</y>
+     <width>311</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1888,142 +2218,6 @@ background-image:url(empty.png);color:rgb(255,255,255);</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_statistics">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>400</y>
-     <width>180</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-image:url(:/images/empty.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="lbl_stats">
-   <property name="geometry">
-    <rect>
-     <x>54</x>
-     <y>410</y>
-     <width>120</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-image:url(:/images/empty.png);</string>
-   </property>
-   <property name="text">
-    <string>Statistics</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="logo_stats">
-   <property name="geometry">
-    <rect>
-     <x>3</x>
-     <y>400</y>
-     <width>40</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/icons/ic_assessment_white_48dp.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="lbl_measurement">
-   <property name="geometry">
-    <rect>
-     <x>53</x>
-     <y>530</y>
-     <width>120</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-image:url(:/images/empty.png);</string>
-   </property>
-   <property name="text">
-    <string>Measurement</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btn_measurement">
-   <property name="geometry">
-    <rect>
-     <x>-1</x>
-     <y>520</y>
-     <width>180</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-image:url(:/images/empty.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="logo_measure">
-   <property name="geometry">
-    <rect>
-     <x>2</x>
-     <y>520</y>
-     <width>40</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/icons/ic_developer_board_white_48dp.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <zorder>stackedWidget</zorder>
-  <zorder>btn_back</zorder>
-  <zorder>logo_general</zorder>
-  <zorder>lbl_general</zorder>
-  <zorder>logo_databases</zorder>
-  <zorder>lbl_databases</zorder>
-  <zorder>lbl_printer</zorder>
-  <zorder>logo_printer</zorder>
-  <zorder>lbl_backup</zorder>
-  <zorder>logo_backuprestore</zorder>
-  <zorder>logo_network</zorder>
-  <zorder>lbl_network</zorder>
-  <zorder>snackbar</zorder>
-  <zorder>lbl_time</zorder>
-  <zorder>lbl_datetime</zorder>
-  <zorder>logo_datetime</zorder>
-  <zorder>lbl_stats</zorder>
-  <zorder>logo_stats</zorder>
-  <zorder>btn_date_time</zorder>
-  <zorder>btn_network</zorder>
-  <zorder>btn_printer</zorder>
-  <zorder>btn_databases</zorder>
-  <zorder>btn_general</zorder>
-  <zorder>lbl_measurement</zorder>
-  <zorder>logo_measure</zorder>
-  <zorder>btn_measurement</zorder>
-  <zorder>btn_statistics</zorder>
-  <zorder>btn_backup</zorder>
  </widget>
  <resources/>
  <connections/>
