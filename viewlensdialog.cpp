@@ -67,9 +67,9 @@ void ViewLensDialog::loadLenses()
     ui->table_lenses->clearContents();
     ui->table_lenses->setRowCount(0);
 
-    ui->table_lenses->setColumnCount(10);
+    ui->table_lenses->setColumnCount(11);
     ui->table_lenses->setHorizontalHeaderLabels(
-        {"IOL", "Company", "Type", "ASRKT", "ASRKII", "Acd", "Sf", "a0", "a1", "a2"});
+        {"S.No", "IOL", "Company", "Type", "ASRKT", "ASRKII", "Acd", "Sf", "a0", "a1", "a2"});
 
     QSqlQuery query(db);
     query.prepare(
@@ -84,9 +84,14 @@ void ViewLensDialog::loadLenses()
     int row = 0;
     while (query.next()) {
         ui->table_lenses->insertRow(row);
+
+        auto *snoItem = new QTableWidgetItem(QString::number(row + 1));
+        snoItem->setTextAlignment(Qt::AlignCenter);
+        ui->table_lenses->setItem(row, 0, snoItem);
+
         for (int col = 0; col < 10; ++col) {
             ui->table_lenses->setItem(
-                row, col,
+                row, col + 1,
                 new QTableWidgetItem(query.value(col).toString()));
         }
         ++row;
@@ -120,7 +125,7 @@ void ViewLensDialog::on_btn_edit_clicked()
         return;
     }
 
-    QString iol = ui->table_lenses->item(row, 0)->text(); // column 0 = iol
+    QString iol = ui->table_lenses->item(row, 1)->text(); // column 0 = iol
 
     EditLensDialog *dlg = new EditLensDialog(iol, this);
     if (dlg->exec() == QDialog::Accepted) {
@@ -138,7 +143,7 @@ void ViewLensDialog::on_btn_delete_clicked()
         return;
     }
 
-    QString iol = ui->table_lenses->item(row, 0)->text();
+    QString iol = ui->table_lenses->item(row, 1)->text();
 
     PromptDialog confirm("Delete Lens",
                          "Are you sure you want to delete lens: " + iol + "?",

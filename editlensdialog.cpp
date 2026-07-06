@@ -1,6 +1,8 @@
 #include "editlensdialog.h"
 #include "ui_editlensdialog.h"
 #include "promptdialog.h"
+#include "keypad.h"
+#include "numericpad.h"
 #include <QTime>
 #include <QSqlQuery>
 #include <QSqlError>
@@ -34,6 +36,17 @@ EditLensDialog::EditLensDialog(const QString &iol, QWidget *parent)
     ui->comboBox_lensType->addItems({"Anterior", "Posterior"});
 
     loadLens();
+
+    // ── Event filters for on-screen input ────────────────────
+    ui->lineEdit_company->installEventFilter(this);
+
+    ui->lineEdit_asrkt->installEventFilter(this);
+    ui->lineEdit_asrkii->installEventFilter(this);
+    ui->lineEdit_acd->installEventFilter(this);
+    ui->lineEdit_sf->installEventFilter(this);
+    ui->lineEdit_a0->installEventFilter(this);
+    ui->lineEdit_a1->installEventFilter(this);
+    ui->lineEdit_a2->installEventFilter(this);
 }
 
 EditLensDialog::~EditLensDialog()
@@ -52,7 +65,7 @@ bool EditLensDialog::openDatabase()
     if (QSqlDatabase::contains(connName)) {
         db = QSqlDatabase::database(connName);
     } else {
-       db = QSqlDatabase::database();
+        db = QSqlDatabase::database();
     }
     if (!db.open()) {
         qDebug() << "DB Error:" << db.lastError().text();
@@ -148,4 +161,36 @@ void EditLensDialog::on_btn_save_clicked()
 void EditLensDialog::on_btn_cancel_clicked()
 {
     reject();
+}
+
+// ─────────────────────────────────────────────────────────────
+//  Event Filter — on-screen keypads
+// ─────────────────────────────────────────────────────────────
+bool EditLensDialog::eventFilter(QObject *obj, QEvent *event)
+{
+    if (event->type() == QEvent::MouseButtonPress) {
+        if (obj == ui->lineEdit_company) {
+            QLineEdit *le = qobject_cast<QLineEdit*>(obj);
+            Keypad *kp = new Keypad(le, this);
+            kp->exec();
+            delete kp;
+            return true;
+        }
+
+        if (obj == ui->lineEdit_asrkt  ||
+            obj == ui->lineEdit_asrkii ||
+            obj == ui->lineEdit_acd    ||
+            obj == ui->lineEdit_sf     ||
+            obj == ui->lineEdit_a0     ||
+            obj == ui->lineEdit_a1     ||
+            obj == ui->lineEdit_a2)
+        {
+            QLineEdit *le = qobject_cast<QLineEdit*>(obj);
+            Numericpad *np = new Numericpad(le, this);
+            np->exec();
+            delete np;
+            return true;
+        }
+    }
+    return QDialog::eventFilter(obj, event);
 }

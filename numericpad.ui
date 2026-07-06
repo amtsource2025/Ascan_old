@@ -47,7 +47,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-small.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>1</string>
@@ -84,7 +84,7 @@ background-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-small.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>2</string>
@@ -121,7 +121,7 @@ background-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-small.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>6</string>
@@ -158,7 +158,7 @@ background-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-small.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>4</string>
@@ -195,7 +195,7 @@ background-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-small.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>5</string>
@@ -232,7 +232,7 @@ background-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-small.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>3</string>
@@ -269,7 +269,7 @@ background-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-small.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>7</string>
@@ -306,7 +306,7 @@ background-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-small.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>8</string>
@@ -343,7 +343,7 @@ background-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-small.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>9</string>
@@ -380,7 +380,7 @@ background-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-small.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>.</string>
@@ -417,7 +417,7 @@ background-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-small.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>0</string>
@@ -454,7 +454,7 @@ background-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-small.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>pm</string>
@@ -491,7 +491,7 @@ background-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/alert-red.png);
-background-image:url(empty.png);
+background-image:url(:/images/empty.png);
 color:rgb(255,255,255);</string>
    </property>
    <property name="text">
@@ -529,7 +529,7 @@ color:rgb(255,255,255);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/alert-green.png);
-background-image:url(empty.png);
+background-image:url(:/images/empty.png);
 color:rgb(255,255,255);</string>
    </property>
    <property name="text">
@@ -575,8 +575,8 @@ color:rgb(255,255,255);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);</string>
+    <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>+/-</string>

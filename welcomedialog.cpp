@@ -5,17 +5,34 @@
 #include "measuredialog.h"
 #include "promptdialog.h"
 #include "homescreendialog.h"
+#include <QApplication>
+#include <QDebug>
+#include "AppManager.h"
 
 // ─────────────────────────────────────────────────────────────
 //  Constructor / Destructor
 // ─────────────────────────────────────────────────────────────
-welcomedialog::welcomedialog(QWidget *parent)
+welcomeDialog::welcomeDialog(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::WelcomeDialog)
+    , m_lastPatientId("")
 {
     ui->setupUi(this);
 
-    // ✅ Fix: just reuse main.cpp's connection, never close it
+    m_lastPatientId.clear();
+
+    ui->comboBox_patientSelect->setStyleSheet(
+        "QComboBox {"
+        "color: black;"
+        "background-color: #219ebc;"
+        "font-size: 24px;"
+        "border: 2px solid red;"
+        "}"
+        );
+
+    this->setCursor(Qt::ArrowCursor);
+
+    // ✅ reuse main.cpp's connection, never close it
     db = QSqlDatabase::database();
     if (!db.isOpen())
         qDebug() << "welcomedialog: DB not open!";
@@ -25,26 +42,25 @@ welcomedialog::welcomedialog(QWidget *parent)
 
     // ── Clock ─────────────────────────────────────────────────
     clockTimer = new QTimer(this);
-    connect(clockTimer, &QTimer::timeout, this, &welcomedialog::updateTime);
+    connect(clockTimer, &QTimer::timeout, this, &welcomeDialog::updateTime);
     clockTimer->start(1000);
     updateTime();
 
     // ── ComboBox signal ───────────────────────────────────────
     connect(ui->comboBox_patientSelect,
             QOverload<int>::of(&QComboBox::currentIndexChanged),
-            this, &welcomedialog::onPatientSelectionChanged);
+            this, &welcomeDialog::onPatientSelectionChanged);
 }
 
-welcomedialog::~welcomedialog()
+welcomeDialog::~welcomeDialog()
 {
-    // ✅ Do NOT close db — owned by main.cpp
     delete ui;
 }
 
 // ─────────────────────────────────────────────────────────────
 //  Database — kept for compatibility but simplified
 // ─────────────────────────────────────────────────────────────
-bool welcomedialog::openDatabase()
+bool welcomeDialog::openDatabase()
 {
     db = QSqlDatabase::database(); // ✅ reuse main.cpp connection
     if (!db.isOpen()) {
@@ -54,10 +70,15 @@ bool welcomedialog::openDatabase()
     return true;
 }
 
+QString welcomeDialog::getLastPatientId()
+{
+    return m_lastPatientId;
+}
+
 // ─────────────────────────────────────────────────────────────
 //  Ensure Default Doctor "Adithya"
 // ─────────────────────────────────────────────────────────────
-QString welcomedialog::ensureDefaultDoctor()
+QString welcomeDialog::ensureDefaultDoctor()
 {
     QSqlQuery query(db);
     query.prepare("SELECT doctorid FROM doctor WHERE LOWER(name) = 'adithya' LIMIT 1");
@@ -80,9 +101,9 @@ QString welcomedialog::ensureDefaultDoctor()
     return m_defaultDoctorId;
 }
 
-void welcomedialog::ensurePatientHasDoctor(const QString & /*patientId*/) {}
+void welcomeDialog::ensurePatientHasDoctor(const QString & /*patientId*/) {}
 
-QString welcomedialog::resolveDoctor(const QString &patientId)
+QString welcomeDialog::resolveDoctor(const QString &patientId)
 {
     QSqlQuery query(db);
 
@@ -112,7 +133,7 @@ QString welcomedialog::resolveDoctor(const QString &patientId)
 // ─────────────────────────────────────────────────────────────
 //  Clock
 // ─────────────────────────────────────────────────────────────
-void welcomedialog::updateTime()
+void welcomeDialog::updateTime()
 {
     ui->lbl_time->setText(QTime::currentTime().toString("hh:mm:ss"));
 }
@@ -120,9 +141,12 @@ void welcomedialog::updateTime()
 // ─────────────────────────────────────────────────────────────
 //  Load Patients into comboBox
 // ─────────────────────────────────────────────────────────────
-void welcomedialog::loadPatients()
+void welcomeDialog::loadPatients()
 {
     const QSignalBlocker blocker(ui->comboBox_patientSelect);
+
+    QString previousPatient = m_lastPatientId;
+
     ui->comboBox_patientSelect->clear();
     ui->comboBox_patientSelect->addItem("-- Select Patient --", "");
 
@@ -133,20 +157,32 @@ void welcomedialog::loadPatients()
         while (query.next()) {
             const QString pid  = query.value(0).toString();
             const QString name = query.value(1).toString();
+
             ui->comboBox_patientSelect->addItem(pid + " - " + name, pid);
         }
     } else {
         qDebug() << "loadPatients error:" << query.lastError().text();
+    }
+
+    if (!previousPatient.isEmpty()) {
+        int idx = ui->comboBox_patientSelect->findData(previousPatient);
+        if (idx >= 0)
+            ui->comboBox_patientSelect->setCurrentIndex(idx);
     }
 }
 
 // ─────────────────────────────────────────────────────────────
 //  Select a patient by ID after add
 // ─────────────────────────────────────────────────────────────
-void welcomedialog::selectPatientById(const QString &patientId)
+void welcomeDialog::selectPatientById(const QString &patientId)
 {
-    if (patientId.isEmpty()) return;
-    const int idx = ui->comboBox_patientSelect->findData(patientId);
+    if (patientId.isEmpty())
+        return;
+
+    m_lastPatientId = patientId;
+
+    int idx = ui->comboBox_patientSelect->findData(patientId);
+
     if (idx >= 0)
         ui->comboBox_patientSelect->setCurrentIndex(idx);
 }
@@ -154,37 +190,35 @@ void welcomedialog::selectPatientById(const QString &patientId)
 // ─────────────────────────────────────────────────────────────
 //  Slot: selection changed — clear any error label
 // ─────────────────────────────────────────────────────────────
-void welcomedialog::onPatientSelectionChanged(int /*index*/)
+void welcomeDialog::onPatientSelectionChanged(int)
 {
-    ui->label->clear();
+    m_lastPatientId =
+        ui->comboBox_patientSelect->currentData().toString();
 }
 
 // ─────────────────────────────────────────────────────────────
 //  ENTER button
 // ─────────────────────────────────────────────────────────────
-void welcomedialog::on_btn_enter_clicked()
+void welcomeDialog::on_btn_enter_clicked()
 {
-    if (ui->comboBox_patientSelect->currentIndex() <= 0) {
-        PromptDialog dlg("Selection Required", "Please select a patient first!", this);
-        dlg.exec();
-        return;
-    }
-
     const QString selectedPatientId =
-        ui->comboBox_patientSelect->currentData().toString();
-    const QString resolvedDoctorId = resolveDoctor(selectedPatientId);
+        (ui->comboBox_patientSelect->currentIndex() > 0)
+            ? ui->comboBox_patientSelect->currentData().toString()
+            : QString();
 
-    MeasureDialog *md = new MeasureDialog(selectedPatientId, resolvedDoctorId, this);
-    md->exec();
-    delete md;
+    const QString resolvedDoctorId =
+        selectedPatientId.isEmpty() ? QString() : resolveDoctor(selectedPatientId);
 
-    loadPatients();
+    AppManager::home->loadContext(selectedPatientId, resolvedDoctorId);
+
+    this->hide();
+    AppManager::home->show();
 }
 
 // ─────────────────────────────────────────────────────────────
 //  Surgeon button — add patient
 // ─────────────────────────────────────────────────────────────
-void welcomedialog::on_btn_surgeon_clicked()
+void welcomeDialog::on_btn_surgeon_clicked()
 {
     AddPatientDialog *apd = new AddPatientDialog(this);
     if (apd->exec() == QDialog::Accepted) {
@@ -198,7 +232,7 @@ void welcomedialog::on_btn_surgeon_clicked()
 // ─────────────────────────────────────────────────────────────
 //  NEW button — add patient or doctor
 // ─────────────────────────────────────────────────────────────
-void welcomedialog::on_btn_newDoctor_2_clicked()
+void welcomeDialog::on_btn_newDoctor_2_clicked()
 {
     PromptDialog askPatient("Add New", "Do you want to add a new Patient?", this);
     if (askPatient.exec() == QDialog::Accepted) {
@@ -218,14 +252,26 @@ void welcomedialog::on_btn_newDoctor_2_clicked()
         addDoc->exec();
         delete addDoc;
     }
+
+    // this->close();
 }
 
 // ─────────────────────────────────────────────────────────────
 //  A-Scan button
 // ─────────────────────────────────────────────────────────────
-void welcomedialog::on_btn_ascan_clicked()
+void welcomeDialog::on_btn_ascan_clicked()
 {
-    HomeScreenDialog homeScreen(this);
-    homeScreen.exec();
-    loadPatients(); // refresh in case patients were added inside HomeScreen
+    if (ui->comboBox_patientSelect->currentIndex() <= 0) {
+        PromptDialog dlg("Selection Required", "Please select a patient first!", this);
+        dlg.exec();
+        return;
+    }
+
+    const QString selectedPatientId = ui->comboBox_patientSelect->currentData().toString();
+    const QString resolvedDoctorId  = resolveDoctor(selectedPatientId);
+
+    AppManager::measure->loadContext(selectedPatientId, resolvedDoctorId);
+
+    this->hide();
+    AppManager::measure->show();
 }

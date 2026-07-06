@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1280</width>
+    <height>720</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,12 +21,12 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>70</width>
-     <height>60</height>
+     <width>91</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
+    <string notr="true">background-image:url(:/images/empty.png);
 border-image: url(:/images/icons/ic_arrow_back_white_48dp.png);</string>
    </property>
    <property name="text">
@@ -39,7 +39,7 @@ border-image: url(:/images/icons/ic_arrow_back_white_48dp.png);</string>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>340</x>
+     <x>580</x>
      <y>0</y>
      <width>160</width>
      <height>70</height>
@@ -51,7 +51,7 @@ border-image: url(:/images/icons/ic_arrow_back_white_48dp.png);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);</string>
+    <string notr="true">background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>Patient Details</string>
@@ -65,13 +65,15 @@ border-image: url(:/images/icons/ic_arrow_back_white_48dp.png);</string>
     <rect>
      <x>9</x>
      <y>80</y>
-     <width>520</width>
-     <height>420</height>
+     <width>701</width>
+     <height>621</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">
-background-image: url(:/images/card-big.png);</string>
+/*background-image: url(:/images/card-big.png);*/
+
+background:rgb(255,255,255);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::StyledPanel</enum>
@@ -88,9 +90,14 @@ background-image: url(:/images/card-big.png);</string>
       <height>20</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);
 </string>
     </property>
    </widget>
@@ -99,12 +106,17 @@ border-image:url(empty.png);
      <rect>
       <x>20</x>
       <y>80</y>
-      <width>100</width>
-      <height>17</height>
+      <width>131</width>
+      <height>21</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Patient Name</string>
@@ -119,8 +131,13 @@ border-image:url(empty.png);
       <height>17</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Gender</string>
@@ -135,8 +152,13 @@ border-image:url(empty.png);
       <height>17</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Phone</string>
@@ -146,13 +168,18 @@ border-image:url(empty.png);
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>363</y>
-      <width>130</width>
-      <height>17</height>
+      <y>400</y>
+      <width>121</width>
+      <height>21</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Operating Eye</string>
@@ -162,13 +189,18 @@ border-image:url(empty.png);
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>276</y>
+      <y>280</y>
       <width>150</width>
       <height>17</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Operating Method</string>
@@ -183,9 +215,14 @@ border-image:url(empty.png);
       <height>20</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);
 </string>
     </property>
    </widget>
@@ -193,13 +230,18 @@ border-image:url(empty.png);
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>320</y>
+      <y>340</y>
       <width>150</width>
-      <height>17</height>
+      <height>21</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Operating Mode</string>
@@ -215,8 +257,8 @@ border-image:url(empty.png);
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);
 </string>
     </property>
    </widget>
@@ -226,11 +268,16 @@ border-image:url(empty.png);
       <x>20</x>
       <y>130</y>
       <width>130</width>
-      <height>17</height>
+      <height>21</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Age</string>
@@ -245,8 +292,13 @@ border-image:url(empty.png);
       <height>23</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Male</string>
@@ -264,8 +316,13 @@ border-image:url(empty.png);
       <height>23</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Female</string>
@@ -280,8 +337,13 @@ border-image:url(empty.png);
       <height>23</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Aphakic</string>
@@ -299,8 +361,13 @@ border-image:url(empty.png);
       <height>23</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Phakic</string>
@@ -310,13 +377,18 @@ border-image:url(empty.png);
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>320</y>
+      <y>340</y>
       <width>112</width>
       <height>23</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Immersion</string>
@@ -326,13 +398,18 @@ border-image:url(empty.png);
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>320</y>
+      <y>340</y>
       <width>112</width>
       <height>23</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Contact</string>
@@ -345,13 +422,18 @@ border-image:url(empty.png);
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>360</y>
+      <y>400</y>
       <width>112</width>
       <height>23</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Right</string>
@@ -361,13 +443,18 @@ border-image:url(empty.png);
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>360</y>
+      <y>400</y>
       <width>112</width>
       <height>23</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Left</string>
@@ -385,8 +472,13 @@ border-image:url(empty.png);
       <height>17</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Patient ID</string>
@@ -401,9 +493,14 @@ border-image:url(empty.png);
       <height>20</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);
+     <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);
 </string>
     </property>
    </widget>
@@ -416,6 +513,11 @@ border-image:url(empty.png);
       <height>23</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="text">
      <string>Dense</string>
     </property>
@@ -424,15 +526,18 @@ border-image:url(empty.png);
   <widget class="QFrame" name="frame_2">
    <property name="geometry">
     <rect>
-     <x>539</x>
+     <x>719</x>
      <y>80</y>
-     <width>250</width>
-     <height>420</height>
+     <width>541</width>
+     <height>621</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">
-background-image: url(:/images/card-big.png);</string>
+/*background-image: url(:/images/card-big.png);*/
+
+background:rgb(255,255,255);
+</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::StyledPanel</enum>
@@ -444,262 +549,313 @@ background-image: url(:/images/card-big.png);</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
-      <width>130</width>
-      <height>17</height>
+      <y>40</y>
+      <width>171</width>
+      <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Keratometer</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_10">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>160</y>
-      <width>40</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>RK1</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_11">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>160</y>
-      <width>40</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>RK2</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_12">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>160</y>
-      <width>40</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>RK</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>140</y>
+      <y>260</y>
       <width>40</width>
       <height>20</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Right</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_rk1">
-    <property name="geometry">
-     <rect>
-      <x>9</x>
-      <y>182</y>
-      <width>50</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);
-</string>
-    </property>
-    <property name="text">
-     <string>45.00</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_rk2">
-    <property name="geometry">
-     <rect>
-      <x>91</x>
-      <y>182</y>
-      <width>50</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);
-</string>
-    </property>
-    <property name="text">
-     <string>45.00</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_rk">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>182</y>
-      <width>50</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);
-</string>
-    </property>
-    <property name="text">
-     <string>45.00</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_14">
     <property name="geometry">
      <rect>
-      <x>9</x>
-      <y>47</y>
+      <x>10</x>
+      <y>110</y>
       <width>40</width>
       <height>21</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Left</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_lk">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>179</x>
-      <y>90</y>
-      <width>50</width>
-      <height>30</height>
+      <x>10</x>
+      <y>340</y>
+      <width>485</width>
+      <height>23</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLineEdit" name="lineEdit_rk1">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);
 </string>
-    </property>
-    <property name="text">
-     <string>45.00</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_15">
-    <property name="geometry">
-     <rect>
-      <x>89</x>
-      <y>68</y>
-      <width>40</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>LK2</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_16">
-    <property name="geometry">
-     <rect>
-      <x>9</x>
-      <y>68</y>
-      <width>40</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>LK1</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_17">
-    <property name="geometry">
-     <rect>
-      <x>179</x>
-      <y>68</y>
-      <width>40</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
-    </property>
-    <property name="text">
-     <string>LK</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_lk1">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>90</y>
-      <width>50</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);
+       </property>
+       <property name="text">
+        <string>45.00</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_rk2">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);
 </string>
-    </property>
-    <property name="text">
-     <string>45.00</string>
-    </property>
+       </property>
+       <property name="text">
+        <string>45.00</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_rk">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);
+</string>
+       </property>
+       <property name="text">
+        <string>45.00</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_lk2">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>90</y>
-      <width>50</width>
-      <height>30</height>
+      <x>10</x>
+      <y>300</y>
+      <width>491</width>
+      <height>22</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_10">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);</string>
+       </property>
+       <property name="text">
+        <string>RK1</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_11">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);</string>
+       </property>
+       <property name="text">
+        <string>RK2</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_12">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);</string>
+       </property>
+       <property name="text">
+        <string>RK</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>485</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLineEdit" name="lineEdit_lk1">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);
 </string>
+       </property>
+       <property name="text">
+        <string>45.00</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_lk2">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);
+</string>
+       </property>
+       <property name="text">
+        <string>45.00</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_lk">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);
+</string>
+       </property>
+       <property name="text">
+        <string>45.00</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>501</width>
+      <height>22</height>
+     </rect>
     </property>
-    <property name="text">
-     <string>45.00</string>
-    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_16">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);</string>
+       </property>
+       <property name="text">
+        <string>LK1</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_15">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);</string>
+       </property>
+       <property name="text">
+        <string>LK2</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_17">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image:url(:/images/empty.png);</string>
+       </property>
+       <property name="text">
+        <string>LK</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QLabel" name="lbl_time">
    <property name="geometry">
     <rect>
-     <x>680</x>
-     <y>0</y>
-     <width>120</width>
-     <height>40</height>
+     <x>1130</x>
+     <y>10</y>
+     <width>141</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
@@ -708,7 +864,7 @@ border-image:url(empty.png);
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+    <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>10:09</string>

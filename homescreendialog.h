@@ -1,3 +1,5 @@
+
+
 #ifndef HOMESCREENDIALOG_H
 #define HOMESCREENDIALOG_H
 
@@ -38,6 +40,9 @@ public:
     void setDoctorFormula(const QString &formula);
     void setPatientName(const QString &name);
 
+
+    void loadContext(const QString &patientId, const QString &doctorId);
+
 private slots:
     void on_btn_doctors_clicked();
     void on_btn_patients_clicked();
@@ -57,6 +62,7 @@ private slots:
     void on_btn_currentDocView_clicked();
     void on_btn_currentDoctorLoad_clicked();
     void on_btn_currentDoctorChooserExit_clicked();
+    void on_btn_currentDoctorMore_clicked();   // ── NEW: "more" (⋮) button next to doctor sidebar
 
     void on_btn_currentPatientChooser_clicked();
     void on_btn_currentPatientLogo_clicked();
@@ -65,6 +71,9 @@ private slots:
     void on_btn_currentPatientView_clicked();
     void on_btn_currentPatientLoad_clicked();
     void on_btn_currentPatientChooserExit_clicked();
+    void on_btn_currentPatientMore_clicked();  // ── NEW: "more" (⋮) button next to patient sidebar
+
+    void applyPatientSelection(const QString &patientId);   // ✅ FIX: moved out of private: — must be a slot
 
     void updateClock();
 
@@ -101,6 +110,10 @@ private:
     bool gestureEvent(QGestureEvent *event);
     void mousePressEvent(QMouseEvent *event) override;
     void mouseReleaseEvent(QMouseEvent *event) override;
+
+    void refreshDoctorSidebar(const QString &doctorId);
+
+    void refreshDoctorTable();
 
     // ── Add these two members ─────────────────────────────────────
     QPropertyAnimation *m_contentAnimation;   // animates stackedWidget geometry
