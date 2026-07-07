@@ -6,29 +6,70 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1280</width>
+    <height>720</height>
    </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>15</pointsize>
+   </font>
   </property>
   <property name="windowTitle">
    <string>WelcomeDialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/images/5.png);</string>
+   <string notr="true">background-image: url(:/images/7.png);</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QPushButton" name="btn_ascan">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QFrame" name="headerBar">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>30</y>
-      <width>211</width>
-      <height>151</height>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>75</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);
-border-image: url(:/images/ascan-select.png);</string>
+     <string notr="true">QFrame#headerBar {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,
+        stop:0 #1976D2, stop:1 #2E9BDA);
+    border: none;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_ascan">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>15</y>
+      <width>221</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton{
+	background-color: rgb(255,255,255);
+	border: 3px solid #FFFFFF;
+	border-radius: 20px;
+	border-image: url(:/images/ascan-select.png);
+}
+
+QPushButton:pressed {
+    border: 3px solid #00BCD4;
+}
+</string>
     </property>
     <property name="text">
      <string/>
@@ -40,15 +81,26 @@ border-image: url(:/images/ascan-select.png);</string>
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>190</y>
-      <width>691</width>
-      <height>361</height>
+      <x>120</x>
+      <y>230</y>
+      <width>1011</width>
+      <height>291</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/images/card-big.png);
-background-image:url(:/empty.png);</string>
+     <string notr="true">QFrame#frame {
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0,
+        x2:1, y2:1,
+        stop:0   rgba(168, 211, 242, 235),
+        stop:0.35 rgba(191, 223, 246, 225),
+        stop:0.70 rgba(201, 230, 248, 225),
+        stop:1   rgba(176, 217, 244, 235)
+    );
+    border: 2px solid #7fb3d9;
+    border-radius: 30px;
+}</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -59,14 +111,19 @@ background-image:url(:/empty.png);</string>
     <widget class="QPushButton" name="btn_surgeon">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>180</y>
-       <width>110</width>
-       <height>110</height>
+       <x>150</x>
+       <y>50</y>
+       <width>141</width>
+       <height>141</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-image:url(empty.png);
+      <string notr="true">background-image:url(:/images/empty.png);
 border-image: url(:/images/patient-icon.png);</string>
      </property>
      <property name="text">
@@ -79,23 +136,90 @@ border-image: url(:/images/patient-icon.png);</string>
     <widget class="QPushButton" name="btn_enter">
      <property name="geometry">
       <rect>
-       <x>530</x>
-       <y>320</y>
+       <x>820</x>
+       <y>210</y>
        <width>120</width>
        <height>40</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Umpush</family>
        <pointsize>14</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border-image:url(:/images/empty.png);
-color: rgb(85, 87, 83);</string>
+      <string notr="true">
+/*QPushButton {
+    border-image: url(:/images/empty.png);
+    color: rgb(85, 87, 83);
+    border: 2px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: #80d4ff;
+    border: 2px solid #006699;
+    border-radius: 10px;
+	color:#00334d
+}*/
+
+QPushButton
+{
+    background-color: #2F6BFF;
+    color: white;
+    border: none;
+    border-radius: 12px;
+font: 700 14pt &quot;Umpush&quot;;
+    padding: 8px 20px;
+}
+
+QPushButton:pressed
+{
+    background-color: #1E56E6;
+}
+
+QPushButton:disabled
+{
+    background-color: #C8D6F5;
+    color: #FFFFFF;
+}
+
+
+QPushButton
+{
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,
+		stop:0 #1976D2, stop:1 #2E9BDA);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font: 700 14pt &quot;Umpush&quot;;
+    padding: 8px 20px;
+}
+
+QPushButton:hover
+{
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,
+		stop:0 #1668BC, stop:1 #2789C4);
+}
+
+QPushButton:pressed
+{
+    background-color: #14589F;
+}
+
+QPushButton:disabled
+{
+    background-color: #C8D6F5;
+    color: #FFFFFF;
+}
+
+
+</string>
      </property>
      <property name="text">
-      <string>ENTER</string>
+      <string>Enter</string>
      </property>
      <property name="flat">
       <bool>true</bool>
@@ -104,23 +228,73 @@ color: rgb(85, 87, 83);</string>
     <widget class="QPushButton" name="btn_newDoctor_2">
      <property name="geometry">
       <rect>
-       <x>400</x>
-       <y>320</y>
-       <width>130</width>
+       <x>590</x>
+       <y>210</y>
+       <width>181</width>
        <height>40</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Umpush</family>
        <pointsize>14</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border-image:url(:/images/empty.png);
-color: rgb(33, 150, 243);</string>
+      <string notr="true">
+/*QPushButton {
+    border-image: url(:/images/empty.png);
+    color: rgb(85, 87, 83);
+    border: 2px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: #80d4ff;
+    border: 2px solid #006699;
+    border-radius: 10px;
+	color:#00334d
+}*/
+
+QPushButton
+{
+    background-color: #00B4D8;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font: 700 14pt &quot;Umpush&quot;;
+    padding: 8px 20px;
+}
+
+
+QPushButton
+{
+    background-color: #FFFFFF;
+    color: #00B4D8;
+    border: 1.5px solid #00B4D8;
+    border-radius: 12px;
+    font: 700 14pt &quot;Umpush&quot;;
+    padding: 8px 20px;
+}
+
+QPushButton:hover
+{
+    background-color: #E6FAFE;
+}
+
+QPushButton:pressed
+{
+    background-color: #CDF3FB;
+}
+
+
+
+
+</string>
      </property>
      <property name="text">
-      <string>NEW</string>
+      <string>+ New Patient</string>
      </property>
      <property name="flat">
       <bool>true</bool>
@@ -129,29 +303,82 @@ color: rgb(33, 150, 243);</string>
     <widget class="FixedComboBox" name="comboBox_patientSelect">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>210</y>
-       <width>471</width>
-       <height>41</height>
+       <x>330</x>
+       <y>90</y>
+       <width>541</width>
+       <height>61</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">border-image:url(empty.png);
-background-image:url(empty.png);</string>
+      <string notr="true">
+
+QComboBox
+{
+    background-color: #FBFCFE;
+    border: 1.5px solid #DCE3EA;
+    border: 2px solid #7fb3d9;
+    border-radius: 12px;
+    padding: 8px 18px;
+    color: #334155;
+    outline: none;
+}
+
+QComboBox:hover
+{
+    border: 1.5px solid #A9C4E8;
+}
+
+QComboBox:focus, QComboBox:on
+{
+    border: 1.5px solid #1976D2;
+    background: #FFFFFF;
+}
+
+QComboBox::drop-down
+{
+    border: none;
+    width: 34px;
+}
+
+QComboBox QAbstractItemView
+{
+    background: white;
+    border: 1px solid #DCE3EA;
+    selection-background-color: #E3F0FD;
+    selection-color: #1976D2;
+    outline: 0;
+    padding: 4px;
+}</string>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
      </property>
     </widget>
+    <zorder>btn_newDoctor_2</zorder>
+    <zorder>btn_surgeon</zorder>
+    <zorder>btn_enter</zorder>
+    <zorder>comboBox_patientSelect</zorder>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>170</y>
+      <x>550</x>
+      <y>200</y>
       <width>192</width>
       <height>17</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background: transparent;
+color: #1A2B3C;
+font-weight: 700;
+letter-spacing: 1px;</string>
     </property>
     <property name="text">
      <string>A-Scan</string>
@@ -163,19 +390,22 @@ background-image:url(empty.png);</string>
    <widget class="QLabel" name="lbl_time">
     <property name="geometry">
      <rect>
-      <x>680</x>
-      <y>-3</y>
-      <width>120</width>
-      <height>40</height>
+      <x>1129</x>
+      <y>10</y>
+      <width>131</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-     </font>
+<font>
+    <pointsize>13</pointsize>
+    <bold>true</bold>
+</font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(empty.png);</string>
+     <string notr="true">background: transparent;
+color: #FFFFFF;
+font-weight: 600;</string>
     </property>
     <property name="text">
      <string>10:09</string>
@@ -187,16 +417,22 @@ background-image:url(empty.png);</string>
    <widget class="QLabel" name="lbl_docName">
     <property name="geometry">
      <rect>
-      <x>2</x>
-      <y>2</y>
-      <width>250</width>
-      <height>28</height>
+      <x>20</x>
+      <y>0</y>
+      <width>261</width>
+      <height>61</height>
      </rect>
     </property>
+<property name="font">
+    <font>
+        <pointsize>15</pointsize>
+        <bold>true</bold>
+    </font>
+</property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgb(255,255,255);
-color:rgb(21,21,21);
-border-image:url(empty.png);</string>
+     <string notr="true">background: transparent;
+color: #FFFFFF;
+font-weight: 600;</string>
     </property>
     <property name="text">
      <string>Welcome, Dr. J Doe, M.D. </string>
@@ -205,15 +441,15 @@ border-image:url(empty.png);</string>
    <widget class="QLabel" name="lbl_softwareVersion">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>570</y>
-      <width>130</width>
-      <height>28</height>
+      <x>1110</x>
+      <y>680</y>
+      <width>151</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">color:rgb(21,21,21);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string>Version:</string>
@@ -230,7 +466,7 @@ background-image:url(empty.png);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">color:rgb(21,21,21);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -239,6 +475,285 @@ background-image:url(empty.png);</string>
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
+   <widget class="QPushButton" name="btn_calibrate">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>570</y>
+      <width>91</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image:url(:/images/empty.png);
+border-image: url(:/images/calibrate-icon.png);
+}
+QPushButton:pressed {
+    border: 5px solid #00BCD4;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_calculator">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>550</y>
+      <width>111</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image:url(:/images/empty.png);
+border-image: url(:/images/calculator-icon.png);
+}
+
+QPushButton:pressed {
+    border: 5px solid #00BCD4;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_doctors">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>560</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton{
+background-image:url(:/images/empty.png);
+border-image: url(:/images/doctor_icon.png);
+}
+
+
+QPushButton:pressed {
+    border: 5px solid #00BCD4;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_patients">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>570</y>
+      <width>91</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+background-image:url(:/images/empty.png);
+border-image: url(:/images/patient-icon.png);
+}
+
+QPushButton:pressed {
+    border: 5px solid #00BCD4;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_lenses">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>570</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image:url(:/images/empty.png);
+border-image: url(:/images/iol-icon.png);
+}
+
+QPushButton:pressed {
+    border: 5px solid #00BCD4;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_settings">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>570</y>
+      <width>91</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+background-image:url(:/images/empty.png);
+border-image: url(:/images/settings-icon.png);
+
+}
+
+QPushButton:pressed {
+    border: 5px solid #00BCD4;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_print">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>570</y>
+      <width>91</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image:url(:/images/empty.png);
+border-image: url(:/images/print-icon.png);
+}
+
+QPushButton:pressed {
+    border: 5px solid #00BCD4;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_calibrate">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>670</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
+    </property>
+    <property name="text">
+     <string>Calibration</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_calculator">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>670</y>
+      <width>81</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
+    </property>
+    <property name="text">
+     <string>Calculator</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_doctors">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>670</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
+    </property>
+    <property name="text">
+     <string>Doctors</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_patients">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>670</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
+    </property>
+    <property name="text">
+     <string>Patients</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_lenses">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>670</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
+    </property>
+    <property name="text">
+     <string>Lenses</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_settings">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>670</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
+    </property>
+    <property name="text">
+     <string>Settings</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_patients_2">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>670</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);color:rgb(21,21,21);</string>
+    </property>
+    <property name="text">
+     <string>Print</string>
+    </property>
+   </widget>
+   <zorder>headerBar</zorder>
    <zorder>btn_ascan</zorder>
    <zorder>label</zorder>
    <zorder>lbl_time</zorder>
@@ -246,6 +761,20 @@ background-image:url(empty.png);</string>
    <zorder>lbl_softwareVersion</zorder>
    <zorder>lbl_serialNumber</zorder>
    <zorder>frame</zorder>
+   <zorder>btn_calibrate</zorder>
+   <zorder>btn_calculator</zorder>
+   <zorder>btn_doctors</zorder>
+   <zorder>btn_patients</zorder>
+   <zorder>btn_lenses</zorder>
+   <zorder>btn_settings</zorder>
+   <zorder>btn_print</zorder>
+   <zorder>lbl_calibrate</zorder>
+   <zorder>lbl_calculator</zorder>
+   <zorder>lbl_doctors</zorder>
+   <zorder>lbl_patients</zorder>
+   <zorder>lbl_lenses</zorder>
+   <zorder>lbl_settings</zorder>
+   <zorder>lbl_patients_2</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
@@ -253,7 +782,7 @@ background-image:url(empty.png);</string>
   <customwidget>
    <class>FixedComboBox</class>
    <extends>QComboBox</extends>
-   <header location="global">fixedcombobox.h</header>
+   <header>fixedcombobox.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

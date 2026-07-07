@@ -6,34 +6,48 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1280</width>
+    <height>720</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">border-image: url(:/images/5.png);</string>
+   <string notr="true">
+QDialog{
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+		stop:0 #eef2f8, stop:1 #e4ebf5);
+	font-family: "Segoe UI";
+}</string>
   </property>
+
+  <!-- Header -->
   <widget class="QLabel" name="lbl_title">
    <property name="geometry">
     <rect>
-     <x>330</x>
-     <y>-7</y>
-     <width>160</width>
-     <height>70</height>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>72</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>16</pointsize>
+     <pointsize>18</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/alert-red.png);
-background-image:url(:/images/empty.png);
-color:rgb(255,255,255);</string>
+    <string notr="true">QLabel{
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,
+		stop:0 #1A5FB4, stop:0.55 #1976D2, stop:1 #2E9BDA);
+	color: rgb(255,255,255);
+	border-bottom-left-radius: 18px;
+	border-bottom-right-radius: 18px;
+	letter-spacing: 1px;
+}</string>
    </property>
    <property name="text">
     <string>Add Lens</string>
@@ -42,61 +56,52 @@ color:rgb(255,255,255);</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_cancel">
+
+  <widget class="QLabel" name="lbl_time">
    <property name="geometry">
     <rect>
-     <x>580</x>
-     <y>499</y>
-     <width>202</width>
-     <height>65</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(25, 118, 210);
-border: 1px solid rgb(25, 118, 210);
-border-radius:5px;
-border-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>Cancel</string>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="snackbar">
-   <property name="geometry">
-    <rect>
-     <x>-11</x>
-     <y>563</y>
-     <width>814</width>
+     <x>1120</x>
+     <y>16</y>
+     <width>140</width>
      <height>40</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/alert-red.png);
-background-image:url(:/images/empty.png);
-color:rgb(255,255,255);</string>
+    <string notr="true">QLabel{
+	background: transparent;
+	color: rgba(255,255,255,220);
+	letter-spacing: 1px;
+}</string>
    </property>
    <property name="text">
-    <string/>
+    <string>10:09</string>
    </property>
-   <property name="indent">
-    <number>5</number>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
+
+  <!-- Card -->
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>6</x>
-     <y>63</y>
-     <width>780</width>
-     <height>420</height>
+     <x>40</x>
+     <y>96</y>
+     <width>1200</width>
+     <height>492</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/images/card-big.png);
-border-image:url(empty.png);</string>
+    <string notr="true">QFrame#frame{
+	background: rgb(255,255,255);
+	border: 1px solid #E2E8F0;
+	border-radius: 16px;
+}</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::StyledPanel</enum>
@@ -104,34 +109,212 @@ border-image:url(empty.png);</string>
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
+
+   <!-- Section: Lens Information -->
+   <widget class="QLabel" name="lbl_sectionInfo">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>18</y>
+      <width>400</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	background: transparent;
+	color: #1976D2;
+	letter-spacing: 2px;
+}</string>
+    </property>
+    <property name="text">
+     <string>LENS INFORMATION</string>
+    </property>
+   </widget>
+
+   <widget class="QLabel" name="lbl_iolLens">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>52</y>
+      <width>200</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{ background: transparent; color: #2C3E50; }</string>
+    </property>
+    <property name="text">
+     <string>Lens IOL</string>
+    </property>
+   </widget>
    <widget class="QLineEdit" name="lineEdit_iol">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>23</y>
-      <width>390</width>
-      <height>30</height>
+      <x>80</x>
+      <y>78</y>
+      <width>480</width>
+      <height>42</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
+     <string notr="true">QLineEdit{
+	background: #FBFCFE;
+	border: 1.5px solid #DCE3EA;
+	border-radius: 9px;
+	padding: 4px 12px;
+	color: #2C3E50;
+	selection-background-color: #90CAF9;
+}
+QLineEdit:focus{
+	border: 1.5px solid #1976D2;
+	background: #FFFFFF;
+}
+QLineEdit:hover{
+	border: 1.5px solid #A9C4E8;
+}</string>
+    </property>
+   </widget>
+
+   <widget class="QLabel" name="lbl_company">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>52</y>
+      <width>200</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{ background: transparent; color: #2C3E50; }</string>
+    </property>
+    <property name="text">
+     <string>Company</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_company">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>78</y>
+      <width>480</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background: #FBFCFE;
+	border: 1.5px solid #DCE3EA;
+	border-radius: 9px;
+	padding: 4px 12px;
+	color: #2C3E50;
+	selection-background-color: #90CAF9;
+}
+QLineEdit:focus{
+	border: 1.5px solid #1976D2;
+	background: #FFFFFF;
+}
+QLineEdit:hover{
+	border: 1.5px solid #A9C4E8;
+}</string>
+    </property>
+   </widget>
+
+   <widget class="QLabel" name="lbl_type">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>150</y>
+      <width>200</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{ background: transparent; color: #2C3E50; }</string>
+    </property>
+    <property name="text">
+     <string>Type</string>
     </property>
    </widget>
    <widget class="QComboBox" name="comboBox_lensType">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>130</y>
-      <width>260</width>
-      <height>27</height>
+      <x>80</x>
+      <y>176</y>
+      <width>320</width>
+      <height>42</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
+     <string notr="true">QComboBox{
+	background: #FBFCFE;
+	border: 1.5px solid #DCE3EA;
+	border-radius: 9px;
+	padding: 4px 12px;
+	color: #2C3E50;
+}
+QComboBox:hover{
+	border: 1.5px solid #A9C4E8;
+}
+QComboBox:focus, QComboBox:on{
+	border: 1.5px solid #1976D2;
+	background: #FFFFFF;
+}
+QComboBox::drop-down{
+	border: none;
+	width: 28px;
+}
+QComboBox QAbstractItemView{
+	background: #FFFFFF;
+	border: 1px solid #DCE3EA;
+	selection-background-color: #E3F0FD;
+	selection-color: #1976D2;
+	outline: none;
+	padding: 4px;
+}</string>
     </property>
     <item>
      <property name="text">
@@ -144,289 +327,306 @@ border-image:url(:/images/empty.png);
      </property>
     </item>
    </widget>
-   <widget class="QLabel" name="lbl_iolLens">
+
+   <!-- Section: IOL Constants -->
+   <widget class="QLabel" name="lbl_sectionConstants">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>30</y>
-      <width>100</width>
-      <height>17</height>
+      <x>80</x>
+      <y>242</y>
+      <width>400</width>
+      <height>22</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
-    </property>
-    <property name="text">
-     <string>Lens IOL</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_company">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>80</y>
-      <width>120</width>
-      <height>17</height>
-     </rect>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
+     <string notr="true">QLabel{
+	background: transparent;
+	color: #1976D2;
+	letter-spacing: 2px;
+}</string>
     </property>
     <property name="text">
-     <string>Company</string>
+     <string>IOL CONSTANTS</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbl_type">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>133</y>
-      <width>120</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
-    </property>
-    <property name="text">
-     <string>Type</string>
-    </property>
-   </widget>
+
    <widget class="QLabel" name="lbl_asrkt">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>185</y>
-      <width>130</width>
-      <height>17</height>
+      <x>80</x>
+      <y>276</y>
+      <width>230</width>
+      <height>20</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
+     <string notr="true">QLabel{ background: transparent; color: #64748B; letter-spacing: 1px; }</string>
     </property>
     <property name="text">
      <string>ASRKT</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbl_asrkii">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>186</y>
-      <width>130</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
-    </property>
-    <property name="text">
-     <string>ASRKII</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_company">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>76</y>
-      <width>390</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
-    </property>
-   </widget>
    <widget class="QLineEdit" name="lineEdit_asrkt">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>210</y>
-      <width>70</width>
-      <height>40</height>
+      <x>80</x>
+      <y>298</y>
+      <width>230</width>
+      <height>54</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
+     <string notr="true">QLineEdit{
+	background: #F5F9FE;
+	border: 1.5px solid #DCE7F5;
+	border-radius: 12px;
+	color: #1976D2;
+	selection-background-color: #90CAF9;
+}
+QLineEdit:focus{
+	border: 1.5px solid #1976D2;
+	background: #FFFFFF;
+}
+QLineEdit:hover{
+	border: 1.5px solid #A9C4E8;
+}</string>
     </property>
     <property name="text">
      <string>118.01</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_acd">
-    <property name="geometry">
-     <rect>
-      <x>250</x>
-      <y>185</y>
-      <width>130</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
-    </property>
-    <property name="text">
-     <string>ACD</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_asrkii">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>210</y>
-      <width>70</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
-    </property>
-    <property name="text">
-     <string>117.9</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_acd">
-    <property name="geometry">
-     <rect>
-      <x>250</x>
-      <y>210</y>
-      <width>70</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
-    </property>
-    <property name="text">
-     <string>4.97</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_sf">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>210</y>
-      <width>70</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
-    </property>
-    <property name="text">
-     <string>1.23</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_sf">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>185</y>
-      <width>130</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
-    </property>
-    <property name="text">
-     <string>SF</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_a1">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>261</y>
-      <width>60</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
-    </property>
-    <property name="text">
-     <string>A1</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_a0">
+
+   <widget class="QLabel" name="lbl_asrkii">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>285</y>
-      <width>70</width>
-      <height>40</height>
+      <x>350</x>
+      <y>276</y>
+      <width>230</width>
+      <height>20</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
+     <string notr="true">QLabel{ background: transparent; color: #64748B; letter-spacing: 1px; }</string>
     </property>
     <property name="text">
-     <string>0.4</string>
+     <string>ASRKII</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_a1">
+   <widget class="QLineEdit" name="lineEdit_asrkii">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>285</y>
-      <width>70</width>
-      <height>40</height>
+      <x>350</x>
+      <y>298</y>
+      <width>230</width>
+      <height>54</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
+     <string notr="true">QLineEdit{
+	background: #F5F9FE;
+	border: 1.5px solid #DCE7F5;
+	border-radius: 12px;
+	color: #1976D2;
+	selection-background-color: #90CAF9;
+}
+QLineEdit:focus{
+	border: 1.5px solid #1976D2;
+	background: #FFFFFF;
+}
+QLineEdit:hover{
+	border: 1.5px solid #A9C4E8;
+}</string>
     </property>
     <property name="text">
-     <string>0.1</string>
+     <string>117.9</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
+
+   <widget class="QLabel" name="lbl_acd">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>276</y>
+      <width>230</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{ background: transparent; color: #64748B; letter-spacing: 1px; }</string>
+    </property>
+    <property name="text">
+     <string>ACD</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_acd">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>298</y>
+      <width>230</width>
+      <height>54</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background: #F5F9FE;
+	border: 1.5px solid #DCE7F5;
+	border-radius: 12px;
+	color: #1976D2;
+	selection-background-color: #90CAF9;
+}
+QLineEdit:focus{
+	border: 1.5px solid #1976D2;
+	background: #FFFFFF;
+}
+QLineEdit:hover{
+	border: 1.5px solid #A9C4E8;
+}</string>
+    </property>
+    <property name="text">
+     <string>4.97</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+
+   <widget class="QLabel" name="lbl_sf">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>276</y>
+      <width>230</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{ background: transparent; color: #64748B; letter-spacing: 1px; }</string>
+    </property>
+    <property name="text">
+     <string>SF</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_sf">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>298</y>
+      <width>230</width>
+      <height>54</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background: #F5F9FE;
+	border: 1.5px solid #DCE7F5;
+	border-radius: 12px;
+	color: #1976D2;
+	selection-background-color: #90CAF9;
+}
+QLineEdit:focus{
+	border: 1.5px solid #1976D2;
+	background: #FFFFFF;
+}
+QLineEdit:hover{
+	border: 1.5px solid #A9C4E8;
+}</string>
+    </property>
+    <property name="text">
+     <string>1.23</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+
    <widget class="QLabel" name="lbl_a0">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>260</y>
-      <width>60</width>
-      <height>17</height>
+      <x>80</x>
+      <y>372</y>
+      <width>320</width>
+      <height>20</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
+     <string notr="true">QLabel{ background: transparent; color: #64748B; letter-spacing: 1px; }</string>
     </property>
     <property name="text">
      <string>A0</string>
@@ -435,37 +635,130 @@ border-image:url(:/images/empty.png);
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_a2">
+   <widget class="QLineEdit" name="lineEdit_a0">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>285</y>
-      <width>70</width>
-      <height>40</height>
+      <x>80</x>
+      <y>394</y>
+      <width>320</width>
+      <height>54</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
+     <string notr="true">QLineEdit{
+	background: #FDF3E7;
+	border: 1.5px solid #F6DFC0;
+	border-radius: 12px;
+	color: #B26A00;
+	selection-background-color: #FCE0B0;
+}
+QLineEdit:focus{
+	border: 1.5px solid #E08E00;
+	background: #FFFFFF;
+}
+QLineEdit:hover{
+	border: 1.5px solid #EBBE7C;
+}</string>
     </property>
     <property name="text">
-     <string>1.28</string>
+     <string>0.4</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
+
+   <widget class="QLabel" name="lbl_a1">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>372</y>
+      <width>320</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{ background: transparent; color: #64748B; letter-spacing: 1px; }</string>
+    </property>
+    <property name="text">
+     <string>A1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_a1">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>394</y>
+      <width>320</width>
+      <height>54</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background: #FDF3E7;
+	border: 1.5px solid #F6DFC0;
+	border-radius: 12px;
+	color: #B26A00;
+	selection-background-color: #FCE0B0;
+}
+QLineEdit:focus{
+	border: 1.5px solid #E08E00;
+	background: #FFFFFF;
+}
+QLineEdit:hover{
+	border: 1.5px solid #EBBE7C;
+}</string>
+    </property>
+    <property name="text">
+     <string>0.1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+
    <widget class="QLabel" name="lbl_a2">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>260</y>
-      <width>60</width>
-      <height>17</height>
+      <x>800</x>
+      <y>372</y>
+      <width>320</width>
+      <height>20</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(:/images/empty.png);
-border-image:url(:/images/empty.png);
-</string>
+     <string notr="true">QLabel{ background: transparent; color: #64748B; letter-spacing: 1px; }</string>
     </property>
     <property name="text">
      <string>A2</string>
@@ -474,56 +767,168 @@ border-image:url(:/images/empty.png);
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
+   <widget class="QLineEdit" name="lineEdit_a2">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>394</y>
+      <width>320</width>
+      <height>54</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background: #FDF3E7;
+	border: 1.5px solid #F6DFC0;
+	border-radius: 12px;
+	color: #B26A00;
+	selection-background-color: #FCE0B0;
+}
+QLineEdit:focus{
+	border: 1.5px solid #E08E00;
+	background: #FFFFFF;
+}
+QLineEdit:hover{
+	border: 1.5px solid #EBBE7C;
+}</string>
+    </property>
+    <property name="text">
+     <string>1.28</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
   </widget>
-  <widget class="QLabel" name="lbl_time">
+
+  <!-- Footer buttons -->
+  <widget class="QPushButton" name="btn_cancel">
    <property name="geometry">
     <rect>
-     <x>680</x>
-     <y>0</y>
-     <width>120</width>
-     <height>40</height>
+     <x>898</x>
+     <y>608</y>
+     <width>170</width>
+     <height>56</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>9</pointsize>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/alert-red.png);
-background-image:url(:/images/empty.png);
-color:rgb(255,255,255);</string>
+    <string notr="true">QPushButton{
+	background: #FFFFFF;
+	color: #1976D2;
+	border: 1.5px solid #1976D2;
+	border-radius: 10px;
+}
+QPushButton:hover{
+	background: #EAF3FC;
+}
+QPushButton:pressed{
+	background: #D7E9FA;
+}</string>
    </property>
    <property name="text">
-    <string>10:09</string>
+    <string>Cancel</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   <property name="flat">
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_save">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>499</y>
-     <width>202</width>
-     <height>65</height>
+     <x>1088</x>
+     <y>608</y>
+     <width>170</width>
+     <height>56</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="autoFillBackground">
     <bool>false</bool>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
-    <string notr="true">border-image:url(empty.png);
-color: rgb(255, 255, 255);
-background-color: rgb(25, 118, 210);
-border-radius:5px;</string>
+    <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,
+		stop:0 #1976D2, stop:1 #2E9BDA);
+	border: none;
+	border-radius: 10px;
+}
+QPushButton:hover{
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,
+		stop:0 #1668BC, stop:1 #2789C4);
+}
+QPushButton:pressed{
+	background: #14589F;
+}</string>
    </property>
    <property name="text">
     <string>Save</string>
    </property>
    <property name="flat">
     <bool>false</bool>
+   </property>
+  </widget>
+
+  <!-- Snackbar -->
+  <widget class="QLabel" name="snackbar">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>668</y>
+     <width>600</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,
+		stop:0 #E53935, stop:1 #EF5350);
+	color: rgb(255,255,255);
+	border-radius: 22px;
+	padding: 0px 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="indent">
+    <number>0</number>
    </property>
   </widget>
  </widget>

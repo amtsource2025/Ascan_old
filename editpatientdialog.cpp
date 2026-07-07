@@ -1,6 +1,8 @@
 #include "editpatientdialog.h"
 #include "ui_editpatientdialog.h"
 #include "promptdialog.h"
+#include "keypad.h"
+#include "numericpad.h"
 #include <QTime>
 #include <QSqlQuery>
 #include <QSqlError>
@@ -30,6 +32,115 @@ EditPatientDialog::EditPatientDialog(int patientDbId, QWidget *parent)
     ui->lineEdit_patID->setReadOnly(true);
 
     loadPatient();
+
+    // ── Enforce mutually exclusive checkboxes ─────────────────
+
+    // Gender: Male / Female
+    connect(ui->checkBox_male, &QCheckBox::toggled, this, [this](bool checked) {
+        if (checked) {
+            QSignalBlocker b(ui->checkBox_female);
+            ui->checkBox_female->setChecked(false);
+        } else {
+            if (!ui->checkBox_female->isChecked()) {
+                QSignalBlocker b(ui->checkBox_male);
+                ui->checkBox_male->setChecked(true);
+            }
+        }
+    });
+    connect(ui->checkBox_female, &QCheckBox::toggled, this, [this](bool checked) {
+        if (checked) {
+            QSignalBlocker b(ui->checkBox_male);
+            ui->checkBox_male->setChecked(false);
+        } else {
+            if (!ui->checkBox_male->isChecked()) {
+                QSignalBlocker b(ui->checkBox_female);
+                ui->checkBox_female->setChecked(true);
+            }
+        }
+    });
+
+    // Operating Method: Aphakic / Phakic / Dense
+    auto exclusiveMethod = [this](QCheckBox *selected,
+                                  QCheckBox *other1,
+                                  QCheckBox *other2) {
+        connect(selected, &QCheckBox::toggled, this, [selected, other1, other2](bool checked) {
+            if (checked) {
+                QSignalBlocker b1(other1);
+                QSignalBlocker b2(other2);
+                other1->setChecked(false);
+                other2->setChecked(false);
+            } else {
+                if (!other1->isChecked() && !other2->isChecked()) {
+                    QSignalBlocker b(selected);
+                    selected->setChecked(true);
+                }
+            }
+        });
+    };
+    exclusiveMethod(ui->checkBox_aphakic, ui->checkBox_phakic,  ui->checkBox_dense);
+    exclusiveMethod(ui->checkBox_phakic,  ui->checkBox_aphakic, ui->checkBox_dense);
+    exclusiveMethod(ui->checkBox_dense,   ui->checkBox_aphakic, ui->checkBox_phakic);
+
+    // Operating Mode: Contact / Immersion
+    connect(ui->checkBox_contact, &QCheckBox::toggled, this, [this](bool checked) {
+        if (checked) {
+            QSignalBlocker b(ui->checkBox_immersion);
+            ui->checkBox_immersion->setChecked(false);
+        } else {
+            if (!ui->checkBox_immersion->isChecked()) {
+                QSignalBlocker b(ui->checkBox_contact);
+                ui->checkBox_contact->setChecked(true);
+            }
+        }
+    });
+    connect(ui->checkBox_immersion, &QCheckBox::toggled, this, [this](bool checked) {
+        if (checked) {
+            QSignalBlocker b(ui->checkBox_contact);
+            ui->checkBox_contact->setChecked(false);
+        } else {
+            if (!ui->checkBox_contact->isChecked()) {
+                QSignalBlocker b(ui->checkBox_immersion);
+                ui->checkBox_immersion->setChecked(true);
+            }
+        }
+    });
+
+    // Operating Eye: Left / Right
+    connect(ui->checkBox_left, &QCheckBox::toggled, this, [this](bool checked) {
+        if (checked) {
+            QSignalBlocker b(ui->checkBox_right);
+            ui->checkBox_right->setChecked(false);
+        } else {
+            if (!ui->checkBox_right->isChecked()) {
+                QSignalBlocker b(ui->checkBox_left);
+                ui->checkBox_left->setChecked(true);
+            }
+        }
+    });
+    connect(ui->checkBox_right, &QCheckBox::toggled, this, [this](bool checked) {
+        if (checked) {
+            QSignalBlocker b(ui->checkBox_left);
+            ui->checkBox_left->setChecked(false);
+        } else {
+            if (!ui->checkBox_left->isChecked()) {
+                QSignalBlocker b(ui->checkBox_right);
+                ui->checkBox_right->setChecked(true);
+            }
+        }
+    });
+
+    // ── Event filters for on-screen input ────────────────────
+    ui->lineEdit_CustPatID->installEventFilter(this);
+    ui->lineEdit_patName->installEventFilter(this);
+    ui->lineEdit_phone->installEventFilter(this);
+
+    ui->lineEdit_age->installEventFilter(this);
+    ui->lineEdit_rk1->installEventFilter(this);
+    ui->lineEdit_rk2->installEventFilter(this);
+    ui->lineEdit_rk->installEventFilter(this);
+    ui->lineEdit_lk1->installEventFilter(this);
+    ui->lineEdit_lk2->installEventFilter(this);
+    ui->lineEdit_lk->installEventFilter(this);
 }
 
 EditPatientDialog::~EditPatientDialog()
@@ -200,4 +311,39 @@ void EditPatientDialog::on_btn_save_clicked()
 void EditPatientDialog::on_btn_cancel_clicked()
 {
     reject();
+}
+
+// ─────────────────────────────────────────────────────────────
+//  Event Filter — on-screen keypads
+// ─────────────────────────────────────────────────────────────
+bool EditPatientDialog::eventFilter(QObject *obj, QEvent *event)
+{
+    if (event->type() == QEvent::MouseButtonPress) {
+        if (obj == ui->lineEdit_CustPatID ||
+            obj == ui->lineEdit_patName   ||
+            obj == ui->lineEdit_phone)
+        {
+            QLineEdit *le = qobject_cast<QLineEdit*>(obj);
+            Keypad *kp = new Keypad(le, this);
+            kp->exec();
+            delete kp;
+            return true;
+        }
+
+        if (obj == ui->lineEdit_age ||
+            obj == ui->lineEdit_rk1 ||
+            obj == ui->lineEdit_rk2 ||
+            obj == ui->lineEdit_rk  ||
+            obj == ui->lineEdit_lk1 ||
+            obj == ui->lineEdit_lk2 ||
+            obj == ui->lineEdit_lk)
+        {
+            QLineEdit *le = qobject_cast<QLineEdit*>(obj);
+            Numericpad *np = new Numericpad(le, this);
+            np->exec();
+            delete np;
+            return true;
+        }
+    }
+    return QDialog::eventFilter(obj, event);
 }

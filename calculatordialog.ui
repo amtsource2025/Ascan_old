@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1280</width>
+    <height>720</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -29,8 +29,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+    <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>Name</string>
@@ -49,8 +49,8 @@ border-image:url(empty.png);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+    <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>Patient ID</string>
@@ -70,7 +70,7 @@ border-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/searchbar.png);
-background-image:url(empty.png);
+background-image:url(:/images/empty.png);
 color:rgb(21,21,21);</string>
    </property>
   </widget>
@@ -84,8 +84,8 @@ color:rgb(21,21,21);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+    <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>Doctor</string>
@@ -105,7 +105,7 @@ border-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/searchbar.png);
-background-image:url(empty.png);
+background-image:url(:/images/empty.png);
 color:rgb(21,21,21);</string>
    </property>
   </widget>
@@ -120,7 +120,7 @@ color:rgb(21,21,21);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/searchbar.png);
-background-image:url(empty.png);
+background-image:url(:/images/empty.png);
 color:rgb(21,21,21);</string>
    </property>
   </widget>
@@ -129,8 +129,8 @@ color:rgb(21,21,21);</string>
     <rect>
      <x>0</x>
      <y>30</y>
-     <width>100</width>
-     <height>100</height>
+     <width>141</width>
+     <height>121</height>
     </rect>
    </property>
    <property name="font">
@@ -139,7 +139,7 @@ color:rgb(21,21,21);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
+    <string notr="true">background-image:url(:/images/empty.png);
 border-image: url(:/images/btn-small.png);</string>
    </property>
    <property name="text">
@@ -154,22 +154,21 @@ border-image: url(:/images/btn-small.png);</string>
     <rect>
      <x>430</x>
      <y>64</y>
-     <width>125</width>
-     <height>90</height>
+     <width>121</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Ubuntu</family>
      <pointsize>26</pointsize>
-     <weight>75</weight>
      <italic>false</italic>
      <bold>true</bold>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-mid.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>45.00</string>
@@ -194,13 +193,12 @@ background-image:url(empty.png);</string>
     <font>
      <family>Ubuntu</family>
      <pointsize>18</pointsize>
-     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-mid.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>0.00</string>
@@ -222,12 +220,11 @@ background-image:url(empty.png);</string>
     <font>
      <family>Ubuntu</family>
      <pointsize>12</pointsize>
-     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(0, 0, 0);background-image:url(empty.png);</string>
+    <string notr="true">color: rgb(0, 0, 0);background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>Rx (mm)</string>
@@ -249,12 +246,11 @@ background-image:url(empty.png);</string>
     <font>
      <family>Ubuntu</family>
      <pointsize>14</pointsize>
-     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(0, 0, 0);background-image:url(empty.png);</string>
+    <string notr="true">color: rgb(0, 0, 0);background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>K1(D)</string>
@@ -266,8 +262,8 @@ background-image:url(empty.png);</string>
   <widget class="QLabel" name="lbl_alval">
    <property name="geometry">
     <rect>
-     <x>548</x>
-     <y>43</y>
+     <x>550</x>
+     <y>40</y>
      <width>130</width>
      <height>16</height>
     </rect>
@@ -276,12 +272,11 @@ background-image:url(empty.png);</string>
     <font>
      <family>Ubuntu</family>
      <pointsize>14</pointsize>
-     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(0, 0, 0);background-image:url(empty.png);</string>
+    <string notr="true">color: rgb(0, 0, 0);background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>AL  (mm)</string>
@@ -303,12 +298,11 @@ background-image:url(empty.png);</string>
     <font>
      <family>Ubuntu</family>
      <pointsize>14</pointsize>
-     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(0, 0, 0);background-image:url(empty.png);</string>
+    <string notr="true">color: rgb(0, 0, 0);background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>K  (D)</string>
@@ -322,22 +316,21 @@ background-image:url(empty.png);</string>
     <rect>
      <x>563</x>
      <y>64</y>
-     <width>125</width>
-     <height>90</height>
+     <width>111</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Ubuntu</family>
      <pointsize>28</pointsize>
-     <weight>75</weight>
      <italic>false</italic>
      <bold>true</bold>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-mid.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>23.00</string>
@@ -362,12 +355,11 @@ background-image:url(empty.png);</string>
     <font>
      <family>Ubuntu</family>
      <pointsize>14</pointsize>
-     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(0, 0, 0);background-image:url(empty.png);</string>
+    <string notr="true">color: rgb(0, 0, 0);background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>K2(D)</string>
@@ -376,779 +368,13 @@ background-image:url(empty.png);</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QFrame" name="frame">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>160</y>
-     <width>229</width>
-     <height>350</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-image: url(empty.png);
-background-color: rgb(96, 125, 139);</string>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <widget class="QComboBox" name="comboBox_lensOne">
-    <property name="geometry">
-     <rect>
-      <x>4</x>
-      <y>4</y>
-      <width>220</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>16</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:rgb(255,255,255);
-color:rgb(33,33,33);
-background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_a0">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>40</y>
-      <width>80</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>14</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>a0 =</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_sf1">
-    <property name="geometry">
-     <rect>
-      <x>17</x>
-      <y>48</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>SF =</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_acd1">
-    <property name="geometry">
-     <rect>
-      <x>28</x>
-      <y>40</y>
-      <width>80</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>ACD =</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_aconst1">
-    <property name="geometry">
-     <rect>
-      <x>7</x>
-      <y>44</y>
-      <width>102</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>ACONST =</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp6">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>140</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp9">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>267</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp1">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>140</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp3">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>210</y>
-      <width>100</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>18</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-color: rgb(13, 71, 161);
-background-color: rgb(172, 224, 251);
-</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp10">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>300</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp4">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>267</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_iolOne">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>110</y>
-      <width>120</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255,255,255);</string>
-    </property>
-    <property name="text">
-     <string>IOL</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_refOne">
-    <property name="geometry">
-     <rect>
-      <x>95</x>
-      <y>110</y>
-      <width>130</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255,255,255);</string>
-    </property>
-    <property name="text">
-     <string>REF</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp5">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>300</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp2">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>173</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp7">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>173</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp8">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>210</y>
-      <width>100</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>18</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-color: rgb(13, 71, 161);
-background-color: rgb(172, 224, 251);
-</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QPushButton" name="btn_hofferq">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>544</y>
-     <width>160</width>
-     <height>55</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius:5px;background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>Hoffer Q</string>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btn_holladay">
-   <property name="geometry">
-    <rect>
-     <x>480</x>
-     <y>544</y>
-     <width>160</width>
-     <height>55</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius:5px;background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>Holladay</string>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btn_srkt">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>544</y>
-     <width>160</width>
-     <height>55</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius:5px;background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>SRK T</string>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btn_srkii">
-   <property name="geometry">
-    <rect>
-     <x>1</x>
-     <y>544</y>
-     <width>160</width>
-     <height>54</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius:5px;background-color: rgb(244, 67, 54);
-color:rgb(255,255,255);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>SRK II</string>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btn_haigis">
-   <property name="geometry">
-    <rect>
-     <x>640</x>
-     <y>544</y>
-     <width>160</width>
-     <height>55</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius:5px;background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>Haigis</string>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="cemm2">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>500</y>
-     <width>230</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius:5px;
-color: rgb(13, 71, 161);
-background-color: rgb(172, 224, 251);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>EMM=0.00</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="cemm3">
-   <property name="geometry">
-    <rect>
-     <x>460</x>
-     <y>500</y>
-     <width>230</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius:5px;
-color: rgb(13, 71, 161);
-background-color: rgb(172, 224, 251);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>EMM=0.00</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="cemm1">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>500</y>
-     <width>230</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius:5px;
-color: rgb(13, 71, 161);
-background-color: rgb(172, 224, 251);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>EMM=0.00</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="QPushButton" name="btn_home">
    <property name="geometry">
     <rect>
-     <x>694</x>
+     <x>1150</x>
      <y>50</y>
-     <width>100</width>
-     <height>100</height>
+     <width>125</width>
+     <height>125</height>
     </rect>
    </property>
    <property name="font">
@@ -1157,7 +383,7 @@ background-image:url(empty.png);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
+    <string notr="true">background-image:url(:/images/empty.png);
 border-image: url(:/images/home.png);</string>
    </property>
    <property name="text">
@@ -1170,10 +396,10 @@ border-image: url(:/images/home.png);</string>
   <widget class="QPushButton" name="btn_measure">
    <property name="geometry">
     <rect>
-     <x>694</x>
-     <y>174</y>
-     <width>100</width>
-     <height>100</height>
+     <x>1150</x>
+     <y>180</y>
+     <width>125</width>
+     <height>125</height>
     </rect>
    </property>
    <property name="font">
@@ -1182,7 +408,7 @@ border-image: url(:/images/home.png);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
+    <string notr="true">background-image:url(:/images/empty.png);
 border-image: url(:/images/graph-icon.png);</string>
    </property>
    <property name="text">
@@ -1195,10 +421,10 @@ border-image: url(:/images/graph-icon.png);</string>
   <widget class="QPushButton" name="btn_print">
    <property name="geometry">
     <rect>
-     <x>694</x>
-     <y>416</y>
-     <width>100</width>
-     <height>100</height>
+     <x>1150</x>
+     <y>500</y>
+     <width>125</width>
+     <height>125</height>
     </rect>
    </property>
    <property name="font">
@@ -1207,7 +433,7 @@ border-image: url(:/images/graph-icon.png);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
+    <string notr="true">background-image:url(:/images/empty.png);
 border-image: url(:/images/print-icon.png);</string>
    </property>
    <property name="text">
@@ -1220,8 +446,8 @@ border-image: url(:/images/print-icon.png);</string>
   <widget class="QLabel" name="lbl_k1val_2">
    <property name="geometry">
     <rect>
-     <x>702</x>
-     <y>150</y>
+     <x>1170</x>
+     <y>160</y>
      <width>85</width>
      <height>20</height>
     </rect>
@@ -1230,12 +456,11 @@ border-image: url(:/images/print-icon.png);</string>
     <font>
      <family>Ubuntu</family>
      <pointsize>11</pointsize>
-     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(0, 0, 0);background-image:url(empty.png);</string>
+    <string notr="true">color: rgb(0, 0, 0);background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>Home</string>
@@ -1247,8 +472,8 @@ border-image: url(:/images/print-icon.png);</string>
   <widget class="QLabel" name="lbl_k1val_3">
    <property name="geometry">
     <rect>
-     <x>702</x>
-     <y>270</y>
+     <x>1170</x>
+     <y>290</y>
      <width>85</width>
      <height>20</height>
     </rect>
@@ -1257,12 +482,11 @@ border-image: url(:/images/print-icon.png);</string>
     <font>
      <family>Ubuntu</family>
      <pointsize>11</pointsize>
-     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(0, 0, 0);background-image:url(empty.png);</string>
+    <string notr="true">color: rgb(0, 0, 0);background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>Measure</string>
@@ -1274,8 +498,8 @@ border-image: url(:/images/print-icon.png);</string>
   <widget class="QLabel" name="lbl_k1val_4">
    <property name="geometry">
     <rect>
-     <x>703</x>
-     <y>510</y>
+     <x>1170</x>
+     <y>620</y>
      <width>85</width>
      <height>20</height>
     </rect>
@@ -1284,12 +508,11 @@ border-image: url(:/images/print-icon.png);</string>
     <font>
      <family>Ubuntu</family>
      <pointsize>11</pointsize>
-     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(0, 0, 0);background-image:url(empty.png);</string>
+    <string notr="true">color: rgb(0, 0, 0);background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>Print</string>
@@ -1298,1071 +521,18 @@ border-image: url(:/images/print-icon.png);</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QFrame" name="frame_2">
-   <property name="geometry">
-    <rect>
-     <x>231</x>
-     <y>160</y>
-     <width>229</width>
-     <height>350</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-image: url(empty.png);
-background-color: rgb(96, 125, 139);</string>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <widget class="QComboBox" name="comboBox_lensTwo">
-    <property name="geometry">
-     <rect>
-      <x>4</x>
-      <y>4</y>
-      <width>220</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>16</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:rgb(255,255,255);
-color:rgb(33,33,33);
-background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_a1">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>40</y>
-      <width>80</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>14</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>a0 =</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_sf2">
-    <property name="geometry">
-     <rect>
-      <x>17</x>
-      <y>48</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>SF =</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_acd2">
-    <property name="geometry">
-     <rect>
-      <x>28</x>
-      <y>40</y>
-      <width>80</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>ACD =</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_aconst2">
-    <property name="geometry">
-     <rect>
-      <x>7</x>
-      <y>44</y>
-      <width>102</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>ACONST =</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp16">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>140</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp19">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>267</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp11">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>140</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp13">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>210</y>
-      <width>100</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>18</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-color: rgb(13, 71, 161);
-background-color: rgb(172, 224, 251);
-</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp20">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>300</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp14">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>267</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_iolOne2">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>110</y>
-      <width>120</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255,255,255);</string>
-    </property>
-    <property name="text">
-     <string>IOL</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_refOne2">
-    <property name="geometry">
-     <rect>
-      <x>95</x>
-      <y>110</y>
-      <width>130</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255,255,255);</string>
-    </property>
-    <property name="text">
-     <string>REF</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp15">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>300</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp12">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>173</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp17">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>173</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp18">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>210</y>
-      <width>100</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>18</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-color: rgb(13, 71, 161);
-background-color: rgb(172, 224, 251);
-</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QFrame" name="frame_3">
-   <property name="geometry">
-    <rect>
-     <x>461</x>
-     <y>160</y>
-     <width>229</width>
-     <height>350</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-image: url(empty.png);
-background-color: rgb(96, 125, 139);</string>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <widget class="QComboBox" name="comboBox_lensThree">
-    <property name="geometry">
-     <rect>
-      <x>4</x>
-      <y>4</y>
-      <width>220</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>16</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:rgb(255,255,255);
-color:rgb(33,33,33);
-background-image:url(empty.png);
-border-image:url(empty.png);</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_a2">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>40</y>
-      <width>80</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>14</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>a0 =</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_sf3">
-    <property name="geometry">
-     <rect>
-      <x>17</x>
-      <y>48</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-color:rgb(255,255,255);</string>
-    </property>
-    <property name="text">
-     <string>SF =</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_acd3">
-    <property name="geometry">
-     <rect>
-      <x>28</x>
-      <y>40</y>
-      <width>80</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>ACD =</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_aconst3">
-    <property name="geometry">
-     <rect>
-      <x>7</x>
-      <y>44</y>
-      <width>102</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>ACONST =</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp26">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>140</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp29">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>267</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp21">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>140</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp23">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>210</y>
-      <width>100</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>18</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-color: rgb(13, 71, 161);
-background-color: rgb(172, 224, 251);
-</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp30">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>300</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp24">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>267</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_iolOne3">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>110</y>
-      <width>120</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255,255,255);</string>
-    </property>
-    <property name="text">
-     <string>IOL</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_refOne3">
-    <property name="geometry">
-     <rect>
-      <x>95</x>
-      <y>110</y>
-      <width>130</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255,255,255);</string>
-    </property>
-    <property name="text">
-     <string>REF</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp25">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>300</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp22">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>173</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp27">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>173</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>15</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-color:rgb(33,33,33);</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="cdisp28">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>210</y>
-      <width>100</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>18</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:5px;
-color: rgb(13, 71, 161);
-background-color: rgb(172, 224, 251);
-</string>
-    </property>
-    <property name="text">
-     <string>0.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-  </widget>
   <widget class="QLabel" name="snackbar">
    <property name="geometry">
     <rect>
      <x>-2</x>
      <y>0</y>
-     <width>805</width>
-     <height>40</height>
+     <width>1281</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/alert-red.png);
-background-image:url(empty.png);color:rgb(255,255,255);</string>
+background-image:url(:/images/empty.png);color:rgb(255,255,255);</string>
    </property>
    <property name="text">
     <string/>
@@ -2390,7 +560,7 @@ background-image:url(empty.png);color:rgb(255,255,255);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-mid.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>45.00</string>
@@ -2421,7 +591,7 @@ background-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-mid.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>45.00</string>
@@ -2449,7 +619,7 @@ background-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-mid.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>45.00</string>
@@ -2477,7 +647,7 @@ background-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-mid.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>45.00</string>
@@ -2502,13 +672,12 @@ background-image:url(empty.png);</string>
     <font>
      <family>Ubuntu</family>
      <pointsize>18</pointsize>
-     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-mid.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>0.00</string>
@@ -2522,22 +691,21 @@ background-image:url(empty.png);</string>
     <rect>
      <x>430</x>
      <y>64</y>
-     <width>125</width>
-     <height>90</height>
+     <width>121</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Ubuntu</family>
      <pointsize>26</pointsize>
-     <weight>75</weight>
      <italic>false</italic>
      <bold>true</bold>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-mid.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>45.00</string>
@@ -2554,22 +722,21 @@ background-image:url(empty.png);</string>
     <rect>
      <x>563</x>
      <y>64</y>
-     <width>125</width>
-     <height>90</height>
+     <width>111</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Ubuntu</family>
      <pointsize>28</pointsize>
-     <weight>75</weight>
      <italic>false</italic>
      <bold>true</bold>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/btn-mid.png);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>23.00</string>
@@ -2596,7 +763,7 @@ background-image:url(empty.png);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);</string>
+    <string notr="true">background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>10:09</string>
@@ -2605,830 +772,17 @@ background-image:url(empty.png);</string>
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_warning1">
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>164</y>
-     <width>30</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius:5px;
-border-image: url(:/images/icons/ic_warning_black_96dp.png);
-color:rgb(255,255,255);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btn_warning2">
-   <property name="geometry">
-    <rect>
-     <x>420</x>
-     <y>164</y>
-     <width>30</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius:5px;
-border-image: url(:/images/icons/ic_warning_black_96dp.png);
-color:rgb(255,255,255);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btn_warning3">
-   <property name="geometry">
-    <rect>
-     <x>650</x>
-     <y>164</y>
-     <width>30</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius:5px;
-border-image: url(:/images/icons/ic_warning_black_96dp.png);
-color:rgb(255,255,255);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_sf12">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);
-background-color:rgb(255,255,255);
-color:rgb(0,0,0);</string>
-   </property>
-   <property name="text">
-    <string>2</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_sf1">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);
-background-color:rgb(255,255,255);
-color:rgb(0,0,0);</string>
-   </property>
-   <property name="text">
-    <string>2</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_A02">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);
-background-color:rgb(255,255,255);
-color:rgb(0,0,0);</string>
-   </property>
-   <property name="text">
-    <string>1.28</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_acd1">
-   <property name="geometry">
-    <rect>
-     <x>111</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);
-background-color:rgb(255,255,255);
-color:rgb(0,0,0);</string>
-   </property>
-   <property name="text">
-    <string>4.97</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_aconst12">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);
-background-color:rgb(255,255,255);
-color:rgb(0,0,0);</string>
-   </property>
-   <property name="text">
-    <string>118</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_acd12">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);
-background-color:rgb(255,255,255);
-color:rgb(0,0,0);</string>
-   </property>
-   <property name="text">
-    <string>4.97</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_A0">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);
-background-color:rgb(255,255,255);
-color:rgb(0,0,0);</string>
-   </property>
-   <property name="text">
-    <string>1.28</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_aconst1">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);
-background-color:rgb(255,255,255);
-color:rgb(0,0,0);</string>
-   </property>
-   <property name="text">
-    <string>118</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_acd2">
-   <property name="geometry">
-    <rect>
-     <x>351</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);
-</string>
-   </property>
-   <property name="text">
-    <string>4.97</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_aconst2">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);
-</string>
-   </property>
-   <property name="text">
-    <string>118</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_A12">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);
-</string>
-   </property>
-   <property name="text">
-    <string>1.28</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_acd22">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);
-</string>
-   </property>
-   <property name="text">
-    <string>4.97</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_aconst22">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);
-</string>
-   </property>
-   <property name="text">
-    <string>118</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_A1">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);
-</string>
-   </property>
-   <property name="text">
-    <string>1.28</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_sf22">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);
-</string>
-   </property>
-   <property name="text">
-    <string>2</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_sf2">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);
-</string>
-   </property>
-   <property name="text">
-    <string>2</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_A22">
-   <property name="geometry">
-    <rect>
-     <x>580</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>1.28</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_sf3">
-   <property name="geometry">
-    <rect>
-     <x>580</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>118</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_acd32">
-   <property name="geometry">
-    <rect>
-     <x>580</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>4.97</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_A2">
-   <property name="geometry">
-    <rect>
-     <x>580</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>1.28</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_aconst32">
-   <property name="geometry">
-    <rect>
-     <x>580</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>118</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_acd3">
-   <property name="geometry">
-    <rect>
-     <x>581</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>4.97</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_aconst3">
-   <property name="geometry">
-    <rect>
-     <x>580</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>118</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_sf32">
-   <property name="geometry">
-    <rect>
-     <x>580</x>
-     <y>200</y>
-     <width>95</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu</family>
-     <pointsize>18</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(empty.png);
-background-image:url(empty.png);</string>
-   </property>
-   <property name="text">
-    <string>118</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
   <widget class="QPushButton" name="btn_newPatient">
    <property name="geometry">
     <rect>
-     <x>694</x>
-     <y>300</y>
-     <width>100</width>
-     <height>100</height>
+     <x>1150</x>
+     <y>330</y>
+     <width>125</width>
+     <height>125</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
+    <string notr="true">background-image:url(:/images/empty.png);
 border-image: url(:/images/patient-icon.png);</string>
    </property>
    <property name="text">
@@ -3441,8 +795,8 @@ border-image: url(:/images/patient-icon.png);</string>
   <widget class="QLabel" name="lbl_k1val_5">
    <property name="geometry">
     <rect>
-     <x>700</x>
-     <y>390</y>
+     <x>1170</x>
+     <y>460</y>
      <width>85</width>
      <height>20</height>
     </rect>
@@ -3451,12 +805,11 @@ border-image: url(:/images/patient-icon.png);</string>
     <font>
      <family>Ubuntu</family>
      <pointsize>11</pointsize>
-     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(0, 0, 0);background-image:url(empty.png);</string>
+    <string notr="true">color: rgb(0, 0, 0);background-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>New Patient</string>
@@ -3465,16 +818,2613 @@ border-image: url(:/images/patient-icon.png);</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <zorder>frame_3</zorder>
-  <zorder>frame</zorder>
-  <zorder>lineEdit_acd32</zorder>
-  <zorder>lineEdit_acd12</zorder>
-  <zorder>lineEdit_acd3</zorder>
-  <zorder>frame_2</zorder>
-  <zorder>lineEdit_acd1</zorder>
-  <zorder>lineEdit_acd22</zorder>
-  <zorder>lineEdit_acd2</zorder>
-  <zorder>lineEdit_sf32</zorder>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>654</y>
+     <width>1271</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="btn_srkii">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:5px;background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);
+background-image:url(:/images/empty.png);</string>
+      </property>
+      <property name="text">
+       <string>SRK II</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_srkt">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:5px;background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);
+background-image:url(:/images/empty.png);</string>
+      </property>
+      <property name="text">
+       <string>SRK T</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_hofferq">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:5px;background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);
+background-image:url(:/images/empty.png);</string>
+      </property>
+      <property name="text">
+       <string>Hoffer Q</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_holladay">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:5px;background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);
+background-image:url(:/images/empty.png);</string>
+      </property>
+      <property name="text">
+       <string>Holladay</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_haigis">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:5px;background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);
+background-image:url(:/images/empty.png);</string>
+      </property>
+      <property name="text">
+       <string>Haigis</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>569</y>
+     <width>1131</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="cemm1">
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>18</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:5px;
+color: rgb(13, 71, 161);
+background-color: rgb(172, 224, 251);
+background-image:url(:/images/empty.png);</string>
+      </property>
+      <property name="text">
+       <string>EMM=0.00</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="cemm2">
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>18</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:5px;
+color: rgb(13, 71, 161);
+background-color: rgb(172, 224, 251);
+background-image:url(:/images/empty.png);</string>
+      </property>
+      <property name="text">
+       <string>EMM=0.00</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="cemm3">
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>18</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:5px;
+color: rgb(13, 71, 161);
+background-color: rgb(172, 224, 251);
+background-image:url(:/images/empty.png);</string>
+      </property>
+      <property name="text">
+       <string>EMM=0.00</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>1131</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/images/empty.png);
+background-color: rgb(96, 125, 139);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QComboBox" name="comboBox_lensOne">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>4</y>
+         <width>280</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(255,255,255);
+color:rgb(33,33,33);
+</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_a0">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>80</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>14</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>a0 =</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_sf1">
+       <property name="geometry">
+        <rect>
+         <x>17</x>
+         <y>48</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>SF =</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_acd1">
+       <property name="geometry">
+        <rect>
+         <x>28</x>
+         <y>40</y>
+         <width>80</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>ACD =</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_aconst1">
+       <property name="geometry">
+        <rect>
+         <x>7</x>
+         <y>44</y>
+         <width>102</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>ACONST =</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp6">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>130</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp9">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>300</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp1">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>130</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp3">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>230</y>
+         <width>100</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+color: rgb(13, 71, 161);
+background-color: rgb(172, 224, 251);
+</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp10">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>350</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp4">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>300</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_iolOne">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>100</y>
+         <width>120</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255,255,255);</string>
+       </property>
+       <property name="text">
+        <string>IOL</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_refOne">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>100</y>
+         <width>130</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255,255,255);</string>
+       </property>
+       <property name="text">
+        <string>REF</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp5">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>350</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp2">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>180</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp7">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>180</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp8">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>230</y>
+         <width>100</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+color: rgb(13, 71, 161);
+background-color: rgb(172, 224, 251);
+</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_aconst1">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>118</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_A0">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>1.28</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_aconst12">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>118</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_A02">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>1.28</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_sf1">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_sf12">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_acd1">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>4.97</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_acd12">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>4.97</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_warning1">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>0</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+border-image: url(:/images/icons/ic_warning_black_96dp.png);
+color:rgb(255,255,255);
+background-image:url(:/images/empty.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <zorder>comboBox_lensOne</zorder>
+      <zorder>lbl_a0</zorder>
+      <zorder>lbl_sf1</zorder>
+      <zorder>lbl_acd1</zorder>
+      <zorder>lbl_aconst1</zorder>
+      <zorder>cdisp6</zorder>
+      <zorder>cdisp9</zorder>
+      <zorder>cdisp1</zorder>
+      <zorder>cdisp3</zorder>
+      <zorder>cdisp10</zorder>
+      <zorder>cdisp4</zorder>
+      <zorder>lbl_iolOne</zorder>
+      <zorder>lbl_refOne</zorder>
+      <zorder>cdisp5</zorder>
+      <zorder>cdisp2</zorder>
+      <zorder>cdisp7</zorder>
+      <zorder>cdisp8</zorder>
+      <zorder>lineEdit_aconst1</zorder>
+      <zorder>lineEdit_A0</zorder>
+      <zorder>lineEdit_aconst12</zorder>
+      <zorder>lineEdit_A02</zorder>
+      <zorder>btn_warning1</zorder>
+      <zorder>lineEdit_acd12</zorder>
+      <zorder>lineEdit_acd1</zorder>
+      <zorder>lineEdit_sf12</zorder>
+      <zorder>lineEdit_sf1</zorder>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/images/empty.png);
+background-color: rgb(96, 125, 139);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QComboBox" name="comboBox_lensTwo">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>4</y>
+         <width>280</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(255,255,255);
+color:rgb(33,33,33);
+</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_a1">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>80</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>14</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>a0 =</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_sf2">
+       <property name="geometry">
+        <rect>
+         <x>17</x>
+         <y>48</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>SF =</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_acd2">
+       <property name="geometry">
+        <rect>
+         <x>28</x>
+         <y>40</y>
+         <width>80</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>ACD =</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_aconst2">
+       <property name="geometry">
+        <rect>
+         <x>7</x>
+         <y>44</y>
+         <width>102</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>ACONST =</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp16">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>130</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp19">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>300</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp11">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>130</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp13">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>230</y>
+         <width>100</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+color: rgb(13, 71, 161);
+background-color: rgb(172, 224, 251);
+</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp20">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>350</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp14">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>300</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_iolOne2">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>100</y>
+         <width>120</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255,255,255);</string>
+       </property>
+       <property name="text">
+        <string>IOL</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_refOne2">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>100</y>
+         <width>130</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255,255,255);</string>
+       </property>
+       <property name="text">
+        <string>REF</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp15">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>350</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp12">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>180</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp17">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>180</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp18">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>230</y>
+         <width>100</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+color: rgb(13, 71, 161);
+background-color: rgb(172, 224, 251);
+</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_aconst2">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>118</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_sf2">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_sf22">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_A1">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>1.28</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_aconst22">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>118</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_A12">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>1.28</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_acd2">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>4.97</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_acd22">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>4.97</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_warning2">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>0</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+border-image: url(:/images/icons/ic_warning_black_96dp.png);
+color:rgb(255,255,255);
+background-image:url(:/images/empty.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_3">
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/images/empty.png);
+background-color: rgb(96, 125, 139);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QComboBox" name="comboBox_lensThree">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>4</y>
+         <width>280</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(255,255,255);
+color:rgb(33,33,33);
+</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_a2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>80</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>14</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>a0 =</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_sf3">
+       <property name="geometry">
+        <rect>
+         <x>17</x>
+         <y>48</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+color:rgb(255,255,255);</string>
+       </property>
+       <property name="text">
+        <string>SF =</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_acd3">
+       <property name="geometry">
+        <rect>
+         <x>28</x>
+         <y>40</y>
+         <width>80</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>ACD =</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_aconst3">
+       <property name="geometry">
+        <rect>
+         <x>7</x>
+         <y>44</y>
+         <width>102</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>ACONST =</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp26">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>130</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp29">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>300</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp21">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>130</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp23">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>230</y>
+         <width>100</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+color: rgb(13, 71, 161);
+background-color: rgb(172, 224, 251);
+</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp30">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>350</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp24">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>300</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_iolOne3">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>100</y>
+         <width>120</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255,255,255);</string>
+       </property>
+       <property name="text">
+        <string>IOL</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_refOne3">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>100</y>
+         <width>130</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255,255,255);</string>
+       </property>
+       <property name="text">
+        <string>REF</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp25">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>350</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp22">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>180</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp27">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>180</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+color:rgb(33,33,33);</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cdisp28">
+       <property name="geometry">
+        <rect>
+         <x>209</x>
+         <y>230</y>
+         <width>100</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+color: rgb(13, 71, 161);
+background-color: rgb(172, 224, 251);
+</string>
+       </property>
+       <property name="text">
+        <string>0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_aconst3">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>118</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_A2">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>1.28</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_sf3">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>118</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_A22">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>1.28</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_aconst32">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>118</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_sf32">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>118</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_acd3">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>4.97</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_acd32">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>95</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/empty.png);
+background-image:url(:/images/empty.png);
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>4.97</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_warning3">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>0</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:5px;
+border-image: url(:/images/icons/ic_warning_black_96dp.png);
+color:rgb(255,255,255);
+background-image:url(:/images/empty.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
   <zorder>lbl_time</zorder>
   <zorder>lbl_alValEdit2</zorder>
   <zorder>lbl_kValEdit2</zorder>
@@ -3494,14 +3444,6 @@ border-image: url(:/images/patient-icon.png);</string>
   <zorder>lbl_alval</zorder>
   <zorder>lbl_kval</zorder>
   <zorder>lbl_k2val</zorder>
-  <zorder>btn_hofferq</zorder>
-  <zorder>btn_holladay</zorder>
-  <zorder>btn_srkt</zorder>
-  <zorder>btn_srkii</zorder>
-  <zorder>btn_haigis</zorder>
-  <zorder>cemm2</zorder>
-  <zorder>cemm3</zorder>
-  <zorder>cemm1</zorder>
   <zorder>btn_home</zorder>
   <zorder>btn_measure</zorder>
   <zorder>btn_print</zorder>
@@ -3513,28 +3455,8 @@ border-image: url(:/images/patient-icon.png);</string>
   <zorder>lbl_kValEdit</zorder>
   <zorder>lbl_alValEdit</zorder>
   <zorder>lbl_k2ValEdit</zorder>
-  <zorder>btn_warning1</zorder>
-  <zorder>btn_warning2</zorder>
-  <zorder>btn_warning3</zorder>
-  <zorder>lineEdit_sf12</zorder>
-  <zorder>lineEdit_sf1</zorder>
-  <zorder>lineEdit_A02</zorder>
-  <zorder>lineEdit_aconst12</zorder>
-  <zorder>lineEdit_A0</zorder>
-  <zorder>lineEdit_aconst1</zorder>
-  <zorder>lineEdit_A12</zorder>
-  <zorder>lineEdit_aconst22</zorder>
-  <zorder>lineEdit_A1</zorder>
-  <zorder>lineEdit_sf22</zorder>
-  <zorder>lineEdit_sf2</zorder>
-  <zorder>lineEdit_A22</zorder>
-  <zorder>lineEdit_sf3</zorder>
-  <zorder>lineEdit_A2</zorder>
-  <zorder>lineEdit_aconst32</zorder>
-  <zorder>lineEdit_aconst2</zorder>
   <zorder>lbl_k1val_5</zorder>
   <zorder>btn_newPatient</zorder>
-  <zorder>lineEdit_aconst3</zorder>
  </widget>
  <resources/>
  <connections/>

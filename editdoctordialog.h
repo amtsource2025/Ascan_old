@@ -17,6 +17,9 @@ public:
     explicit EditDoctorDialog(const QString &doctorId, QWidget *parent = nullptr);
     ~EditDoctorDialog();
 
+protected:
+    bool eventFilter(QObject *obj, QEvent *event) override;
+
 
 private slots:
     void on_btn_save_clicked();

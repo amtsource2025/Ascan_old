@@ -1,6 +1,7 @@
 #include "editdoctordialog.h"
 #include "ui_editdoctordialog.h"
 #include "promptdialog.h"
+#include "keypad.h"
 #include <QTime>
 #include <QSqlQuery>
 #include <QSqlError>
@@ -31,6 +32,9 @@ EditDoctorDialog::EditDoctorDialog(const QString &doctorId, QWidget *parent)
 
     loadLensOptions();   // populate comboboxes first
     loadDoctor();        // then fill values
+
+    // ── Event filters for on-screen input ────────────────────
+    ui->lineEdit_docName->installEventFilter(this);
 }
 
 EditDoctorDialog::~EditDoctorDialog()
@@ -177,3 +181,19 @@ void EditDoctorDialog::on_btn_cancel_clicked()
     reject();
 }
 
+// ─────────────────────────────────────────────────────────────
+//  Event Filter — on-screen keypads
+// ─────────────────────────────────────────────────────────────
+bool EditDoctorDialog::eventFilter(QObject *obj, QEvent *event)
+{
+    if (event->type() == QEvent::MouseButtonPress) {
+        if (obj == ui->lineEdit_docName) {
+            QLineEdit *le = qobject_cast<QLineEdit*>(obj);
+            Keypad *kp = new Keypad(le, this);
+            kp->exec();
+            delete kp;
+            return true;
+        }
+    }
+    return QDialog::eventFilter(obj, event);
+}

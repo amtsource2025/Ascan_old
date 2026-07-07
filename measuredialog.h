@@ -18,10 +18,20 @@ class MeasureDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit MeasureDialog(const QString &patientId,
-                           const QString &doctorId,
-                           QWidget *parent = nullptr);
+    explicit MeasureDialog(QWidget *parent = nullptr);
+    MeasureDialog(const QString &patientId, const QString &doctorId, QWidget *parent = nullptr);
+    void loadContext(const QString &patientId, const QString &doctorId);
     ~MeasureDialog();
+
+
+    int currentEye()      const { return m_currentEye; }
+    int lensType()        const { return m_lensType; }
+    int opMode()           const { return m_opMode; }
+    int selectedReading()  const { return m_selectedReading; }
+    QPixmap renderWaveformPixmap(); // make sure this is public
+     QPixmap getWaveformPixmap() const;
+
+protected:
 
 private slots:
     void updateTime();
@@ -89,6 +99,8 @@ private:
     QCustomPlot *m_plot;
 
     void bindReadingFilters(QSqlQuery &q) const;
+
+
 };
 
 #endif // MEASUREDIALOG_H

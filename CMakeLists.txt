@@ -1,19 +1,15 @@
 cmake_minimum_required(VERSION 3.16)
 project(Ascan LANGUAGES CXX)
-
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
-
 # Find Qt5
 find_package(Qt5 REQUIRED COMPONENTS Core Gui Widgets Sql PrintSupport Charts)
-
+#find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Sql PrintSupport Charts)
 # Find OpenSSL
 find_package(OpenSSL REQUIRED)
-
 # Source files
 set(SOURCES
     adddoctordialog.cpp
@@ -100,15 +96,16 @@ set(RESOURCE_FILES
 )
 
 # Create executable
-add_executable(Ascan
+add_executable(Ascan_v2
     ${SOURCES}
     ${HEADERS}
     ${UI_FILES}
     ${RESOURCE_FILES}
+    IOLCalculator.h
 )
 
 # Include directories
-target_include_directories(Ascan PRIVATE
+target_include_directories(Ascan_v2 PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}/Services
     ${OPENSSL_INCLUDE_DIR}
@@ -116,24 +113,30 @@ target_include_directories(Ascan PRIVATE
 )
 
 # Link Qt5
-target_link_libraries(Ascan PRIVATE
+target_link_libraries(Ascan_v2 PRIVATE
     Qt5::Core
     Qt5::Gui
     Qt5::Widgets
     Qt5::Sql
     Qt5::PrintSupport
     Qt5::Charts
+
+    # Qt6::Core
+    # Qt6::Gui
+    # Qt6::Widgets
+    # Qt6::Sql
+    # Qt6::PrintSupport
+    # Qt6::Charts
 )
 
 # Link OpenSSL
-target_link_libraries(Ascan PRIVATE
+target_link_libraries(Ascan_v2 PRIVATE
     OpenSSL::SSL
     OpenSSL::Crypto
 )
 
-# Link hwhandler static library
-#target_link_libraries(Ascan PRIVATE
-#   ${CMAKE_CURRENT_SOURCE_DIR}/libhwhandler.a
-#)
 
-install(TARGETS Ascan DESTINATION /opt/Ascan/bin)
+install(TARGETS Ascan_v2 DESTINATION /opt/Ascan/bin)
+target_link_libraries(Ascan_v2 PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/libiolcalc.so
+)

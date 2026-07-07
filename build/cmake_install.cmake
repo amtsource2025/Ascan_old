@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -39,29 +39,33 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/arm-linux-gnueabihf-objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/opt/Ascan/bin/Ascan" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/opt/Ascan/bin/Ascan")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/opt/Ascan/bin/Ascan_v2" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/opt/Ascan/bin/Ascan_v2")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/opt/Ascan/bin/Ascan"
+         FILE "$ENV{DESTDIR}/opt/Ascan/bin/Ascan_v2"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/opt/Ascan/bin/Ascan")
+   "/opt/Ascan/bin/Ascan_v2")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/opt/Ascan/bin" TYPE EXECUTABLE FILES "/home/amt-06/Desktop/Ascan_1/build/Ascan")
-  if(EXISTS "$ENV{DESTDIR}/opt/Ascan/bin/Ascan" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/opt/Ascan/bin/Ascan")
+  file(INSTALL DESTINATION "/opt/Ascan/bin" TYPE EXECUTABLE FILES "/home/amt-06/Desktop/Ascan_1/build/Ascan_v2")
+  if(EXISTS "$ENV{DESTDIR}/opt/Ascan/bin/Ascan_v2" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/opt/Ascan/bin/Ascan_v2")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}/opt/Ascan/bin/Ascan_v2"
+         OLD_RPATH "/home/amt-06/Desktop/Ascan_1:"
+         NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/arm-linux-gnueabihf-strip" "$ENV{DESTDIR}/opt/Ascan/bin/Ascan")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/opt/Ascan/bin/Ascan_v2")
     endif()
   endif()
 endif()

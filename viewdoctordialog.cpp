@@ -102,26 +102,32 @@ void ViewDoctorDialog::loadDoctors()
 {
     ui->table_doctor->clearContents();
     ui->table_doctor->setRowCount(0);
-    ui->table_doctor->setColumnCount(6);
+    ui->table_doctor->setColumnCount(7);
     ui->table_doctor->setHorizontalHeaderLabels(
-        {"ID", "Name", "Lens1", "Lens2", "Lens3", "Formula"});
+        {"S.No", "ID", "Name", "Lens1", "Lens2", "Lens3", "Formula"});
 
     QSqlQuery query(db);
-    // ✅ FIXED column names to match actual schema
     query.prepare("SELECT doctorid, name, lenspresetone, lenspresettwo, lenspresetthree, formula "
                   "FROM doctor ORDER BY name ASC");
 
     if (!query.exec()) {
-        qDebug() << "loadDoctors error:" << query.lastError().text(); // ← check this in logs
+        qDebug() << "loadDoctors error:" << query.lastError().text();
         return;
     }
 
     int row = 0;
     while (query.next()) {
         ui->table_doctor->insertRow(row);
+
+        // Column 0: S.No
+        auto *snoItem = new QTableWidgetItem(QString::number(row + 1));
+        snoItem->setTextAlignment(Qt::AlignCenter);
+        ui->table_doctor->setItem(row, 0, snoItem);
+
+        // Columns 1-6: actual data (shifted by 1)
         for (int col = 0; col < 6; ++col) {
             ui->table_doctor->setItem(
-                row, col,
+                row, col + 1,
                 new QTableWidgetItem(query.value(col).toString()));
         }
         ++row;
@@ -144,8 +150,8 @@ void ViewDoctorDialog::onDoctorRowClicked(int row, int /*column*/)
     if (row < 0 || row >= ui->table_doctor->rowCount())
         return;
 
-    QString doctorId   = ui->table_doctor->item(row, 0)->text();
-    QString doctorName = ui->table_doctor->item(row, 1)->text();
+    QString doctorId   = ui->table_doctor->item(row, 1)->text();
+    QString doctorName = ui->table_doctor->item(row, 2)->text();
 
     QSqlQuery query(db);
     query.prepare("UPDATE patient SET doctorid = :did WHERE patientid = :pid");
@@ -202,7 +208,7 @@ void ViewDoctorDialog::on_btn_edit_clicked()
         return;
     }
 
-    QString doctorId = ui->table_doctor->item(row, 0)->text(); // column 0 = doctorid
+    QString doctorId = ui->table_doctor->item(row, 1)->text(); // column 0 = doctorid
 
     EditDoctorDialog *dlg = new EditDoctorDialog(doctorId, this);
     if (dlg->exec() == QDialog::Accepted) {
@@ -223,8 +229,8 @@ void ViewDoctorDialog::on_btn_delete_clicked()
         return;
     }
 
-    QString id   = ui->table_doctor->item(row, 0)->text();
-    QString name = ui->table_doctor->item(row, 1)->text();
+    QString id   = ui->table_doctor->item(row, 1)->text();
+    QString name = ui->table_doctor->item(row, 2)->text();
 
     PromptDialog confirm("Delete Doctor",
                          "Are you sure you want to delete Dr. " + name + "?",
@@ -257,7 +263,7 @@ void ViewDoctorDialog::on_btn_view_clicked()
         p.exec();
         return;
     }
-    QString doctorId = ui->table_doctor->item(row, 0)->text();
+    QString doctorId = ui->table_doctor->item(row, 1)->text();
     DoctorDetailDialog *dlg = new DoctorDetailDialog(doctorId, this);
     dlg->exec();
     delete dlg;

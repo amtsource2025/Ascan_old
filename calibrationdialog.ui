@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1280</width>
+    <height>720</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,14 +20,14 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>200</y>
-     <width>512</width>
-     <height>255</height>
+     <y>130</y>
+     <width>971</width>
+     <height>431</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(0, 0, 0);
-background-image:url(empty.png);</string>
+background-image:url(:/images/empty.png);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::StyledPanel</enum>
@@ -40,13 +40,13 @@ background-image:url(empty.png);</string>
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>455</y>
-     <width>510</width>
-     <height>20</height>
+     <y>560</y>
+     <width>971</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
+    <string notr="true">background-image:url(:/images/empty.png);
 border-image: url(:/images/scale.png);
 </string>
    </property>
@@ -60,15 +60,20 @@ border-image: url(:/images/scale.png);
   <widget class="QLabel" name="lbl_avgAl">
    <property name="geometry">
     <rect>
-     <x>560</x>
-     <y>90</y>
+     <x>1020</x>
+     <y>70</y>
      <width>80</width>
      <height>30</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
-border-image:url(empty.png);</string>
+    <string notr="true">background-image:url(:/images/empty.png);
+border-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>AVG AL:</string>
@@ -80,8 +85,8 @@ border-image:url(empty.png);</string>
   <widget class="QLineEdit" name="lineEdit_avgAl">
    <property name="geometry">
     <rect>
-     <x>640</x>
-     <y>60</y>
+     <x>1120</x>
+     <y>50</y>
      <width>130</width>
      <height>80</height>
     </rect>
@@ -93,7 +98,7 @@ border-image:url(empty.png);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/images/searchbar.png);
-background-image:url(empty.png);
+background-image:url(:/images/empty.png);
 color:rgb(21,21,21);</string>
    </property>
    <property name="text">
@@ -106,14 +111,19 @@ color:rgb(21,21,21);</string>
   <widget class="QPushButton" name="btn_start">
    <property name="geometry">
     <rect>
-     <x>540</x>
-     <y>470</y>
+     <x>1020</x>
+     <y>630</y>
      <width>240</width>
      <height>70</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
+    <string notr="true">background-image:url(:/images/empty.png);
 color: rgb(255, 255, 255);
 background-color: #1976D2;
 border-radius:5px;</string>
@@ -125,14 +135,14 @@ border-radius:5px;</string>
   <widget class="QPushButton" name="btn_back">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>60</width>
-     <height>60</height>
+     <x>10</x>
+     <y>10</y>
+     <width>81</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);
+    <string notr="true">background-image:url(:/images/empty.png);
 border-image: url(:/images/backbutton.png);</string>
    </property>
    <property name="text">
@@ -142,19 +152,19 @@ border-image: url(:/images/backbutton.png);</string>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>10</y>
+     <x>560</x>
+     <y>40</y>
      <width>110</width>
      <height>40</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>14</pointsize>
+     <pointsize>16</pointsize>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(empty.png);border-image:url(empty.png);</string>
+    <string notr="true">background-image:url(:/images/empty.png);border-image:url(:/images/empty.png);</string>
    </property>
    <property name="text">
     <string>Calibration</string>

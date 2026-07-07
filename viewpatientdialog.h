@@ -11,6 +11,9 @@
 #include <QHeaderView>
 #include <QAbstractItemView>
 #include <QTime>
+#include <QTimer>
+#include <QEvent>
+#include <QMouseEvent>
 
 namespace Ui {
 class ViewPatientDialog;
@@ -24,7 +27,11 @@ public:
     explicit ViewPatientDialog(QWidget *parent = nullptr);
     ~ViewPatientDialog();
 
+signals:
+    void patientSelected(const QString &patientId);
 
+protected:
+    bool eventFilter(QObject *obj, QEvent *event) override;
 
 private slots:
     void updateTime();
@@ -33,6 +40,7 @@ private slots:
     void on_btn_delete_clicked();
     void on_btn_view_clicked();
     void on_btn_close_clicked();
+    void onLongPressTimeout();
 
 private:
     Ui::ViewPatientDialog *ui;
@@ -41,6 +49,14 @@ private:
 
     bool openDatabase();
     void loadPatients();
+
+    QTimer *longPressTimer;
+    int m_pressedRow = -1;
+
+
+
+
+
 };
 
 #endif // VIEWPATIENTDIALOG_H
