@@ -289,7 +289,11 @@ public:
         btn_home->setFlat(true);
         btn_measure = new QPushButton(CalculatorDialog);
         btn_measure->setObjectName(QString::fromUtf8("btn_measure"));
+<<<<<<< HEAD
         btn_measure->setGeometry(QRect(1150, 180, 125, 125));
+=======
+        btn_measure->setGeometry(QRect(1150, 200, 125, 125));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         btn_measure->setFont(font);
         btn_measure->setStyleSheet(QString::fromUtf8("background-image:url(:/images/empty.png);\n"
 "border-image: url(:/images/graph-icon.png);"));
@@ -303,7 +307,11 @@ public:
         btn_print->setFlat(true);
         lbl_k1val_2 = new QLabel(CalculatorDialog);
         lbl_k1val_2->setObjectName(QString::fromUtf8("lbl_k1val_2"));
+<<<<<<< HEAD
         lbl_k1val_2->setGeometry(QRect(1170, 160, 85, 20));
+=======
+        lbl_k1val_2->setGeometry(QRect(1170, 180, 85, 20));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         QFont font6;
         font6.setFamily(QString::fromUtf8("Ubuntu"));
         font6.setPointSize(11);
@@ -313,7 +321,11 @@ public:
         lbl_k1val_2->setAlignment(Qt::AlignCenter);
         lbl_k1val_3 = new QLabel(CalculatorDialog);
         lbl_k1val_3->setObjectName(QString::fromUtf8("lbl_k1val_3"));
+<<<<<<< HEAD
         lbl_k1val_3->setGeometry(QRect(1170, 290, 85, 20));
+=======
+        lbl_k1val_3->setGeometry(QRect(1170, 330, 85, 20));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lbl_k1val_3->setFont(font6);
         lbl_k1val_3->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);background-image:url(:/images/empty.png);"));
         lbl_k1val_3->setAlignment(Qt::AlignCenter);
@@ -398,13 +410,21 @@ public:
         lbl_time->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         btn_newPatient = new QPushButton(CalculatorDialog);
         btn_newPatient->setObjectName(QString::fromUtf8("btn_newPatient"));
+<<<<<<< HEAD
         btn_newPatient->setGeometry(QRect(1150, 330, 125, 125));
+=======
+        btn_newPatient->setGeometry(QRect(1150, 350, 125, 125));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         btn_newPatient->setStyleSheet(QString::fromUtf8("background-image:url(:/images/empty.png);\n"
 "border-image: url(:/images/patient-icon.png);"));
         btn_newPatient->setFlat(true);
         lbl_k1val_5 = new QLabel(CalculatorDialog);
         lbl_k1val_5->setObjectName(QString::fromUtf8("lbl_k1val_5"));
+<<<<<<< HEAD
         lbl_k1val_5->setGeometry(QRect(1170, 460, 85, 20));
+=======
+        lbl_k1val_5->setGeometry(QRect(1170, 470, 85, 20));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lbl_k1val_5->setFont(font6);
         lbl_k1val_5->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);background-image:url(:/images/empty.png);"));
         lbl_k1val_5->setAlignment(Qt::AlignCenter);
@@ -948,8 +968,12 @@ public:
         lineEdit_aconst2->setFont(font2);
         lineEdit_aconst2->setStyleSheet(QString::fromUtf8("border-image: url(:/images/empty.png);\n"
 "background-image:url(:/images/empty.png);\n"
+<<<<<<< HEAD
 "background-color:rgb(255,255,255);\n"
 "color:rgb(0,0,0);"));
+=======
+""));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lineEdit_aconst2->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         lineEdit_sf2 = new QLineEdit(frame_2);
         lineEdit_sf2->setObjectName(QString::fromUtf8("lineEdit_sf2"));
@@ -957,8 +981,12 @@ public:
         lineEdit_sf2->setFont(font2);
         lineEdit_sf2->setStyleSheet(QString::fromUtf8("border-image: url(:/images/empty.png);\n"
 "background-image:url(:/images/empty.png);\n"
+<<<<<<< HEAD
 "background-color:rgb(255,255,255);\n"
 "color:rgb(0,0,0);"));
+=======
+""));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lineEdit_sf2->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         lineEdit_sf22 = new QLineEdit(frame_2);
         lineEdit_sf22->setObjectName(QString::fromUtf8("lineEdit_sf22"));
@@ -966,8 +994,12 @@ public:
         lineEdit_sf22->setFont(font2);
         lineEdit_sf22->setStyleSheet(QString::fromUtf8("border-image: url(:/images/empty.png);\n"
 "background-image:url(:/images/empty.png);\n"
+<<<<<<< HEAD
 "background-color:rgb(255,255,255);\n"
 "color:rgb(0,0,0);"));
+=======
+""));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lineEdit_sf22->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         lineEdit_A1 = new QLineEdit(frame_2);
         lineEdit_A1->setObjectName(QString::fromUtf8("lineEdit_A1"));
@@ -975,8 +1007,12 @@ public:
         lineEdit_A1->setFont(font2);
         lineEdit_A1->setStyleSheet(QString::fromUtf8("border-image: url(:/images/empty.png);\n"
 "background-image:url(:/images/empty.png);\n"
+<<<<<<< HEAD
 "background-color:rgb(255,255,255);\n"
 "color:rgb(0,0,0);"));
+=======
+""));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lineEdit_A1->setAlignment(Qt::AlignCenter);
         lineEdit_aconst22 = new QLineEdit(frame_2);
         lineEdit_aconst22->setObjectName(QString::fromUtf8("lineEdit_aconst22"));
@@ -984,8 +1020,12 @@ public:
         lineEdit_aconst22->setFont(font2);
         lineEdit_aconst22->setStyleSheet(QString::fromUtf8("border-image: url(:/images/empty.png);\n"
 "background-image:url(:/images/empty.png);\n"
+<<<<<<< HEAD
 "background-color:rgb(255,255,255);\n"
 "color:rgb(0,0,0);"));
+=======
+""));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lineEdit_aconst22->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         lineEdit_A12 = new QLineEdit(frame_2);
         lineEdit_A12->setObjectName(QString::fromUtf8("lineEdit_A12"));
@@ -993,8 +1033,12 @@ public:
         lineEdit_A12->setFont(font2);
         lineEdit_A12->setStyleSheet(QString::fromUtf8("border-image: url(:/images/empty.png);\n"
 "background-image:url(:/images/empty.png);\n"
+<<<<<<< HEAD
 "background-color:rgb(255,255,255);\n"
 "color:rgb(0,0,0);"));
+=======
+""));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lineEdit_A12->setAlignment(Qt::AlignCenter);
         lineEdit_acd2 = new QLineEdit(frame_2);
         lineEdit_acd2->setObjectName(QString::fromUtf8("lineEdit_acd2"));
@@ -1002,8 +1046,12 @@ public:
         lineEdit_acd2->setFont(font2);
         lineEdit_acd2->setStyleSheet(QString::fromUtf8("border-image: url(:/images/empty.png);\n"
 "background-image:url(:/images/empty.png);\n"
+<<<<<<< HEAD
 "background-color:rgb(255,255,255);\n"
 "color:rgb(0,0,0);"));
+=======
+""));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lineEdit_acd2->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         lineEdit_acd22 = new QLineEdit(frame_2);
         lineEdit_acd22->setObjectName(QString::fromUtf8("lineEdit_acd22"));
@@ -1011,8 +1059,12 @@ public:
         lineEdit_acd22->setFont(font2);
         lineEdit_acd22->setStyleSheet(QString::fromUtf8("border-image: url(:/images/empty.png);\n"
 "background-image:url(:/images/empty.png);\n"
+<<<<<<< HEAD
 "background-color:rgb(255,255,255);\n"
 "color:rgb(0,0,0);"));
+=======
+""));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lineEdit_acd22->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         btn_warning2 = new QPushButton(frame_2);
         btn_warning2->setObjectName(QString::fromUtf8("btn_warning2"));
@@ -1174,72 +1226,104 @@ public:
         lineEdit_aconst3->setGeometry(QRect(120, 40, 95, 50));
         lineEdit_aconst3->setFont(font2);
         lineEdit_aconst3->setStyleSheet(QString::fromUtf8("border-image: url(:/images/empty.png);\n"
+<<<<<<< HEAD
 "background-image:url(:/images/empty.png);\n"
 "background-color:rgb(255,255,255);\n"
 "color:rgb(0,0,0);"));
+=======
+"background-image:url(:/images/empty.png);"));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lineEdit_aconst3->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         lineEdit_A2 = new QLineEdit(frame_3);
         lineEdit_A2->setObjectName(QString::fromUtf8("lineEdit_A2"));
         lineEdit_A2->setGeometry(QRect(120, 40, 95, 50));
         lineEdit_A2->setFont(font2);
         lineEdit_A2->setStyleSheet(QString::fromUtf8("border-image: url(:/images/empty.png);\n"
+<<<<<<< HEAD
 "background-image:url(:/images/empty.png);\n"
 "background-color:rgb(255,255,255);\n"
 "color:rgb(0,0,0);"));
+=======
+"background-image:url(:/images/empty.png);"));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lineEdit_A2->setAlignment(Qt::AlignCenter);
         lineEdit_sf3 = new QLineEdit(frame_3);
         lineEdit_sf3->setObjectName(QString::fromUtf8("lineEdit_sf3"));
         lineEdit_sf3->setGeometry(QRect(120, 40, 95, 50));
         lineEdit_sf3->setFont(font2);
         lineEdit_sf3->setStyleSheet(QString::fromUtf8("border-image: url(:/images/empty.png);\n"
+<<<<<<< HEAD
 "background-image:url(:/images/empty.png);\n"
 "background-color:rgb(255,255,255);\n"
 "color:rgb(0,0,0);"));
+=======
+"background-image:url(:/images/empty.png);"));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lineEdit_sf3->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         lineEdit_A22 = new QLineEdit(frame_3);
         lineEdit_A22->setObjectName(QString::fromUtf8("lineEdit_A22"));
         lineEdit_A22->setGeometry(QRect(120, 40, 95, 50));
         lineEdit_A22->setFont(font2);
         lineEdit_A22->setStyleSheet(QString::fromUtf8("border-image: url(:/images/empty.png);\n"
+<<<<<<< HEAD
 "background-image:url(:/images/empty.png);\n"
 "background-color:rgb(255,255,255);\n"
 "color:rgb(0,0,0);"));
+=======
+"background-image:url(:/images/empty.png);"));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lineEdit_A22->setAlignment(Qt::AlignCenter);
         lineEdit_aconst32 = new QLineEdit(frame_3);
         lineEdit_aconst32->setObjectName(QString::fromUtf8("lineEdit_aconst32"));
         lineEdit_aconst32->setGeometry(QRect(120, 40, 95, 50));
         lineEdit_aconst32->setFont(font2);
         lineEdit_aconst32->setStyleSheet(QString::fromUtf8("border-image: url(:/images/empty.png);\n"
+<<<<<<< HEAD
 "background-image:url(:/images/empty.png);\n"
 "background-color:rgb(255,255,255);\n"
 "color:rgb(0,0,0);"));
+=======
+"background-image:url(:/images/empty.png);"));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lineEdit_aconst32->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         lineEdit_sf32 = new QLineEdit(frame_3);
         lineEdit_sf32->setObjectName(QString::fromUtf8("lineEdit_sf32"));
         lineEdit_sf32->setGeometry(QRect(120, 40, 95, 50));
         lineEdit_sf32->setFont(font2);
         lineEdit_sf32->setStyleSheet(QString::fromUtf8("border-image: url(:/images/empty.png);\n"
+<<<<<<< HEAD
 "background-image:url(:/images/empty.png);\n"
 "background-color:rgb(255,255,255);\n"
 "color:rgb(0,0,0);"));
+=======
+"background-image:url(:/images/empty.png);"));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lineEdit_sf32->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         lineEdit_acd3 = new QLineEdit(frame_3);
         lineEdit_acd3->setObjectName(QString::fromUtf8("lineEdit_acd3"));
         lineEdit_acd3->setGeometry(QRect(120, 40, 95, 50));
         lineEdit_acd3->setFont(font2);
         lineEdit_acd3->setStyleSheet(QString::fromUtf8("border-image: url(:/images/empty.png);\n"
+<<<<<<< HEAD
 "background-image:url(:/images/empty.png);\n"
 "background-color:rgb(255,255,255);\n"
 "color:rgb(0,0,0);"));
+=======
+"background-image:url(:/images/empty.png);"));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lineEdit_acd3->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         lineEdit_acd32 = new QLineEdit(frame_3);
         lineEdit_acd32->setObjectName(QString::fromUtf8("lineEdit_acd32"));
         lineEdit_acd32->setGeometry(QRect(120, 40, 95, 50));
         lineEdit_acd32->setFont(font2);
         lineEdit_acd32->setStyleSheet(QString::fromUtf8("border-image: url(:/images/empty.png);\n"
+<<<<<<< HEAD
 "background-image:url(:/images/empty.png);\n"
 "background-color:rgb(255,255,255);\n"
 "color:rgb(0,0,0);"));
+=======
+"background-image:url(:/images/empty.png);"));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lineEdit_acd32->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         btn_warning3 = new QPushButton(frame_3);
         btn_warning3->setObjectName(QString::fromUtf8("btn_warning3"));

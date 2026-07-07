@@ -84,8 +84,11 @@ public:
     void setCalcContext(const CalcContext &ctx);
 
     PrintDialog::ScanContext buildScanContextFromCurrentReading();
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 
 private slots:
     void on_btn_back_clicked();
@@ -95,7 +98,10 @@ private slots:
 
     // Clock in the top-right corner (lbl_time in the .ui).
     void updateTime();
+<<<<<<< HEAD
 
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 
 private:
     Ui::PrintDialog *ui;
@@ -108,6 +114,7 @@ private:
 
     ScanContext m_scanCtx;
     CalcContext m_calcCtx;
+<<<<<<< HEAD
 
     QSerialPort *m_printerPort;
     QTimer      *m_clockTimer;
@@ -160,6 +167,57 @@ private:
 
     QPixmap applyLayoutOrientation(const QPixmap &waveform) const;
 
+=======
+
+    QSerialPort *m_printerPort;
+    QTimer      *m_clockTimer;
+
+    // CSN-A2 58mm thermal printer: 384 dots wide.
+    static const int kPrinterWidthPx = 384;
+
+    // --- Serial port helpers -------------------------------------------------
+    bool openPrinterPort();
+    void closePrinterPort();
+    bool writeToPrinter(const QByteArray &data);
+    void debugDumpPortDiagnostics(const QString &portName);
+
+    // --- ESC/POS command builders -------------------------------------------
+    QByteArray escInit();
+    QByteArray escCut();
+    QByteArray escAlignCenter();
+    QByteArray escAlignLeft();
+    QByteArray escBoldOn();
+    QByteArray escBoldOff();
+    QByteArray escFeedLines(int n);
+    QByteArray textLine(const QString &text);
+
+    QByteArray pixmapToEscRaster(const QPixmap &pixmap);
+
+    // --- Content builders ----------------------------------------------------
+    QByteArray buildScanPrintJob(const ScanContext &ctx, bool withCut);
+    QByteArray buildCalcPrintJob(const CalcContext &ctx, bool withCut);
+    QString    buildCalcContent(const CalcContext &ctx);
+
+    // --- UI helpers -----------------------------------------------------------
+    void fillScanHeaderInfo(ScanContext &ctx);
+    void fillCalcHeaderInfo(CalcContext &ctx);
+    void loadPatientDoctorNames();
+    void showSnack(const QString &msg, bool isError = true);
+    void returnToPreviousPage();
+
+    // --- Dummy data (Stage 1 - no DB yet) -------------------------------------
+    // Used when a button is pressed without a real context having been set
+    // via setScanContext()/setCalcContext(), so printing can be tested before
+    // the database wiring is in place. Remove/bypass once real data flows in.
+    ScanContext makeDummyScanContext();
+    CalcContext makeDummyCalcContext();
+    QPixmap     makeDummyWaveform();
+
+    // --- Print flows ------------------------------------------------------------
+    void doPrintScan();
+    void doPrintCalc();
+    void doPrintAll();
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 };
 
 #endif // PRINTDIALOG_H

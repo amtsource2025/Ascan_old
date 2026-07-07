@@ -25,8 +25,11 @@ public:
     void    loadPatients();
     void    selectPatientById(const QString &patientId);
     QString getLastPatientId();
+<<<<<<< HEAD
 protected:
     void showEvent(QShowEvent *event) override;
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 
 private slots:
     void onPatientSelectionChanged(int index);
@@ -64,9 +67,12 @@ private:
     void    ensurePatientHasDoctor(const QString &patientId);
     QString resolveDoctor(const QString &patientId);
 
+<<<<<<< HEAD
     QString m_currentPatientId;
     QString m_currentDoctorId;
 
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 };
 
 #endif // WELCOMEDIALOG_H

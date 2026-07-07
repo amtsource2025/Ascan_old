@@ -24,7 +24,10 @@ class Ui_WelcomeDialog
 {
 public:
     QWidget *centralWidget;
+<<<<<<< HEAD
     QFrame *headerBar;
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
     QPushButton *btn_ascan;
     QFrame *frame;
     QPushButton *btn_surgeon;
@@ -36,6 +39,7 @@ public:
     QLabel *lbl_docName;
     QLabel *lbl_softwareVersion;
     QLabel *lbl_serialNumber;
+<<<<<<< HEAD
     QPushButton *btn_calibrate;
     QPushButton *btn_calculator;
     QPushButton *btn_doctors;
@@ -50,6 +54,8 @@ public:
     QLabel *lbl_lenses;
     QLabel *lbl_settings;
     QLabel *lbl_patients_2;
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 
     void setupUi(QMainWindow *WelcomeDialog)
     {
@@ -59,6 +65,7 @@ public:
         QFont font;
         font.setPointSize(15);
         WelcomeDialog->setFont(font);
+<<<<<<< HEAD
         WelcomeDialog->setStyleSheet(QString::fromUtf8("background-image: url(:/images/7.png);"));
         centralWidget = new QWidget(WelcomeDialog);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
@@ -87,10 +94,30 @@ public:
 "QPushButton:pressed {\n"
 "    border: 3px solid #00BCD4;\n"
 "}\n"
+=======
+        WelcomeDialog->setStyleSheet(QString::fromUtf8("background-image: url(:/images/5.png);"));
+        centralWidget = new QWidget(WelcomeDialog);
+        centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
+        centralWidget->setStyleSheet(QString::fromUtf8(""));
+        btn_ascan = new QPushButton(centralWidget);
+        btn_ascan->setObjectName(QString::fromUtf8("btn_ascan"));
+        btn_ascan->setGeometry(QRect(530, 0, 231, 191));
+        btn_ascan->setStyleSheet(QString::fromUtf8("\n"
+"QPushButton{\n"
+"background-image:url(:/images/empty.png);\n"
+"border-image: url(:/images/ascan-select.png);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    border: 5px solid #00BCD4;\n"
+"}\n"
+"\n"
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 ""));
         btn_ascan->setFlat(true);
         frame = new QFrame(centralWidget);
         frame->setObjectName(QString::fromUtf8("frame"));
+<<<<<<< HEAD
         frame->setGeometry(QRect(120, 230, 1011, 291));
         frame->setStyleSheet(QString::fromUtf8("QFrame#frame {\n"
 "    background-color: qlineargradient(\n"
@@ -104,12 +131,28 @@ public:
 "    );\n"
 "    border: 2px solid #7fb3d9;\n"
 "    border-radius: 30px;\n"
+=======
+        frame->setGeometry(QRect(140, 230, 1011, 431));
+        frame->setStyleSheet(QString::fromUtf8("QFrame\n"
+"{\n"
+"\n"
+"	border-image: url(:/images/card-big.png); \n"
+"	background-image:url(:/images/empty.png);\n"
+"    background-color: rgb(255,255,255);\n"
+"    border: 1px solid rgb(220,225,235);\n"
+"    border-radius: 22px;\n"
+"\n"
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 "}"));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
         btn_surgeon = new QPushButton(frame);
         btn_surgeon->setObjectName(QString::fromUtf8("btn_surgeon"));
+<<<<<<< HEAD
         btn_surgeon->setGeometry(QRect(150, 50, 141, 141));
+=======
+        btn_surgeon->setGeometry(QRect(170, 150, 141, 141));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         QFont font1;
         font1.setPointSize(13);
         btn_surgeon->setFont(font1);
@@ -118,7 +161,11 @@ public:
         btn_surgeon->setFlat(true);
         btn_enter = new QPushButton(frame);
         btn_enter->setObjectName(QString::fromUtf8("btn_enter"));
+<<<<<<< HEAD
         btn_enter->setGeometry(QRect(820, 210, 120, 40));
+=======
+        btn_enter->setGeometry(QRect(850, 370, 120, 40));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         QFont font2;
         font2.setFamily(QString::fromUtf8("Umpush"));
         font2.setPointSize(14);
@@ -160,6 +207,7 @@ public:
 "    color: #FFFFFF;\n"
 "}\n"
 "\n"
+<<<<<<< HEAD
 "\n"
 "QPushButton\n"
 "{\n"
@@ -191,11 +239,17 @@ public:
 "}\n"
 "\n"
 "\n"
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 ""));
         btn_enter->setFlat(true);
         btn_newDoctor_2 = new QPushButton(frame);
         btn_newDoctor_2->setObjectName(QString::fromUtf8("btn_newDoctor_2"));
+<<<<<<< HEAD
         btn_newDoctor_2->setGeometry(QRect(590, 210, 181, 40));
+=======
+        btn_newDoctor_2->setGeometry(QRect(630, 370, 181, 40));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         btn_newDoctor_2->setFont(font2);
         btn_newDoctor_2->setStyleSheet(QString::fromUtf8("\n"
 "/*QPushButton {\n"
@@ -222,6 +276,7 @@ public:
 "}\n"
 "\n"
 "\n"
+<<<<<<< HEAD
 "QPushButton\n"
 "{\n"
 "    background-color: #FFFFFF;\n"
@@ -244,11 +299,14 @@ public:
 "\n"
 "\n"
 "\n"
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 "\n"
 ""));
         btn_newDoctor_2->setFlat(true);
         comboBox_patientSelect = new FixedComboBox(frame);
         comboBox_patientSelect->setObjectName(QString::fromUtf8("comboBox_patientSelect"));
+<<<<<<< HEAD
         comboBox_patientSelect->setGeometry(QRect(330, 90, 541, 61));
         comboBox_patientSelect->setStyleSheet(QString::fromUtf8("\n"
 "\n"
@@ -259,10 +317,20 @@ public:
 "    border: 2px solid #7fb3d9;\n"
 "    border-radius: 12px;\n"
 "    padding: 8px 18px;\n"
+=======
+        comboBox_patientSelect->setGeometry(QRect(330, 190, 541, 61));
+        comboBox_patientSelect->setStyleSheet(QString::fromUtf8("/*QComboBox\n"
+"{\n"
+"    background-color: white;\n"
+"    border: 1px solid #E2E8F0;\n"
+"    border-radius: 8px;\n"
+"    padding: 8px 16px;\n"
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 "    color: #334155;\n"
 "    outline: none;\n"
 "}\n"
 "\n"
+<<<<<<< HEAD
 "QComboBox:hover\n"
 "{\n"
 "    border: 1.5px solid #A9C4E8;\n"
@@ -278,17 +346,36 @@ public:
 "{\n"
 "    border: none;\n"
 "    width: 34px;\n"
+=======
+"QComboBox:focus\n"
+"{\n"
+"    border: 1px solid #3B82F6;\n"
+"    outline: none;\n"
+"}\n"
+"\n"
+"QComboBox:on\n"
+"{\n"
+"    border: 1px solid #3B82F6;\n"
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 "}\n"
 "\n"
 "QComboBox QAbstractItemView\n"
 "{\n"
 "    background: white;\n"
+<<<<<<< HEAD
 "    border: 1px solid #DCE3EA;\n"
 "    selection-background-color: #E3F0FD;\n"
 "    selection-color: #1976D2;\n"
 "    outline: 0;\n"
 "    padding: 4px;\n"
 "}"));
+=======
+"    border: 1px solid #80c0e4;\n"
+"    selection-background-color: #DCEEFF;\n"
+"    selection-color: #1E40AF;\n"
+"    outline: 0;\n"
+"}*/"));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         comboBox_patientSelect->setFrame(true);
         btn_newDoctor_2->raise();
         btn_surgeon->raise();
@@ -297,6 +384,7 @@ public:
         label = new QLabel(centralWidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(550, 200, 192, 17));
+<<<<<<< HEAD
         QFont font3;
         font3.setPointSize(15);
         font3.setBold(true);
@@ -305,10 +393,15 @@ public:
 "color: #1A2B3C;\n"
 "font-weight: 700;\n"
 "letter-spacing: 1px;"));
+=======
+        label->setFont(font);
+        label->setStyleSheet(QString::fromUtf8("background-image:url(:/images/empty.png);"));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         label->setAlignment(Qt::AlignCenter);
         lbl_time = new QLabel(centralWidget);
         lbl_time->setObjectName(QString::fromUtf8("lbl_time"));
         lbl_time->setGeometry(QRect(1129, 10, 131, 41));
+<<<<<<< HEAD
         QFont font4;
         font4.setPointSize(13);
         font4.setBold(true);
@@ -316,10 +409,15 @@ public:
         lbl_time->setStyleSheet(QString::fromUtf8("background: transparent;\n"
 "color: #FFFFFF;\n"
 "font-weight: 600;"));
+=======
+        lbl_time->setFont(font1);
+        lbl_time->setStyleSheet(QString::fromUtf8("background-image:url(:/images/empty.png);"));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lbl_time->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         lbl_docName = new QLabel(centralWidget);
         lbl_docName->setObjectName(QString::fromUtf8("lbl_docName"));
         lbl_docName->setGeometry(QRect(20, 0, 261, 61));
+<<<<<<< HEAD
         lbl_docName->setFont(font3);
         lbl_docName->setStyleSheet(QString::fromUtf8("background: transparent;\n"
 "color: #FFFFFF;\n"
@@ -327,6 +425,15 @@ public:
         lbl_softwareVersion = new QLabel(centralWidget);
         lbl_softwareVersion->setObjectName(QString::fromUtf8("lbl_softwareVersion"));
         lbl_softwareVersion->setGeometry(QRect(1110, 680, 151, 41));
+=======
+        lbl_docName->setFont(font);
+        lbl_docName->setStyleSheet(QString::fromUtf8("background-color:rgb(255,255,255);\n"
+"color:rgb(21,21,21);\n"
+"border-image:url(:/images/empty.png);"));
+        lbl_softwareVersion = new QLabel(centralWidget);
+        lbl_softwareVersion->setObjectName(QString::fromUtf8("lbl_softwareVersion"));
+        lbl_softwareVersion->setGeometry(QRect(10, 670, 151, 41));
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         lbl_softwareVersion->setStyleSheet(QString::fromUtf8("color:rgb(21,21,21);\n"
 "background-image:url(:/images/empty.png);"));
         lbl_serialNumber = new QLabel(centralWidget);
@@ -335,6 +442,7 @@ public:
         lbl_serialNumber->setStyleSheet(QString::fromUtf8("color:rgb(21,21,21);\n"
 "background-image:url(:/images/empty.png);"));
         lbl_serialNumber->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+<<<<<<< HEAD
         btn_calibrate = new QPushButton(centralWidget);
         btn_calibrate->setObjectName(QString::fromUtf8("btn_calibrate"));
         btn_calibrate->setGeometry(QRect(70, 570, 91, 91));
@@ -447,6 +555,9 @@ public:
         lbl_patients_2->setStyleSheet(QString::fromUtf8("background-image:url(:/images/empty.png);color:rgb(21,21,21);"));
         WelcomeDialog->setCentralWidget(centralWidget);
         headerBar->raise();
+=======
+        WelcomeDialog->setCentralWidget(centralWidget);
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         btn_ascan->raise();
         label->raise();
         lbl_time->raise();
@@ -454,6 +565,7 @@ public:
         lbl_softwareVersion->raise();
         lbl_serialNumber->raise();
         frame->raise();
+<<<<<<< HEAD
         btn_calibrate->raise();
         btn_calculator->raise();
         btn_doctors->raise();
@@ -468,6 +580,8 @@ public:
         lbl_lenses->raise();
         lbl_settings->raise();
         lbl_patients_2->raise();
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 
         retranslateUi(WelcomeDialog);
 
@@ -486,6 +600,7 @@ public:
         lbl_docName->setText(QCoreApplication::translate("WelcomeDialog", "Welcome, Dr. J Doe, M.D. ", nullptr));
         lbl_softwareVersion->setText(QCoreApplication::translate("WelcomeDialog", "Version:", nullptr));
         lbl_serialNumber->setText(QString());
+<<<<<<< HEAD
         btn_calibrate->setText(QString());
         btn_calculator->setText(QString());
         btn_doctors->setText(QString());
@@ -500,6 +615,8 @@ public:
         lbl_lenses->setText(QCoreApplication::translate("WelcomeDialog", "Lenses", nullptr));
         lbl_settings->setText(QCoreApplication::translate("WelcomeDialog", "Settings", nullptr));
         lbl_patients_2->setText(QCoreApplication::translate("WelcomeDialog", "Print", nullptr));
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
     } // retranslateUi
 
 };

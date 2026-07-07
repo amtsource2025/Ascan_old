@@ -14,7 +14,10 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+<<<<<<< HEAD
 #include <QtWidgets/QRadioButton>
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 #include "QtCharts"
 
 QT_BEGIN_NAMESPACE
@@ -34,8 +37,11 @@ public:
     QChartView *graphicsView;
     QLabel *lbl_time;
     QPushButton *pushButton;
+<<<<<<< HEAD
     QRadioButton *radio_layoutDefault;
     QRadioButton *radio_layoutHorizontal;
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 
     void setupUi(QDialog *PrintDialog)
     {
@@ -180,12 +186,15 @@ public:
         pushButton->setGeometry(QRect(480, 20, 91, 91));
         pushButton->setStyleSheet(QString::fromUtf8("border-image: url(:/images/calc-icon-shrt(1).png);\n"
 "background-image:url(:/images/empty.png);"));
+<<<<<<< HEAD
         radio_layoutDefault = new QRadioButton(PrintDialog);
         radio_layoutDefault->setObjectName(QString::fromUtf8("radio_layoutDefault"));
         radio_layoutDefault->setGeometry(QRect(200, 580, 111, 51));
         radio_layoutHorizontal = new QRadioButton(PrintDialog);
         radio_layoutHorizontal->setObjectName(QString::fromUtf8("radio_layoutHorizontal"));
         radio_layoutHorizontal->setGeometry(QRect(360, 580, 111, 51));
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
         graphicsView->raise();
         btn_both->raise();
         btn_scan->raise();
@@ -198,8 +207,11 @@ public:
         btn_calculations2->raise();
         btn_both2->raise();
         pushButton->raise();
+<<<<<<< HEAD
         radio_layoutDefault->raise();
         radio_layoutHorizontal->raise();
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 
         retranslateUi(PrintDialog);
 
@@ -220,8 +232,11 @@ public:
         snackbar->setText(QString());
         lbl_time->setText(QCoreApplication::translate("PrintDialog", "10:09", nullptr));
         pushButton->setText(QString());
+<<<<<<< HEAD
         radio_layoutDefault->setText(QCoreApplication::translate("PrintDialog", "RadioButton", nullptr));
         radio_layoutHorizontal->setText(QCoreApplication::translate("PrintDialog", "RadioButton", nullptr));
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
     } // retranslateUi
 
 };

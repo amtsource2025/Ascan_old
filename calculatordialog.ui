@@ -397,7 +397,11 @@ border-image: url(:/images/home.png);</string>
    <property name="geometry">
     <rect>
      <x>1150</x>
+<<<<<<< HEAD
      <y>180</y>
+=======
+     <y>200</y>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
      <width>125</width>
      <height>125</height>
     </rect>
@@ -447,7 +451,11 @@ border-image: url(:/images/print-icon.png);</string>
    <property name="geometry">
     <rect>
      <x>1170</x>
+<<<<<<< HEAD
      <y>160</y>
+=======
+     <y>180</y>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
      <width>85</width>
      <height>20</height>
     </rect>
@@ -473,7 +481,11 @@ border-image: url(:/images/print-icon.png);</string>
    <property name="geometry">
     <rect>
      <x>1170</x>
+<<<<<<< HEAD
      <y>290</y>
+=======
+     <y>330</y>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
      <width>85</width>
      <height>20</height>
     </rect>
@@ -776,7 +788,11 @@ background-image:url(:/images/empty.png);</string>
    <property name="geometry">
     <rect>
      <x>1150</x>
+<<<<<<< HEAD
      <y>330</y>
+=======
+     <y>350</y>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
      <width>125</width>
      <height>125</height>
     </rect>
@@ -796,7 +812,11 @@ border-image: url(:/images/patient-icon.png);</string>
    <property name="geometry">
     <rect>
      <x>1170</x>
+<<<<<<< HEAD
      <y>460</y>
+=======
+     <y>470</y>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
      <width>85</width>
      <height>20</height>
     </rect>
@@ -2407,8 +2427,12 @@ background-color: rgb(172, 224, 251);
        <property name="styleSheet">
         <string notr="true">border-image: url(:/images/empty.png);
 background-image:url(:/images/empty.png);
+<<<<<<< HEAD
 background-color:rgb(255,255,255);
 color:rgb(0,0,0);</string>
+=======
+</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        </property>
        <property name="text">
         <string>118</string>
@@ -2436,8 +2460,12 @@ color:rgb(0,0,0);</string>
        <property name="styleSheet">
         <string notr="true">border-image: url(:/images/empty.png);
 background-image:url(:/images/empty.png);
+<<<<<<< HEAD
 background-color:rgb(255,255,255);
 color:rgb(0,0,0);</string>
+=======
+</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        </property>
        <property name="text">
         <string>2</string>
@@ -2465,8 +2493,12 @@ color:rgb(0,0,0);</string>
        <property name="styleSheet">
         <string notr="true">border-image: url(:/images/empty.png);
 background-image:url(:/images/empty.png);
+<<<<<<< HEAD
 background-color:rgb(255,255,255);
 color:rgb(0,0,0);</string>
+=======
+</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        </property>
        <property name="text">
         <string>2</string>
@@ -2494,8 +2526,12 @@ color:rgb(0,0,0);</string>
        <property name="styleSheet">
         <string notr="true">border-image: url(:/images/empty.png);
 background-image:url(:/images/empty.png);
+<<<<<<< HEAD
 background-color:rgb(255,255,255);
 color:rgb(0,0,0);</string>
+=======
+</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        </property>
        <property name="text">
         <string>1.28</string>
@@ -2523,8 +2559,12 @@ color:rgb(0,0,0);</string>
        <property name="styleSheet">
         <string notr="true">border-image: url(:/images/empty.png);
 background-image:url(:/images/empty.png);
+<<<<<<< HEAD
 background-color:rgb(255,255,255);
 color:rgb(0,0,0);</string>
+=======
+</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        </property>
        <property name="text">
         <string>118</string>
@@ -2552,8 +2592,12 @@ color:rgb(0,0,0);</string>
        <property name="styleSheet">
         <string notr="true">border-image: url(:/images/empty.png);
 background-image:url(:/images/empty.png);
+<<<<<<< HEAD
 background-color:rgb(255,255,255);
 color:rgb(0,0,0);</string>
+=======
+</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        </property>
        <property name="text">
         <string>1.28</string>
@@ -2581,8 +2625,12 @@ color:rgb(0,0,0);</string>
        <property name="styleSheet">
         <string notr="true">border-image: url(:/images/empty.png);
 background-image:url(:/images/empty.png);
+<<<<<<< HEAD
 background-color:rgb(255,255,255);
 color:rgb(0,0,0);</string>
+=======
+</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        </property>
        <property name="text">
         <string>4.97</string>
@@ -2610,8 +2658,12 @@ color:rgb(0,0,0);</string>
        <property name="styleSheet">
         <string notr="true">border-image: url(:/images/empty.png);
 background-image:url(:/images/empty.png);
+<<<<<<< HEAD
 background-color:rgb(255,255,255);
 color:rgb(0,0,0);</string>
+=======
+</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        </property>
        <property name="text">
         <string>4.97</string>
@@ -3173,9 +3225,13 @@ background-color: rgb(172, 224, 251);
        </property>
        <property name="styleSheet">
         <string notr="true">border-image: url(:/images/empty.png);
+<<<<<<< HEAD
 background-image:url(:/images/empty.png);
 background-color:rgb(255,255,255);
 color:rgb(0,0,0);</string>
+=======
+background-image:url(:/images/empty.png);</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        </property>
        <property name="text">
         <string>118</string>
@@ -3202,9 +3258,13 @@ color:rgb(0,0,0);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">border-image: url(:/images/empty.png);
+<<<<<<< HEAD
 background-image:url(:/images/empty.png);
 background-color:rgb(255,255,255);
 color:rgb(0,0,0);</string>
+=======
+background-image:url(:/images/empty.png);</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        </property>
        <property name="text">
         <string>1.28</string>
@@ -3231,9 +3291,13 @@ color:rgb(0,0,0);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">border-image: url(:/images/empty.png);
+<<<<<<< HEAD
 background-image:url(:/images/empty.png);
 background-color:rgb(255,255,255);
 color:rgb(0,0,0);</string>
+=======
+background-image:url(:/images/empty.png);</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        </property>
        <property name="text">
         <string>118</string>
@@ -3260,9 +3324,13 @@ color:rgb(0,0,0);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">border-image: url(:/images/empty.png);
+<<<<<<< HEAD
 background-image:url(:/images/empty.png);
 background-color:rgb(255,255,255);
 color:rgb(0,0,0);</string>
+=======
+background-image:url(:/images/empty.png);</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        </property>
        <property name="text">
         <string>1.28</string>
@@ -3289,9 +3357,13 @@ color:rgb(0,0,0);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">border-image: url(:/images/empty.png);
+<<<<<<< HEAD
 background-image:url(:/images/empty.png);
 background-color:rgb(255,255,255);
 color:rgb(0,0,0);</string>
+=======
+background-image:url(:/images/empty.png);</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        </property>
        <property name="text">
         <string>118</string>
@@ -3318,9 +3390,13 @@ color:rgb(0,0,0);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">border-image: url(:/images/empty.png);
+<<<<<<< HEAD
 background-image:url(:/images/empty.png);
 background-color:rgb(255,255,255);
 color:rgb(0,0,0);</string>
+=======
+background-image:url(:/images/empty.png);</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        </property>
        <property name="text">
         <string>118</string>
@@ -3347,9 +3423,13 @@ color:rgb(0,0,0);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">border-image: url(:/images/empty.png);
+<<<<<<< HEAD
 background-image:url(:/images/empty.png);
 background-color:rgb(255,255,255);
 color:rgb(0,0,0);</string>
+=======
+background-image:url(:/images/empty.png);</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        </property>
        <property name="text">
         <string>4.97</string>
@@ -3376,9 +3456,13 @@ color:rgb(0,0,0);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">border-image: url(:/images/empty.png);
+<<<<<<< HEAD
 background-image:url(:/images/empty.png);
 background-color:rgb(255,255,255);
 color:rgb(0,0,0);</string>
+=======
+background-image:url(:/images/empty.png);</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        </property>
        <property name="text">
         <string>4.97</string>

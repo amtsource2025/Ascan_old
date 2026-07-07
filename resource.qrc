@@ -2097,8 +2097,11 @@
         <file>iol_icon.png</file>
         <file>save_icon.png</file>
         <file>view_icon.png</file>
+<<<<<<< HEAD
         <file>6.png</file>
         <file>ascan-select1.png</file>
         <file>7.png</file>
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
     </qresource>
 </RCC>

@@ -8,6 +8,7 @@
 #include <QApplication>
 #include <QDebug>
 #include "AppManager.h"
+<<<<<<< HEAD
 
 #include "viewdoctordialog.h"
 #include "viewpatientdialog.h"
@@ -18,6 +19,8 @@
 #include "promptdialog.h"
 #include "calculatordialog.h"
 
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 
 // ─────────────────────────────────────────────────────────────
 //  Constructor / Destructor
@@ -31,6 +34,18 @@ welcomeDialog::welcomeDialog(QWidget *parent)
 
     m_lastPatientId.clear();
 
+<<<<<<< HEAD
+=======
+    ui->comboBox_patientSelect->setStyleSheet(
+        "QComboBox {"
+        "color: black;"
+        "background-color: #219ebc;"
+        "font-size: 24px;"
+        "border: 2px solid red;"
+        "}"
+        );
+
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
     this->setCursor(Qt::ArrowCursor);
 
     // ✅ reuse main.cpp's connection, never close it
@@ -158,7 +173,10 @@ void welcomeDialog::loadPatients()
     const QSignalBlocker blocker(ui->comboBox_patientSelect);
 
     QString previousPatient = m_lastPatientId;
+<<<<<<< HEAD
     bool previousStillExists = false;
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 
     ui->comboBox_patientSelect->clear();
     ui->comboBox_patientSelect->addItem("-- Select Patient --", "");
@@ -180,6 +198,7 @@ void welcomeDialog::loadPatients()
         qDebug() << "loadPatients error:" << query.lastError().text();
     }
 
+<<<<<<< HEAD
     // ✅ Most recently added patient — works on ANY database file with the
     // same schema, since it relies only on rowid (SQLite's built-in
     // insertion-order column), not on any hardcoded id.
@@ -214,6 +233,13 @@ void welcomeDialog::loadPatients()
     // setCurrentIndex above happens inside QSignalBlocker scope, so force
     // a repaint here to make sure the newly selected text is drawn.
     ui->comboBox_patientSelect->update();
+=======
+    if (!previousPatient.isEmpty()) {
+        int idx = ui->comboBox_patientSelect->findData(previousPatient);
+        if (idx >= 0)
+            ui->comboBox_patientSelect->setCurrentIndex(idx);
+    }
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 }
 
 // ─────────────────────────────────────────────────────────────
@@ -319,6 +345,7 @@ void welcomeDialog::on_btn_ascan_clicked()
 
     this->hide();
     AppManager::measure->show();
+<<<<<<< HEAD
 }
 
 
@@ -392,4 +419,6 @@ void welcomeDialog::on_btn_calibrate_clicked()
 {
     CalibrationDialog dlg(this);
     dlg.exec();
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 }

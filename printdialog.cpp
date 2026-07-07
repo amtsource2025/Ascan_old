@@ -411,6 +411,435 @@ void PrintDialog::doPrintCalc()
 
     qDebug() << "[PrintDialog] doPrintScan() write result:" << ok;
     showSnack(ok ? tr("Scan printed.") : tr("Print failed."), !ok);
+<<<<<<< HEAD
+=======
+}
+
+void PrintDialog::doPrintAll()
+{
+    qDebug() << "[PrintDialog] doPrintAll() called. scan valid =" << m_scanCtx.valid
+             << "calc valid =" << m_calcCtx.valid;
+
+    if (!m_scanCtx.valid && !m_calcCtx.valid) {
+        showSnack(tr("Nothing to print."));
+        return;
+    }
+
+    if (!openPrinterPort()) {
+        showSnack(tr("Printer not responding. Check connection."));
+        return;
+    }
+
+    // Build both sections WITHOUT their own cut, then cut once at the very end.
+    QByteArray job = escInit();
+
+    if (m_scanCtx.valid)
+        job += buildScanPrintJob(m_scanCtx, /*withCut=*/false);
+
+    if (m_calcCtx.valid)
+        job += buildCalcPrintJob(m_calcCtx, /*withCut=*/false);
+
+    job += escFeedLines(2);
+    job += escCut();
+
+    qDebug() << "[PrintDialog] combined job size (bytes):" << job.size();
+
+    bool ok = writeToPrinter(job);
+    closePrinterPort();
+
+    qDebug() << "[PrintDialog] doPrintAll() write result:" << ok;
+    showSnack(ok ? tr("Printed.") : tr("Print failed."), !ok);
+}
+
+
+// ===========================================================================
+// Serial port handling  (/dev/ttyUL1, ARM board UART -> CSN-A2 thermal printer)
+// ===========================================================================
+void PrintDialog::debugDumpPortDiagnostics(const QString &portName)
+{
+    qDebug() << "[PrintDialog][diag] ---- port diagnostics for" << portName << "----";
+
+    uid_t uid = getuid();
+    uid_t euid = geteuid();
+    struct passwd *pw = getpwuid(euid);
+    qDebug() << "[PrintDialog][diag] running as uid=" << uid << "euid=" << euid
+             << "user=" << (pw ? pw->pw_name : "?");
+
+    gid_t groups[32];
+    int ngroups = 32;
+    if (pw && getgrouplist(pw->pw_name, pw->pw_gid, groups, &ngroups) >= 0) {
+        QStringList groupNames;
+        for (int i = 0; i < ngroups; ++i) {
+            struct group *gr = getgrgid(groups[i]);
+            groupNames << (gr ? QString(gr->gr_name) : QString::number(groups[i]));
+        }
+        qDebug() << "[PrintDialog][diag] process groups:" << groupNames.join(", ");
+    }
+
+    QFileInfo fi(portName);
+    if (!fi.exists()) {
+        qWarning() << "[PrintDialog][diag]" << portName << "DOES NOT EXIST on this filesystem.";
+    } else {
+        qDebug() << "[PrintDialog][diag] node exists — owner:" << fi.owner()
+            << "group:" << fi.group()
+            << "perms:" << QString::number(fi.permissions(), 8)
+            << "readable:" << fi.isReadable()
+            << "writable:" << fi.isWritable();
+    }
+
+    bool foundInQtEnum = false;
+    const auto ports = QSerialPortInfo::availablePorts();
+    qDebug() << "[PrintDialog][diag] QSerialPortInfo sees" << ports.size() << "port(s) total";
+    for (const QSerialPortInfo &info : ports) {
+        qDebug() << "[PrintDialog][diag]   -" << info.systemLocation()
+        << "busy:" << info.isBusy()
+        << "desc:" << info.description();
+        if (info.systemLocation() == portName || info.portName() == portName)
+            foundInQtEnum = true;
+    }
+    if (!foundInQtEnum) {
+        qWarning() << "[PrintDialog][diag]" << portName
+                   << "was NOT found by QSerialPortInfo::availablePorts() — "
+                      "QSerialPort::open() may fail even though the raw node exists "
+                      "and a plain echo/redirect to it works.";
+    }
+
+    qDebug() << "[PrintDialog][diag] -------------------------------------------";
+}
+
+bool PrintDialog::openPrinterPort()
+{
+    static const QString kPortName = QStringLiteral("/dev/ttyUL1");
+
+    if (m_printerPort && m_printerPort->isOpen()) {
+        qDebug() << "[PrintDialog] port already open";
+        return true;
+    }
+
+    debugDumpPortDiagnostics(kPortName);
+
+    if (!m_printerPort)
+        m_printerPort = new QSerialPort(this);
+
+    m_printerPort->setPortName(kPortName);
+    m_printerPort->setBaudRate(QSerialPort::Baud9600);
+    m_printerPort->setDataBits(QSerialPort::Data8);
+    m_printerPort->setParity(QSerialPort::NoParity);
+    m_printerPort->setStopBits(QSerialPort::OneStop);
+    m_printerPort->setFlowControl(QSerialPort::NoFlowControl);
+
+    m_printerPort->setReadBufferSize(0);
+    m_printerPort->clear();
+
+    qDebug() << "[PrintDialog] opening" << kPortName << "...";
+    if (!m_printerPort->open(QIODevice::ReadWrite)) {
+        QSerialPort::SerialPortError err = m_printerPort->error();
+        QMetaEnum me = QMetaEnum::fromType<QSerialPort::SerialPortError>();
+        qWarning() << "[PrintDialog] FAILED to open" << kPortName
+                   << "| errorString:" << m_printerPort->errorString()
+                   << "| errorEnum:" << me.valueToKey(err) << "(" << int(err) << ")";
+
+        switch (err) {
+        case QSerialPort::PermissionError:
+            qWarning() << "[PrintDialog] -> PermissionError: process user is not allowed "
+                          "to open this device.";
+            break;
+        case QSerialPort::DeviceNotFoundError:
+            qWarning() << "[PrintDialog] -> DeviceNotFoundError: portName doesn't match "
+                          "any device Qt can see.";
+            break;
+        case QSerialPort::OpenError:
+            qWarning() << "[PrintDialog] -> OpenError: already open elsewhere, or the "
+                          "underlying open() syscall failed for another reason.";
+            break;
+        default:
+            break;
+        }
+        return false;
+    }
+
+    qDebug() << "[PrintDialog]" << kPortName << "opened OK — actual settings:"
+             << "baud=" << m_printerPort->baudRate()
+             << "dataBits=" << m_printerPort->dataBits()
+             << "parity=" << m_printerPort->parity()
+             << "stopBits=" << m_printerPort->stopBits()
+             << "flowControl=" << m_printerPort->flowControl();
+    return true;
+}
+
+void PrintDialog::closePrinterPort()
+{
+    if (m_printerPort && m_printerPort->isOpen()) {
+        qDebug() << "[PrintDialog] closing /dev/ttyUL1";
+        m_printerPort->close();
+    }
+}
+
+bool PrintDialog::writeToPrinter(const QByteArray &data)
+{
+    if (!m_printerPort || !m_printerPort->isOpen()) {
+        qWarning() << "[PrintDialog] Port is not open!";
+        return false;
+    }
+
+    const int chunkSize = 128;      // Send 128 bytes at a time
+
+    for (int i = 0; i < data.size(); i += chunkSize)
+    {
+        QByteArray chunk = data.mid(i, chunkSize);
+
+        qint64 written = m_printerPort->write(chunk);
+
+        if (written != chunk.size()) {
+            qWarning() << "Write failed at chunk" << i;
+            return false;
+        }
+
+        if (!m_printerPort->waitForBytesWritten(2000)) {
+            qWarning() << "Timeout while writing chunk";
+            return false;
+        }
+
+        m_printerPort->flush();
+
+        QThread::msleep(20);     // Allow printer UART buffer to empty
+    }
+
+    return true;
+}
+
+// ===========================================================================
+// ESC/POS primitives
+// ===========================================================================
+QByteArray PrintDialog::escInit()
+{
+    return QByteArray("\x1B\x40", 2); // ESC @  - initialize printer
+}
+
+QByteArray PrintDialog::escCut()
+{
+    return QByteArray("\x1D\x56\x00", 3); // GS V 0 - full cut
+}
+
+QByteArray PrintDialog::escAlignCenter()
+{
+    return QByteArray("\x1B\x61\x01", 3); // ESC a 1
+}
+
+QByteArray PrintDialog::escAlignLeft()
+{
+    return QByteArray("\x1B\x61\x00", 3); // ESC a 0
+}
+
+QByteArray PrintDialog::escBoldOn()
+{
+    return QByteArray("\x1B\x45\x01", 3); // ESC E 1
+}
+
+QByteArray PrintDialog::escBoldOff()
+{
+    return QByteArray("\x1B\x45\x00", 3); // ESC E 0
+}
+
+QByteArray PrintDialog::escFeedLines(int n)
+{
+    QByteArray out;
+    out.append('\x1B');
+    out.append('\x64'); // ESC d n
+    out.append(char(n));
+    return out;
+}
+
+QByteArray PrintDialog::textLine(const QString &text)
+{
+    QByteArray out = text.toLatin1();
+    out.append('\n');
+    return out;
+}
+
+// ===========================================================================
+// Waveform pixmap -> ESC * (mode 33, 24-dot double density) raster bit image
+// ===========================================================================
+QByteArray PrintDialog::pixmapToEscRaster(const QPixmap &pixmapIn)
+{
+    QByteArray out;
+    if (pixmapIn.isNull())
+        return out;
+
+    QImage img = pixmapIn.toImage();
+
+    img.invertPixels();
+
+    if (img.width() != kPrinterWidthPx) {
+        int newHeight = int(double(img.height()) *
+                            (double(kPrinterWidthPx) / double(img.width())));
+        if (newHeight < 1) newHeight = 1;
+        img = img.scaled(kPrinterWidthPx, newHeight,
+                         Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+    }
+
+    img = img.convertToFormat(QImage::Format_Mono, Qt::MonoOnly | Qt::ThresholdDither);
+
+    const int width  = img.width();
+    const int height = img.height();
+    const int bandRows = 24; // ESC * mode 33 covers 24 vertical dots per pass
+
+    for (int y0 = 0; y0 < height; y0 += bandRows) {
+        QByteArray band;
+        band.reserve(width * 3);
+
+        for (int x = 0; x < width; ++x) {
+            unsigned char b0 = 0, b1 = 0, b2 = 0;
+
+            for (int r = 0; r < bandRows; ++r) {
+                int y = y0 + r;
+                bool dark = false;
+                if (y < height) {
+                    QRgb pix = img.pixel(x, y);
+                    dark = (qGray(pix) < 128);
+                }
+                if (dark) {
+                    int byteIdx = r / 8;
+                    int bitIdx  = 7 - (r % 8);
+                    if (byteIdx == 0)      b0 |= (1 << bitIdx);
+                    else if (byteIdx == 1)  b1 |= (1 << bitIdx);
+                    else                    b2 |= (1 << bitIdx);
+                }
+            }
+
+            band.append(char(b0));
+            band.append(char(b1));
+            band.append(char(b2));
+        }
+
+        int nL = width % 256;
+        int nH = width / 256;
+
+        out.append('\x1B');       // ESC
+        out.append('\x2A');       // '*'
+        out.append(char(33));     // mode 33 = 24-dot double density
+        out.append(char(nL));
+        out.append(char(nH));
+        out.append(band);
+        out.append('\x0A');       // line feed to advance to the next band
+    }
+
+    return out;
+}
+
+// ===========================================================================
+// Print job builders
+// ===========================================================================
+QByteArray PrintDialog::buildScanPrintJob(const ScanContext &ctx, bool withCut)
+{
+    QByteArray job;
+
+    job += escInit();
+    job += escAlignCenter();
+    job += escBoldOn();
+    job += textLine("AcuAxis A-Scan Report");
+    job += escBoldOff();
+    job += escAlignLeft();
+
+    job += QString("Patient : %1\n").arg(ctx.patientName).toLatin1();
+    job += QString("ID      : %1\n").arg(ctx.patientId).toLatin1();
+    job += QString("Doctor  : %1\n").arg(ctx.doctorName).toLatin1();
+    job += QString("Date    : %1\n").arg(ctx.dateTime).toLatin1();
+    job += QString("Eye     : %1\n").arg(ctx.eye).toLatin1();
+    job += QString("AL      : %1 mm\n").arg(ctx.axialLength).toLatin1();
+    job += "\n";
+
+    // Rasterize + print the waveform (dummy sine trace or real
+    // renderWaveformPixmap() capture from MeasureDialog).
+    if (!ctx.waveformPixmap.isNull()) {
+        job += escAlignCenter();
+        job += pixmapToEscRaster(ctx.waveformPixmap);
+        job += escAlignLeft();
+    } else {
+        qWarning() << "[PrintDialog] buildScanPrintJob: waveformPixmap is null, skipping raster";
+    }
+
+    job += escFeedLines(2);
+
+    if (withCut)
+        job += escCut();
+
+    return job;
+}
+
+QByteArray PrintDialog::buildCalcPrintJob(const CalcContext &ctx, bool withCut)
+{
+    QByteArray job;
+    job += escInit();
+    job += escAlignCenter();
+    job += escBoldOn();
+    job += textLine("AcuAxis IOL Calculation");
+    job += escBoldOff();
+    job += escAlignLeft();
+
+    job += buildCalcContent(ctx).toLatin1();
+
+    job += escFeedLines(2);
+
+    if (withCut)
+        job += escCut();
+
+    return job;
+}
+
+QString PrintDialog::buildCalcContent(const CalcContext &ctx)
+{
+    static const char *kFormulaNames[] = { "SRK/II", "SRK/T", "Hoffer Q", "Holladay" };
+    QString formulaName = (ctx.formulaIndex >= 0 && ctx.formulaIndex < 4)
+                              ? kFormulaNames[ctx.formulaIndex]
+                              : "Unknown";
+
+    QString content;
+    content += QString("Patient : %1 (%2)\n").arg(ctx.patientName, ctx.patientId);
+    content += QString("Doctor  : %1\n").arg(ctx.doctorName);
+    content += QString("Date    : %1\n").arg(ctx.dateTime);
+    content += QString("Eye     : %1\n").arg(ctx.eye);
+    content += QString("Formula : %1\n").arg(formulaName);
+    content += "\n";
+
+    if (!ctx.k1.isEmpty())
+        content += QString("K1      : %1 D\n").arg(ctx.k1);
+    if (!ctx.k2.isEmpty())
+        content += QString("K2      : %1 D\n").arg(ctx.k2);
+    if (!ctx.axialLength.isEmpty())
+        content += QString("AL      : %1 mm\n").arg(ctx.axialLength);
+    if (!ctx.aConstant.isEmpty())
+        content += QString("A-Const : %1\n").arg(ctx.aConstant);
+    if (!ctx.iolPower.isEmpty())
+        content += QString("IOL Pwr : %1 D\n").arg(ctx.iolPower);
+    if (!ctx.predictedRefraction.isEmpty())
+        content += QString("Pred Rx : %1 D\n").arg(ctx.predictedRefraction);
+
+    content += "\n";
+    if (ctx.lensRowidOne >= 0)
+        content += QString("Lens 1 (rowid) : %1\n").arg(ctx.lensRowidOne);
+    if (ctx.lensRowidTwo >= 0)
+        content += QString("Lens 2 (rowid) : %1\n").arg(ctx.lensRowidTwo);
+    if (ctx.lensRowidThree >= 0)
+        content += QString("Lens 3 (rowid) : %1\n").arg(ctx.lensRowidThree);
+
+    return content;
+}
+
+// ===========================================================================
+// Snackbar helper
+// ===========================================================================
+void PrintDialog::showSnack(const QString &msg, bool isError)
+{
+    ui->snackbar->setText(msg);
+    ui->snackbar->setVisible(true);
+
+    Q_UNUSED(isError);
+
+    QTimer::singleShot(3000, this, [this]() {
+        ui->snackbar->setVisible(false);
+    });
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 }
 
 void PrintDialog::doPrintAll()

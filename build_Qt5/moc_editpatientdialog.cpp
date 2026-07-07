@@ -7,7 +7,11 @@
 *****************************************************************************/
 
 #include <memory>
+<<<<<<<< HEAD:build_Qt5/moc_editpatientdialog.cpp
 #include "../editpatientdialog.h"
+========
+#include "../../../../editpatientdialog.h"
+>>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556:build/6_11_0-Debug/Ascan_v2_autogen/EWIEGA46WW/moc_editpatientdialog.cpp
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)

@@ -360,8 +360,11 @@ background-image:url(:/images/empty.png);</string>
   <zorder>btn_calculations2</zorder>
   <zorder>btn_both2</zorder>
   <zorder>pushButton</zorder>
+<<<<<<< HEAD
   <zorder>radio_layoutDefault</zorder>
   <zorder>radio_layoutHorizontal</zorder>
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
  </widget>
  <customwidgets>
   <customwidget>

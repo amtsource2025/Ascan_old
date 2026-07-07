@@ -25,6 +25,7 @@
    <property name="styleSheet">
     <string notr="true"/>
    </property>
+<<<<<<< HEAD
    <widget class="QFrame" name="headerBar">
     <property name="geometry">
      <rect>
@@ -69,6 +70,28 @@ QPushButton{
 QPushButton:pressed {
     border: 3px solid #00BCD4;
 }
+=======
+   <widget class="QPushButton" name="btn_ascan">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>0</y>
+      <width>231</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton{
+background-image:url(:/images/empty.png);
+border-image: url(:/images/ascan-select.png);
+}
+
+QPushButton:pressed {
+    border: 5px solid #00BCD4;
+}
+
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 </string>
     </property>
     <property name="text">
@@ -81,6 +104,7 @@ QPushButton:pressed {
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
+<<<<<<< HEAD
       <x>120</x>
       <y>230</y>
       <width>1011</width>
@@ -100,6 +124,24 @@ QPushButton:pressed {
     );
     border: 2px solid #7fb3d9;
     border-radius: 30px;
+=======
+      <x>140</x>
+      <y>230</y>
+      <width>1011</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame
+{
+
+	border-image: url(:/images/card-big.png); 
+	background-image:url(:/images/empty.png);
+    background-color: rgb(255,255,255);
+    border: 1px solid rgb(220,225,235);
+    border-radius: 22px;
+
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 }</string>
     </property>
     <property name="frameShape">
@@ -111,8 +153,13 @@ QPushButton:pressed {
     <widget class="QPushButton" name="btn_surgeon">
      <property name="geometry">
       <rect>
+<<<<<<< HEAD
        <x>150</x>
        <y>50</y>
+=======
+       <x>170</x>
+       <y>150</y>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        <width>141</width>
        <height>141</height>
       </rect>
@@ -136,8 +183,13 @@ border-image: url(:/images/patient-icon.png);</string>
     <widget class="QPushButton" name="btn_enter">
      <property name="geometry">
       <rect>
+<<<<<<< HEAD
        <x>820</x>
        <y>210</y>
+=======
+       <x>850</x>
+       <y>370</y>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        <width>120</width>
        <height>40</height>
       </rect>
@@ -186,6 +238,7 @@ QPushButton:disabled
     color: #FFFFFF;
 }
 
+<<<<<<< HEAD
 
 QPushButton
 {
@@ -216,6 +269,8 @@ QPushButton:disabled
 }
 
 
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 </string>
      </property>
      <property name="text">
@@ -228,8 +283,13 @@ QPushButton:disabled
     <widget class="QPushButton" name="btn_newDoctor_2">
      <property name="geometry">
       <rect>
+<<<<<<< HEAD
        <x>590</x>
        <y>210</y>
+=======
+       <x>630</x>
+       <y>370</y>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        <width>181</width>
        <height>40</height>
       </rect>
@@ -268,6 +328,7 @@ QPushButton
 }
 
 
+<<<<<<< HEAD
 QPushButton
 {
     background-color: #FFFFFF;
@@ -290,6 +351,8 @@ QPushButton:pressed
 
 
 
+=======
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 
 </string>
      </property>
@@ -304,12 +367,17 @@ QPushButton:pressed
      <property name="geometry">
       <rect>
        <x>330</x>
+<<<<<<< HEAD
        <y>90</y>
+=======
+       <y>190</y>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
        <width>541</width>
        <height>61</height>
       </rect>
      </property>
      <property name="styleSheet">
+<<<<<<< HEAD
       <string notr="true">
 
 QComboBox
@@ -319,10 +387,19 @@ QComboBox
     border: 2px solid #7fb3d9;
     border-radius: 12px;
     padding: 8px 18px;
+=======
+      <string notr="true">/*QComboBox
+{
+    background-color: white;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 8px 16px;
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
     color: #334155;
     outline: none;
 }
 
+<<<<<<< HEAD
 QComboBox:hover
 {
     border: 1.5px solid #A9C4E8;
@@ -338,17 +415,36 @@ QComboBox::drop-down
 {
     border: none;
     width: 34px;
+=======
+QComboBox:focus
+{
+    border: 1px solid #3B82F6;
+    outline: none;
+}
+
+QComboBox:on
+{
+    border: 1px solid #3B82F6;
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
 }
 
 QComboBox QAbstractItemView
 {
     background: white;
+<<<<<<< HEAD
     border: 1px solid #DCE3EA;
     selection-background-color: #E3F0FD;
     selection-color: #1976D2;
     outline: 0;
     padding: 4px;
 }</string>
+=======
+    border: 1px solid #80c0e4;
+    selection-background-color: #DCEEFF;
+    selection-color: #1E40AF;
+    outline: 0;
+}*/</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
      </property>
      <property name="frame">
       <bool>true</bool>
@@ -371,6 +467,7 @@ QComboBox QAbstractItemView
     <property name="font">
      <font>
       <pointsize>15</pointsize>
+<<<<<<< HEAD
       <bold>true</bold>
      </font>
     </property>
@@ -379,6 +476,12 @@ QComboBox QAbstractItemView
 color: #1A2B3C;
 font-weight: 700;
 letter-spacing: 1px;</string>
+=======
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
     </property>
     <property name="text">
      <string>A-Scan</string>
@@ -397,6 +500,7 @@ letter-spacing: 1px;</string>
      </rect>
     </property>
     <property name="font">
+<<<<<<< HEAD
 <font>
     <pointsize>13</pointsize>
     <bold>true</bold>
@@ -406,6 +510,14 @@ letter-spacing: 1px;</string>
      <string notr="true">background: transparent;
 color: #FFFFFF;
 font-weight: 600;</string>
+=======
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/images/empty.png);</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
     </property>
     <property name="text">
      <string>10:09</string>
@@ -423,6 +535,7 @@ font-weight: 600;</string>
       <height>61</height>
      </rect>
     </property>
+<<<<<<< HEAD
 <property name="font">
     <font>
         <pointsize>15</pointsize>
@@ -433,6 +546,17 @@ font-weight: 600;</string>
      <string notr="true">background: transparent;
 color: #FFFFFF;
 font-weight: 600;</string>
+=======
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255,255,255);
+color:rgb(21,21,21);
+border-image:url(:/images/empty.png);</string>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
     </property>
     <property name="text">
      <string>Welcome, Dr. J Doe, M.D. </string>
@@ -441,8 +565,13 @@ font-weight: 600;</string>
    <widget class="QLabel" name="lbl_softwareVersion">
     <property name="geometry">
      <rect>
+<<<<<<< HEAD
       <x>1110</x>
       <y>680</y>
+=======
+      <x>10</x>
+      <y>670</y>
+>>>>>>> c45e4e3d7db5a6fc95b663ed077b6e12fe2a2556
       <width>151</width>
       <height>41</height>
      </rect>
