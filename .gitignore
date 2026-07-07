@@ -5,3 +5,10 @@ Ascan.V1
 qrc_resource.cpp
 Ascan.V1
 *.o
+qrc_resource.cpp
+build_Qt5/qrc_resource.cpp
+Ascan.V1
+Ascan.V4
+*.o
+*.so
+*.so.*
